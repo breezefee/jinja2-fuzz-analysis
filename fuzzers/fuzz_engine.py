@@ -4,6 +4,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -40,6 +41,18 @@ def _summary_path(target: str, coverage_dir: Path) -> Path:
     return coverage_dir / f"{target}_summary.json"
 
 
+def _load_summary_with_retry(summary_path: Path, retries: int = 8) -> dict[str, Any]:
+    for _ in range(retries):
+        if not summary_path.exists():
+            time.sleep(0.05)
+            continue
+        try:
+            return json.loads(summary_path.read_text(encoding="utf-8"))
+        except Exception:
+            time.sleep(0.05)
+    return {}
+
+
 def run_target(
     target: str,
     iterations: int,
@@ -74,12 +87,7 @@ def run_target(
         check=False,
     )
 
-    summary: dict[str, Any] = {}
-    if summary_path.exists():
-        try:
-            summary = json.loads(summary_path.read_text(encoding="utf-8"))
-        except Exception:
-            summary = {}
+    summary = _load_summary_with_retry(summary_path)
 
     coverage_metrics = _parse_coverage_metrics((process.stdout or "") + "\n" + (process.stderr or ""))
     coverage_payload = {
