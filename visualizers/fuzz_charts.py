@@ -54,34 +54,41 @@ def _chart_coverage_trend(fuzz_data: dict[str, Any]) -> str:
 
 
 def _chart_exception_distribution(fuzz_data: dict[str, Any]) -> str:
-    exception_counter: Counter[str] = Counter()
+    rows: list[dict[str, Any]] = []
     for target in fuzz_data.get("targets", []):
-        counter = target.get("summary", {}).get("exception_counts", {})
-        for key, value in counter.items():
-            exception_counter[key] += int(value)
+        counts = target.get("summary", {}).get("exception_counts", {})
+        total = sum(int(v) for v in counts.values())
+        rows.append({"Target": target["target"], "异常次数": total})
 
-    if not exception_counter:
-        exception_counter["None"] = 0
-    top_items = exception_counter.most_common(10)
-    frame = pd.DataFrame(
-        {
-            "exception": [truncate_label(item[0], 20) for item in top_items],
-            "count": [int(item[1]) for item in top_items],
-        }
-    )
+    if not rows:
+        rows = [{"Target": "N/A", "异常次数": 0}]
+
+    frame = pd.DataFrame(rows).sort_values("异常次数", ascending=True)
+    colors = list(config.WARM_PALETTE[: len(frame)])
+
     fig, ax = plt.subplots(figsize=(11, 6))
-    sns.barplot(
-        data=frame,
-        x="exception",
-        y="count",
-        color=config.WARM_PALETTE[1],
+    bars = ax.barh(
+        frame["Target"],
+        frame["异常次数"],
+        color=colors,
         edgecolor="#7A2E23",
-        ax=ax,
+        height=0.55,
     )
-    ax.set_title("Crash/异常分类统计")
-    ax.set_xlabel("异常类型")
-    ax.set_ylabel("出现次数")
-    ax.tick_params(axis="x", rotation=45)
+    for bar in bars:
+        w = bar.get_width()
+        ax.text(
+            w + max(frame["异常次数"]) * 0.01,
+            bar.get_y() + bar.get_height() / 2,
+            f"{int(w):,}",
+            va="center",
+            fontsize=12,
+            fontweight="bold",
+            color="#4A4A48",
+        )
+    ax.set_title("各 Fuzz Target 异常触发统计")
+    ax.set_xlabel("累计异常次数")
+    ax.set_ylabel("")
+    ax.set_xlim(0, max(frame["异常次数"]) * 1.15)
     return save_figure(fig, "12_Crash异常分类统计.png")
 
 
