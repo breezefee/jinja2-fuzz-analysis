@@ -22,9 +22,22 @@ from visualizers.network_charts import build_network_chart
 from visualizers.style import apply_warm_style
 
 TaskFn = Callable[[], dict[str, Any]]
+DEFAULT_TASK_ORDER = [
+    "commit_collect",
+    "github_collect",
+    "ast",
+    "libcst",
+    "z3",
+    "trace",
+    "fuzz",
+    "chart_commit",
+    "chart_code",
+    "chart_fuzz",
+    "chart_network",
+]
 
 
-def _build_task_registry() -> dict[str, TaskFn]:
+def _build_task_registry(fuzz_runs: int, execute_fuzz: bool) -> dict[str, TaskFn]:
     return {
         "commit_collect": lambda: collect_commits(config.JINJA_REPO_ROOT),
         "github_collect": collect_github_metadata,
@@ -32,7 +45,7 @@ def _build_task_registry() -> dict[str, TaskFn]:
         "libcst": lambda: analyze_libcst(config.JINJA_SRC_ROOT),
         "z3": analyze_constraints,
         "trace": trace_execution,
-        "fuzz": lambda: run_all_targets(config.DEFAULT_FUZZ_ITERATIONS),
+        "fuzz": lambda: run_all_targets(fuzz_runs, execute=execute_fuzz),
         "chart_commit": build_commit_charts,
         "chart_code": build_code_charts,
         "chart_fuzz": build_fuzz_charts,
@@ -56,7 +69,10 @@ def _prepare_runtime() -> None:
 
 
 def run(selected_tasks: list[str]) -> dict[str, Any]:
-    registry = _build_task_registry()
+    registry = _build_task_registry(
+        fuzz_runs=config.DEFAULT_FUZZ_ITERATIONS,
+        execute_fuzz=True,
+    )
     results: dict[str, Any] = {}
     for name in selected_tasks:
         results[name] = registry[name]()
@@ -64,14 +80,28 @@ def run(selected_tasks: list[str]) -> dict[str, Any]:
 
 
 def parse_args() -> argparse.Namespace:
-    registry = _build_task_registry()
+    registry = _build_task_registry(
+        fuzz_runs=config.DEFAULT_FUZZ_ITERATIONS,
+        execute_fuzz=True,
+    )
     parser = argparse.ArgumentParser(description="Jinja2 fuzz and analysis pipeline")
     parser.add_argument(
         "--tasks",
         nargs="+",
-        default=list(registry.keys()),
+        default=DEFAULT_TASK_ORDER,
         choices=list(registry.keys()),
         help="Tasks to execute",
+    )
+    parser.add_argument(
+        "--fuzz-runs",
+        type=int,
+        default=config.DEFAULT_FUZZ_ITERATIONS,
+        help="Atheris 每个 target 的迭代次数",
+    )
+    parser.add_argument(
+        "--plan-fuzz-only",
+        action="store_true",
+        help="只规划 fuzz 任务，不实际执行",
     )
     parser.add_argument(
         "--summary",
@@ -85,7 +115,11 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     _prepare_runtime()
-    results = run(args.tasks)
+    registry = _build_task_registry(
+        fuzz_runs=args.fuzz_runs,
+        execute_fuzz=not args.plan_fuzz_only,
+    )
+    results = {task: registry[task]() for task in args.tasks}
     dump_json(args.summary, results)
     return 0
 
