@@ -1,0 +1,225 @@
+{
+  "collector": "github_api",
+  "status": "ok",
+  "collected_at": "2026-02-10T05:49:06.452038+00:00",
+  "repo": {
+    "name": "jinja",
+    "full_name": "pallets/jinja",
+    "stargazers_count": 11447,
+    "forks_count": 1697,
+    "open_issues_count": 94,
+    "created_at": "2010-10-17T13:41:17Z",
+    "updated_at": "2026-02-09T18:24:04Z",
+    "default_branch": "main"
+  },
+  "top_contributors": [
+    {
+      "login": "mitsuhiko",
+      "contributions": 1299
+    },
+    {
+      "login": "davidism",
+      "contributions": 810
+    },
+    {
+      "login": "dependabot-preview[bot]",
+      "contributions": 70
+    },
+    {
+      "login": "untitaker",
+      "contributions": 69
+    },
+    {
+      "login": "dependabot[bot]",
+      "contributions": 54
+    },
+    {
+      "login": "ThiefMaster",
+      "contributions": 36
+    },
+    {
+      "login": "pre-commit-ci[bot]",
+      "contributions": 32
+    },
+    {
+      "login": "birkenfeld",
+      "contributions": 25
+    },
+    {
+      "login": "tux21b",
+      "contributions": 15
+    },
+    {
+      "login": "amy-lei",
+      "contributions": 13
+    },
+    {
+      "login": "jab",
+      "contributions": 12
+    },
+    {
+      "login": "snoack",
+      "contributions": 12
+    },
+    {
+      "login": "kristi",
+      "contributions": 12
+    },
+    {
+      "login": "jdufresne",
+      "contributions": 12
+    },
+    {
+      "login": "kevin-brown",
+      "contributions": 11
+    },
+    {
+      "login": "jeffwidman",
+      "contributions": 10
+    },
+    {
+      "login": "Lukasa",
+      "contributions": 8
+    },
+    {
+      "login": "ThomasWaldmann",
+      "contributions": 8
+    },
+    {
+      "login": "steelywing",
+      "contributions": 8
+    },
+    {
+      "login": "terminalmage",
+      "contributions": 7
+    }
+  ],
+  "releases": [
+    {
+      "name": "",
+      "tag_name": "3.1.6",
+      "published_at": "2025-03-05T20:05:10Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.1.5",
+      "published_at": "2024-12-21T18:31:29Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.1.4",
+      "published_at": "2024-05-05T23:42:16Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.1.3",
+      "published_at": "2024-01-10T23:12:42Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.1.2",
+      "published_at": "2022-04-28T17:24:04Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.1.1",
+      "published_at": "2022-03-25T22:36:06Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.1.0",
+      "published_at": "2022-03-24T14:24:17Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.0.3",
+      "published_at": "2021-11-16T00:34:33Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.0.2",
+      "published_at": "2021-10-05T00:55:20Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.0.1",
+      "published_at": "2021-05-18T20:41:14Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.0.0",
+      "published_at": "2021-05-12T00:11:00Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "3.0.0rc2",
+      "published_at": "2021-04-25T15:16:21Z",
+      "prerelease": true
+    },
+    {
+      "name": "",
+      "tag_name": "3.0.0rc1",
+      "published_at": "2021-04-16T15:26:40Z",
+      "prerelease": true
+    },
+    {
+      "name": "",
+      "tag_name": "2.11.3",
+      "published_at": "2021-01-31T17:15:06Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "2.11.2",
+      "published_at": "2020-04-13T17:01:38Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "2.11.1",
+      "published_at": "2020-01-30T21:09:15Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "2.11.0",
+      "published_at": "2020-01-29T06:41:45Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "2.10.3",
+      "published_at": "2019-10-04T19:00:50Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "2.10.2",
+      "published_at": "2019-10-04T18:29:32Z",
+      "prerelease": false
+    },
+    {
+      "name": "",
+      "tag_name": "2.10.1",
+      "published_at": "2019-04-06T20:17:48Z",
+      "prerelease": false
+    },
+    {
+      "name": "2.10",
+      "tag_name": "2.10",
+      "published_at": "2017-11-08T20:14:00Z",
+      "prerelease": false
+    }
+  ]
+}
