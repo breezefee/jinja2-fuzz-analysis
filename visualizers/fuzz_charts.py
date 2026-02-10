@@ -34,6 +34,7 @@ def _chart_coverage_trend(fuzz_data: dict[str, Any]) -> str:
         records = [{"target": "none", "iteration": 0, "exceptions": 0}]
 
     frame = pd.DataFrame(records)
+    palette_size = max(1, frame["target"].nunique())
     fig, ax = plt.subplots(figsize=(12, 7))
     sns.lineplot(
         data=frame,
@@ -41,7 +42,7 @@ def _chart_coverage_trend(fuzz_data: dict[str, Any]) -> str:
         y="exceptions",
         hue="target",
         marker="o",
-        palette=list(config.WARM_PALETTE),
+        palette=sns.color_palette(list(config.WARM_PALETTE), n_colors=palette_size),
         linewidth=2,
         ax=ax,
     )
