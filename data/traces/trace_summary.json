@@ -1,0 +1,83 @@
+{
+  "analyzer": "pysnooper",
+  "status": "ok",
+  "collected_at": "2026-02-10T06:02:48.131424+00:00",
+  "records": [
+    {
+      "stage": "parse",
+      "case": "simple_expr",
+      "status": "ok",
+      "output_preview": "Template"
+    },
+    {
+      "stage": "parse",
+      "case": "loop_block",
+      "status": "ok",
+      "output_preview": "Template"
+    },
+    {
+      "stage": "parse",
+      "case": "broken_syntax",
+      "status": "error",
+      "error_type": "TemplateSyntaxError",
+      "error": "Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'."
+    },
+    {
+      "stage": "render",
+      "case": "basic_render",
+      "status": "ok",
+      "output_preview": "JINJA"
+    },
+    {
+      "stage": "render",
+      "case": "scope_chain",
+      "status": "ok",
+      "output_preview": "1:1 2:2 3:3 "
+    },
+    {
+      "stage": "render",
+      "case": "undefined_name",
+      "status": "error",
+      "error_type": "UndefinedError",
+      "error": "'unknown' is undefined"
+    },
+    {
+      "stage": "compile",
+      "case": "compile_expr",
+      "status": "ok",
+      "output_preview": "595"
+    },
+    {
+      "stage": "compile",
+      "case": "compile_if",
+      "status": "ok",
+      "output_preview": "655"
+    },
+    {
+      "stage": "compile",
+      "case": "compile_broken",
+      "status": "error",
+      "error_type": "TemplateSyntaxError",
+      "error": "Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'."
+    },
+    {
+      "stage": "sandbox",
+      "case": "safe_attr",
+      "status": "ok",
+      "output_preview": "ok"
+    },
+    {
+      "stage": "sandbox",
+      "case": "dunder_attempt",
+      "status": "error",
+      "error_type": "SecurityError",
+      "error": "access to attribute '__class__' of 'str' object is unsafe."
+    }
+  ],
+  "trace_files": [
+    "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/traces/trace_parse.txt",
+    "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/traces/trace_render.txt",
+    "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/traces/trace_compile.txt",
+    "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/traces/trace_sandbox.txt"
+  ]
+}
