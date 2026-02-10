@@ -1,0 +1,12 @@
+{
+  "target": "lexer",
+  "iterations": 10000,
+  "coverage_metrics": {
+    "cov": 88,
+    "features": 288,
+    "corpus": 49,
+    "exec_per_sec": 0
+  },
+  "return_code": 0,
+  "summary_path": "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/fuzz_coverage/lexer_summary.json"
+}

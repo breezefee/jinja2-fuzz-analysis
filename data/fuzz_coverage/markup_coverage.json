@@ -1,0 +1,12 @@
+{
+  "target": "markup",
+  "iterations": 10000,
+  "coverage_metrics": {
+    "cov": 29,
+    "features": 41,
+    "corpus": 9,
+    "exec_per_sec": 0
+  },
+  "return_code": 0,
+  "summary_path": "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/fuzz_coverage/markup_summary.json"
+}

@@ -19,11 +19,11 @@ FUZZ_TARGET_MODULES = {
 }
 
 
-def _parse_coverage_metrics(stderr: str) -> dict[str, Any]:
-    cov_matches = re.findall(r"cov:\s*(\d+)", stderr)
-    feat_matches = re.findall(r"ft:\s*(\d+)", stderr)
-    corp_matches = re.findall(r"corp:\s*(\d+)", stderr)
-    exec_matches = re.findall(r"exec/s:\s*([0-9]+)", stderr)
+def _parse_coverage_metrics(output_text: str) -> dict[str, Any]:
+    cov_matches = re.findall(r"cov:\s*(\d+)", output_text)
+    feat_matches = re.findall(r"ft:\s*(\d+)", output_text)
+    corp_matches = re.findall(r"corp:\s*(\d+)", output_text)
+    exec_matches = re.findall(r"exec/s:\s*([0-9]+)", output_text)
     return {
         "cov": int(cov_matches[-1]) if cov_matches else 0,
         "features": int(feat_matches[-1]) if feat_matches else 0,
@@ -81,7 +81,7 @@ def run_target(
         except Exception:
             summary = {}
 
-    coverage_metrics = _parse_coverage_metrics(process.stderr or "")
+    coverage_metrics = _parse_coverage_metrics((process.stdout or "") + "\n" + (process.stderr or ""))
     coverage_payload = {
         "target": target,
         "iterations": iterations,

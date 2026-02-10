@@ -12,15 +12,18 @@ from utils.helpers import dump_json, utc_now_iso
 
 
 class TargetRecorder:
-    def __init__(self, target: str, runs: int, summary_path: Path) -> None:
+    def __init__(self, target: str, runs: int, summary_path: Path, crash_dir: Path) -> None:
         self.target = target
         self.runs = runs
         self.summary_path = summary_path
+        self.crash_dir = crash_dir
         self.iterations = 0
         self.exception_counter: Counter[str] = Counter()
         self.exception_samples: dict[str, str] = {}
+        self.crash_files: dict[str, str] = {}
         self.trend: list[dict[str, int]] = []
         self.milestone = max(1, runs // 40)
+        self.crash_dir.mkdir(parents=True, exist_ok=True)
 
     def step(self) -> None:
         self.iterations += 1
@@ -37,6 +40,13 @@ class TargetRecorder:
         key = type(exc).__name__
         self.exception_counter[key] += 1
         self.exception_samples.setdefault(key, sample[:240])
+        if key not in self.crash_files:
+            crash_path = self.crash_dir / f"{self.target}_{key}.txt"
+            crash_path.write_text(
+                f"exception={key}\nsample={sample[:2000]}\n",
+                encoding="utf-8",
+            )
+            self.crash_files[key] = str(crash_path)
 
     def finalize(self) -> None:
         payload = {
@@ -47,6 +57,7 @@ class TargetRecorder:
             "iterations_observed": self.iterations,
             "exception_counts": dict(self.exception_counter.most_common()),
             "exception_samples": self.exception_samples,
+            "crash_files": list(self.crash_files.values()),
             "trend": self.trend,
         }
         dump_json(self.summary_path, payload)

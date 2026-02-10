@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import atheris
-from jinja2 import Environment
 
 from fuzzers.target_utils import TargetRecorder, build_argument_parser, run_atheris_target
+
+with atheris.instrument_imports():
+    from jinja2 import Environment
 
 TARGET_NAME = "parse"
 
@@ -29,7 +31,7 @@ def main() -> None:
     parser = build_argument_parser(TARGET_NAME)
     args = parser.parse_args()
     summary_path = args.coverage_dir / f"{TARGET_NAME}_summary.json"
-    recorder = TargetRecorder(TARGET_NAME, args.runs, summary_path)
+    recorder = TargetRecorder(TARGET_NAME, args.runs, summary_path, args.crash_dir)
 
     def _test_one_input(data: bytes) -> None:
         fuzz_entry(data, recorder=recorder)

@@ -1,0 +1,12 @@
+{
+  "target": "parse",
+  "iterations": 10000,
+  "coverage_metrics": {
+    "cov": 352,
+    "features": 844,
+    "corpus": 93,
+    "exec_per_sec": 9950
+  },
+  "return_code": 0,
+  "summary_path": "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/fuzz_coverage/parse_summary.json"
+}

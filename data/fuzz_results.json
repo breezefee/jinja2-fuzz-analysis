@@ -1,0 +1,48 @@
+{
+  "fuzzer": "atheris",
+  "status": "planned",
+  "collected_at": "2026-02-10T06:24:37.843191+00:00",
+  "iterations": 100,
+  "targets": [
+    {
+      "target": "parse",
+      "iterations": 100,
+      "status": "planned",
+      "coverage_metrics": {},
+      "crash_files": [],
+      "summary": {}
+    },
+    {
+      "target": "render",
+      "iterations": 100,
+      "status": "planned",
+      "coverage_metrics": {},
+      "crash_files": [],
+      "summary": {}
+    },
+    {
+      "target": "sandbox",
+      "iterations": 100,
+      "status": "planned",
+      "coverage_metrics": {},
+      "crash_files": [],
+      "summary": {}
+    },
+    {
+      "target": "lexer",
+      "iterations": 100,
+      "status": "planned",
+      "coverage_metrics": {},
+      "crash_files": [],
+      "summary": {}
+    },
+    {
+      "target": "markup",
+      "iterations": 100,
+      "status": "planned",
+      "coverage_metrics": {},
+      "crash_files": [],
+      "summary": {}
+    }
+  ]
+}
