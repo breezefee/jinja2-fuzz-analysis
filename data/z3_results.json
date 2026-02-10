@@ -1,0 +1,124 @@
+{
+  "analyzer": "z3",
+  "status": "ok",
+  "collected_at": "2026-02-10T06:00:41.104830+00:00",
+  "template_syntax_constraints": {
+    "valid_model_count": 5,
+    "valid_models": [
+      {
+        "expr_blocks": 1,
+        "stmt_blocks": 0,
+        "template": "{{ value }}",
+        "length": 11
+      },
+      {
+        "expr_blocks": 2,
+        "stmt_blocks": 1,
+        "template": "{{ value }}{{ value }}{% if flag %}X{% endif %}",
+        "length": 47
+      },
+      {
+        "expr_blocks": 2,
+        "stmt_blocks": 0,
+        "template": "{{ value }}{{ value }}",
+        "length": 22
+      },
+      {
+        "expr_blocks": 3,
+        "stmt_blocks": 0,
+        "template": "{{ value }}{{ value }}{{ value }}",
+        "length": 33
+      },
+      {
+        "expr_blocks": 2,
+        "stmt_blocks": 2,
+        "template": "{{ value }}{{ value }}{% if flag %}X{% endif %}{% if flag %}X{% endif %}",
+        "length": 72
+      }
+    ],
+    "invalid_example_status": "sat"
+  },
+  "filter_type_propagation": {
+    "chains": [
+      {
+        "chain": [
+          "lower",
+          "length"
+        ],
+        "status": "sat",
+        "type_path": [
+          "str",
+          "str",
+          "int"
+        ]
+      },
+      {
+        "chain": [
+          "list",
+          "length"
+        ],
+        "status": "sat",
+        "type_path": [
+          "list",
+          "list",
+          "int"
+        ]
+      },
+      {
+        "chain": [
+          "int",
+          "lower"
+        ],
+        "status": "unsat",
+        "type_path": []
+      },
+      {
+        "chain": [
+          "escape",
+          "bool"
+        ],
+        "status": "sat",
+        "type_path": [
+          "str",
+          "str",
+          "bool"
+        ]
+      },
+      {
+        "chain": [
+          "length",
+          "upper"
+        ],
+        "status": "unsat",
+        "type_path": []
+      }
+    ],
+    "sat_count": 3,
+    "unsat_count": 2
+  },
+  "sandbox_security_verification": {
+    "safe_policy_status": "sat",
+    "safe_model": {
+      "enable_sandbox": true,
+      "allow_private_attribute": false,
+      "allow_dunder_attribute": false,
+      "allow_call": true
+    },
+    "unsafe_counterexample_status": "sat",
+    "unsafe_counterexample_model": {
+      "enable_sandbox": true,
+      "allow_private_attribute": false,
+      "allow_dunder_attribute": false,
+      "allow_call": false
+    }
+  },
+  "generated_templates": {
+    "generated_templates": [
+      "{{ A|lower }}{% if B %}OK{% endif %}",
+      "{{ C|lower }}{% if D %}OK{% endif %}",
+      "{{ E|lower }}{% if F %}OK{% endif %}",
+      "{{ G|lower }}{% if H %}OK{% endif %}"
+    ],
+    "template_count": 4
+  }
+}
