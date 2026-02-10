@@ -1,0 +1,2375 @@
+{
+  "analyzer": "ast",
+  "status": "ok",
+  "source_root": "/mnt/c/Users/l/Desktop/opensource/group4/jinja/src/jinja2",
+  "collected_at": "2026-02-10T05:57:19.209729+00:00",
+  "totals": {
+    "python_files": 25,
+    "functions": 742,
+    "async_functions": 32,
+    "classes": 160
+  },
+  "complexity_summary": {
+    "count": 882,
+    "average": 2.823,
+    "median": 2.0,
+    "max": 48,
+    "min": 1
+  },
+  "complexity_rank_distribution": {
+    "A": 790,
+    "B": 63,
+    "C": 25,
+    "D": 3,
+    "F": 1
+  },
+  "top_complex_functions": [
+    {
+      "file": "lexer.py",
+      "name": "tokeniter",
+      "lineno": 669,
+      "complexity": 48,
+      "rank": "F"
+    },
+    {
+      "file": "compiler.py",
+      "name": "visit_For",
+      "lineno": 1175,
+      "complexity": 30,
+      "rank": "D"
+    },
+    {
+      "file": "ext.py",
+      "name": "parse",
+      "lineno": 335,
+      "complexity": 25,
+      "rank": "D"
+    },
+    {
+      "file": "utils.py",
+      "name": "urlize",
+      "lineno": 230,
+      "complexity": 25,
+      "rank": "D"
+    },
+    {
+      "file": "compiler.py",
+      "name": "visit_Template",
+      "lineno": 825,
+      "complexity": 20,
+      "rank": "C"
+    },
+    {
+      "file": "compiler.py",
+      "name": "visit_Output",
+      "lineno": 1497,
+      "complexity": 19,
+      "rank": "C"
+    },
+    {
+      "file": "compiler.py",
+      "name": "pop_assign_tracking",
+      "lineno": 780,
+      "complexity": 18,
+      "rank": "C"
+    },
+    {
+      "file": "compiler.py",
+      "name": "signature",
+      "lineno": 477,
+      "complexity": 17,
+      "rank": "C"
+    },
+    {
+      "file": "sandbox.py",
+      "name": "is_internal_attribute",
+      "lineno": 115,
+      "complexity": 17,
+      "rank": "C"
+    },
+    {
+      "file": "ext.py",
+      "name": "extract_from_ast",
+      "lineno": 635,
+      "complexity": 15,
+      "rank": "C"
+    },
+    {
+      "file": "lexer.py",
+      "name": "wrap",
+      "lineno": 615,
+      "complexity": 15,
+      "rank": "C"
+    },
+    {
+      "file": "runtime.py",
+      "name": "__call__",
+      "lineno": 696,
+      "complexity": 15,
+      "rank": "C"
+    },
+    {
+      "file": "compiler.py",
+      "name": "macro_body",
+      "lineno": 610,
+      "complexity": 14,
+      "rank": "C"
+    },
+    {
+      "file": "filters.py",
+      "name": "do_filesizeformat",
+      "lineno": 700,
+      "complexity": 14,
+      "rank": "C"
+    },
+    {
+      "file": "lexer.py",
+      "name": "Lexer",
+      "lineno": 471,
+      "complexity": 14,
+      "rank": "C"
+    },
+    {
+      "file": "bccache.py",
+      "name": "_get_default_cache_dir",
+      "lineno": 210,
+      "complexity": 13,
+      "rank": "C"
+    },
+    {
+      "file": "environment.py",
+      "name": "_filter_test_common",
+      "lineno": 497,
+      "complexity": 13,
+      "rank": "C"
+    },
+    {
+      "file": "ext.py",
+      "name": "_make_node",
+      "lineno": 507,
+      "complexity": 12,
+      "rank": "C"
+    },
+    {
+      "file": "loaders.py",
+      "name": "__init__",
+      "lineno": 302,
+      "complexity": 12,
+      "rank": "C"
+    },
+    {
+      "file": "meta.py",
+      "name": "find_referenced_templates",
+      "lineno": 62,
+      "complexity": 12,
+      "rank": "C"
+    },
+    {
+      "file": "nodes.py",
+      "name": "_FilterTestCommon",
+      "lineno": 735,
+      "complexity": 12,
+      "rank": "C"
+    },
+    {
+      "file": "parser.py",
+      "name": "parse_primary",
+      "lineno": 639,
+      "complexity": 12,
+      "rank": "C"
+    },
+    {
+      "file": "utils.py",
+      "name": "generate_lorem_ipsum",
+      "lineno": 353,
+      "complexity": 12,
+      "rank": "C"
+    },
+    {
+      "file": "ext.py",
+      "name": "babel_extract",
+      "lineno": 752,
+      "complexity": 11,
+      "rank": "C"
+    },
+    {
+      "file": "ext.py",
+      "name": "_parse_block",
+      "lineno": 460,
+      "complexity": 11,
+      "rank": "C"
+    },
+    {
+      "file": "filters.py",
+      "name": "do_urlize",
+      "lineno": 742,
+      "complexity": 11,
+      "rank": "C"
+    },
+    {
+      "file": "nodes.py",
+      "name": "as_const",
+      "lineno": 746,
+      "complexity": 11,
+      "rank": "C"
+    },
+    {
+      "file": "parser.py",
+      "name": "parse_call_args",
+      "lineno": 866,
+      "complexity": 11,
+      "rank": "C"
+    },
+    {
+      "file": "parser.py",
+      "name": "subparse",
+      "lineno": 990,
+      "complexity": 11,
+      "rank": "C"
+    },
+    {
+      "file": "compiler.py",
+      "name": "has_safe_repr",
+      "lineno": 125,
+      "complexity": 10,
+      "rank": "B"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "source": "__init__.py",
+      "target": "__future__.annotations"
+    },
+    {
+      "source": "__init__.py",
+      "target": "bccache.BytecodeCache"
+    },
+    {
+      "source": "__init__.py",
+      "target": "bccache.FileSystemBytecodeCache"
+    },
+    {
+      "source": "__init__.py",
+      "target": "bccache.MemcachedBytecodeCache"
+    },
+    {
+      "source": "__init__.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "__init__.py",
+      "target": "environment.Template"
+    },
+    {
+      "source": "__init__.py",
+      "target": "exceptions.TemplateAssertionError"
+    },
+    {
+      "source": "__init__.py",
+      "target": "exceptions.TemplateError"
+    },
+    {
+      "source": "__init__.py",
+      "target": "exceptions.TemplateNotFound"
+    },
+    {
+      "source": "__init__.py",
+      "target": "exceptions.TemplateRuntimeError"
+    },
+    {
+      "source": "__init__.py",
+      "target": "exceptions.TemplateSyntaxError"
+    },
+    {
+      "source": "__init__.py",
+      "target": "exceptions.TemplatesNotFound"
+    },
+    {
+      "source": "__init__.py",
+      "target": "exceptions.UndefinedError"
+    },
+    {
+      "source": "__init__.py",
+      "target": "importlib.metadata"
+    },
+    {
+      "source": "__init__.py",
+      "target": "loaders.BaseLoader"
+    },
+    {
+      "source": "__init__.py",
+      "target": "loaders.ChoiceLoader"
+    },
+    {
+      "source": "__init__.py",
+      "target": "loaders.DictLoader"
+    },
+    {
+      "source": "__init__.py",
+      "target": "loaders.FileSystemLoader"
+    },
+    {
+      "source": "__init__.py",
+      "target": "loaders.FunctionLoader"
+    },
+    {
+      "source": "__init__.py",
+      "target": "loaders.ModuleLoader"
+    },
+    {
+      "source": "__init__.py",
+      "target": "loaders.PackageLoader"
+    },
+    {
+      "source": "__init__.py",
+      "target": "loaders.PrefixLoader"
+    },
+    {
+      "source": "__init__.py",
+      "target": "runtime.ChainableUndefined"
+    },
+    {
+      "source": "__init__.py",
+      "target": "runtime.DebugUndefined"
+    },
+    {
+      "source": "__init__.py",
+      "target": "runtime.StrictUndefined"
+    },
+    {
+      "source": "__init__.py",
+      "target": "runtime.Undefined"
+    },
+    {
+      "source": "__init__.py",
+      "target": "runtime.make_logging_undefined"
+    },
+    {
+      "source": "__init__.py",
+      "target": "typing"
+    },
+    {
+      "source": "__init__.py",
+      "target": "utils.clear_caches"
+    },
+    {
+      "source": "__init__.py",
+      "target": "utils.is_undefined"
+    },
+    {
+      "source": "__init__.py",
+      "target": "utils.pass_context"
+    },
+    {
+      "source": "__init__.py",
+      "target": "utils.pass_environment"
+    },
+    {
+      "source": "__init__.py",
+      "target": "utils.pass_eval_context"
+    },
+    {
+      "source": "__init__.py",
+      "target": "utils.select_autoescape"
+    },
+    {
+      "source": "__init__.py",
+      "target": "warnings"
+    },
+    {
+      "source": "_identifier.py",
+      "target": "re"
+    },
+    {
+      "source": "async_utils.py",
+      "target": "functools.WRAPPER_ASSIGNMENTS"
+    },
+    {
+      "source": "async_utils.py",
+      "target": "functools.wraps"
+    },
+    {
+      "source": "async_utils.py",
+      "target": "inspect"
+    },
+    {
+      "source": "async_utils.py",
+      "target": "typing"
+    },
+    {
+      "source": "async_utils.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "async_utils.py",
+      "target": "utils._PassArg"
+    },
+    {
+      "source": "async_utils.py",
+      "target": "utils.pass_eval_context"
+    },
+    {
+      "source": "bccache.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "bccache.py",
+      "target": "errno"
+    },
+    {
+      "source": "bccache.py",
+      "target": "fnmatch"
+    },
+    {
+      "source": "bccache.py",
+      "target": "hashlib.sha1"
+    },
+    {
+      "source": "bccache.py",
+      "target": "io.BytesIO"
+    },
+    {
+      "source": "bccache.py",
+      "target": "marshal"
+    },
+    {
+      "source": "bccache.py",
+      "target": "os"
+    },
+    {
+      "source": "bccache.py",
+      "target": "os.remove"
+    },
+    {
+      "source": "bccache.py",
+      "target": "pickle"
+    },
+    {
+      "source": "bccache.py",
+      "target": "stat"
+    },
+    {
+      "source": "bccache.py",
+      "target": "sys"
+    },
+    {
+      "source": "bccache.py",
+      "target": "tempfile"
+    },
+    {
+      "source": "bccache.py",
+      "target": "types.CodeType"
+    },
+    {
+      "source": "bccache.py",
+      "target": "typing"
+    },
+    {
+      "source": "bccache.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "compiler.py",
+      "target": "contextlib.contextmanager"
+    },
+    {
+      "source": "compiler.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "compiler.py",
+      "target": "exceptions.TemplateAssertionError"
+    },
+    {
+      "source": "compiler.py",
+      "target": "functools.update_wrapper"
+    },
+    {
+      "source": "compiler.py",
+      "target": "idtracking.Symbols"
+    },
+    {
+      "source": "compiler.py",
+      "target": "idtracking.VAR_LOAD_ALIAS"
+    },
+    {
+      "source": "compiler.py",
+      "target": "idtracking.VAR_LOAD_PARAMETER"
+    },
+    {
+      "source": "compiler.py",
+      "target": "idtracking.VAR_LOAD_RESOLVE"
+    },
+    {
+      "source": "compiler.py",
+      "target": "idtracking.VAR_LOAD_UNDEFINED"
+    },
+    {
+      "source": "compiler.py",
+      "target": "io.StringIO"
+    },
+    {
+      "source": "compiler.py",
+      "target": "itertools.chain"
+    },
+    {
+      "source": "compiler.py",
+      "target": "keyword.iskeyword"
+    },
+    {
+      "source": "compiler.py",
+      "target": "markupsafe.Markup"
+    },
+    {
+      "source": "compiler.py",
+      "target": "markupsafe.escape"
+    },
+    {
+      "source": "compiler.py",
+      "target": "nodes"
+    },
+    {
+      "source": "compiler.py",
+      "target": "nodes.EvalContext"
+    },
+    {
+      "source": "compiler.py",
+      "target": "optimizer.Optimizer"
+    },
+    {
+      "source": "compiler.py",
+      "target": "runtime.async_exported"
+    },
+    {
+      "source": "compiler.py",
+      "target": "runtime.exported"
+    },
+    {
+      "source": "compiler.py",
+      "target": "typing"
+    },
+    {
+      "source": "compiler.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "compiler.py",
+      "target": "utils._PassArg"
+    },
+    {
+      "source": "compiler.py",
+      "target": "utils.concat"
+    },
+    {
+      "source": "compiler.py",
+      "target": "visitor.NodeVisitor"
+    },
+    {
+      "source": "debug.py",
+      "target": "exceptions.TemplateSyntaxError"
+    },
+    {
+      "source": "debug.py",
+      "target": "runtime.Context"
+    },
+    {
+      "source": "debug.py",
+      "target": "sys"
+    },
+    {
+      "source": "debug.py",
+      "target": "types.CodeType"
+    },
+    {
+      "source": "debug.py",
+      "target": "types.TracebackType"
+    },
+    {
+      "source": "debug.py",
+      "target": "typing"
+    },
+    {
+      "source": "debug.py",
+      "target": "utils.internal_code"
+    },
+    {
+      "source": "debug.py",
+      "target": "utils.missing"
+    },
+    {
+      "source": "defaults.py",
+      "target": "filters.FILTERS"
+    },
+    {
+      "source": "defaults.py",
+      "target": "tests.TESTS"
+    },
+    {
+      "source": "defaults.py",
+      "target": "typing"
+    },
+    {
+      "source": "defaults.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "defaults.py",
+      "target": "utils.Cycler"
+    },
+    {
+      "source": "defaults.py",
+      "target": "utils.Joiner"
+    },
+    {
+      "source": "defaults.py",
+      "target": "utils.Namespace"
+    },
+    {
+      "source": "defaults.py",
+      "target": "utils.generate_lorem_ipsum"
+    },
+    {
+      "source": "environment.py",
+      "target": "asyncio"
+    },
+    {
+      "source": "environment.py",
+      "target": "bccache.BytecodeCache"
+    },
+    {
+      "source": "environment.py",
+      "target": "collections.ChainMap"
+    },
+    {
+      "source": "environment.py",
+      "target": "compiler.CodeGenerator"
+    },
+    {
+      "source": "environment.py",
+      "target": "compiler.generate"
+    },
+    {
+      "source": "environment.py",
+      "target": "contextlib.aclosing"
+    },
+    {
+      "source": "environment.py",
+      "target": "debug.rewrite_traceback_stack"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.BLOCK_END_STRING"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.BLOCK_START_STRING"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.COMMENT_END_STRING"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.COMMENT_START_STRING"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.DEFAULT_FILTERS"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.DEFAULT_NAMESPACE"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.DEFAULT_POLICIES"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.DEFAULT_TESTS"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.KEEP_TRAILING_NEWLINE"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.LINE_COMMENT_PREFIX"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.LINE_STATEMENT_PREFIX"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.LSTRIP_BLOCKS"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.NEWLINE_SEQUENCE"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.TRIM_BLOCKS"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.VARIABLE_END_STRING"
+    },
+    {
+      "source": "environment.py",
+      "target": "defaults.VARIABLE_START_STRING"
+    },
+    {
+      "source": "environment.py",
+      "target": "exceptions.TemplateNotFound"
+    },
+    {
+      "source": "environment.py",
+      "target": "exceptions.TemplateRuntimeError"
+    },
+    {
+      "source": "environment.py",
+      "target": "exceptions.TemplateSyntaxError"
+    },
+    {
+      "source": "environment.py",
+      "target": "exceptions.TemplatesNotFound"
+    },
+    {
+      "source": "environment.py",
+      "target": "exceptions.UndefinedError"
+    },
+    {
+      "source": "environment.py",
+      "target": "ext.Extension"
+    },
+    {
+      "source": "environment.py",
+      "target": "functools.lru_cache"
+    },
+    {
+      "source": "environment.py",
+      "target": "functools.partial"
+    },
+    {
+      "source": "environment.py",
+      "target": "functools.reduce"
+    },
+    {
+      "source": "environment.py",
+      "target": "lexer.Lexer"
+    },
+    {
+      "source": "environment.py",
+      "target": "lexer.TokenStream"
+    },
+    {
+      "source": "environment.py",
+      "target": "lexer.get_lexer"
+    },
+    {
+      "source": "environment.py",
+      "target": "loaders.BaseLoader"
+    },
+    {
+      "source": "environment.py",
+      "target": "loaders.ModuleLoader"
+    },
+    {
+      "source": "environment.py",
+      "target": "markupsafe.Markup"
+    },
+    {
+      "source": "environment.py",
+      "target": "nodes"
+    },
+    {
+      "source": "environment.py",
+      "target": "nodes.EvalContext"
+    },
+    {
+      "source": "environment.py",
+      "target": "os"
+    },
+    {
+      "source": "environment.py",
+      "target": "parser.Parser"
+    },
+    {
+      "source": "environment.py",
+      "target": "runtime.Context"
+    },
+    {
+      "source": "environment.py",
+      "target": "runtime.Undefined"
+    },
+    {
+      "source": "environment.py",
+      "target": "runtime.new_context"
+    },
+    {
+      "source": "environment.py",
+      "target": "types.CodeType"
+    },
+    {
+      "source": "environment.py",
+      "target": "typing"
+    },
+    {
+      "source": "environment.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "environment.py",
+      "target": "utils.LRUCache"
+    },
+    {
+      "source": "environment.py",
+      "target": "utils._PassArg"
+    },
+    {
+      "source": "environment.py",
+      "target": "utils.concat"
+    },
+    {
+      "source": "environment.py",
+      "target": "utils.consume"
+    },
+    {
+      "source": "environment.py",
+      "target": "utils.import_string"
+    },
+    {
+      "source": "environment.py",
+      "target": "utils.internalcode"
+    },
+    {
+      "source": "environment.py",
+      "target": "utils.missing"
+    },
+    {
+      "source": "environment.py",
+      "target": "weakref"
+    },
+    {
+      "source": "environment.py",
+      "target": "zipfile.ZIP_DEFLATED"
+    },
+    {
+      "source": "environment.py",
+      "target": "zipfile.ZIP_STORED"
+    },
+    {
+      "source": "environment.py",
+      "target": "zipfile.ZipFile"
+    },
+    {
+      "source": "environment.py",
+      "target": "zipfile.ZipInfo"
+    },
+    {
+      "source": "exceptions.py",
+      "target": "runtime.Undefined"
+    },
+    {
+      "source": "exceptions.py",
+      "target": "typing"
+    },
+    {
+      "source": "ext.py",
+      "target": "defaults"
+    },
+    {
+      "source": "ext.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "ext.py",
+      "target": "exceptions.TemplateAssertionError"
+    },
+    {
+      "source": "ext.py",
+      "target": "exceptions.TemplateSyntaxError"
+    },
+    {
+      "source": "ext.py",
+      "target": "gettext"
+    },
+    {
+      "source": "ext.py",
+      "target": "lexer.Token"
+    },
+    {
+      "source": "ext.py",
+      "target": "lexer.TokenStream"
+    },
+    {
+      "source": "ext.py",
+      "target": "markupsafe.Markup"
+    },
+    {
+      "source": "ext.py",
+      "target": "nodes"
+    },
+    {
+      "source": "ext.py",
+      "target": "parser.Parser"
+    },
+    {
+      "source": "ext.py",
+      "target": "pprint"
+    },
+    {
+      "source": "ext.py",
+      "target": "re"
+    },
+    {
+      "source": "ext.py",
+      "target": "runtime.Context"
+    },
+    {
+      "source": "ext.py",
+      "target": "runtime.Undefined"
+    },
+    {
+      "source": "ext.py",
+      "target": "runtime.concat"
+    },
+    {
+      "source": "ext.py",
+      "target": "typing"
+    },
+    {
+      "source": "ext.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "ext.py",
+      "target": "utils.import_string"
+    },
+    {
+      "source": "ext.py",
+      "target": "utils.pass_context"
+    },
+    {
+      "source": "filters.py",
+      "target": "async_utils.async_variant"
+    },
+    {
+      "source": "filters.py",
+      "target": "async_utils.auto_aiter"
+    },
+    {
+      "source": "filters.py",
+      "target": "async_utils.auto_await"
+    },
+    {
+      "source": "filters.py",
+      "target": "async_utils.auto_to_list"
+    },
+    {
+      "source": "filters.py",
+      "target": "collections.abc"
+    },
+    {
+      "source": "filters.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "filters.py",
+      "target": "exceptions.FilterArgumentError"
+    },
+    {
+      "source": "filters.py",
+      "target": "inspect.getattr_static"
+    },
+    {
+      "source": "filters.py",
+      "target": "itertools.chain"
+    },
+    {
+      "source": "filters.py",
+      "target": "itertools.groupby"
+    },
+    {
+      "source": "filters.py",
+      "target": "markupsafe.Markup"
+    },
+    {
+      "source": "filters.py",
+      "target": "markupsafe.escape"
+    },
+    {
+      "source": "filters.py",
+      "target": "markupsafe.soft_str"
+    },
+    {
+      "source": "filters.py",
+      "target": "math"
+    },
+    {
+      "source": "filters.py",
+      "target": "nodes.EvalContext"
+    },
+    {
+      "source": "filters.py",
+      "target": "random"
+    },
+    {
+      "source": "filters.py",
+      "target": "re"
+    },
+    {
+      "source": "filters.py",
+      "target": "runtime.Context"
+    },
+    {
+      "source": "filters.py",
+      "target": "runtime.Undefined"
+    },
+    {
+      "source": "filters.py",
+      "target": "sandbox.SandboxedEnvironment"
+    },
+    {
+      "source": "filters.py",
+      "target": "textwrap"
+    },
+    {
+      "source": "filters.py",
+      "target": "typing"
+    },
+    {
+      "source": "filters.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "filters.py",
+      "target": "utils.htmlsafe_json_dumps"
+    },
+    {
+      "source": "filters.py",
+      "target": "utils.pass_context"
+    },
+    {
+      "source": "filters.py",
+      "target": "utils.pass_environment"
+    },
+    {
+      "source": "filters.py",
+      "target": "utils.pass_eval_context"
+    },
+    {
+      "source": "filters.py",
+      "target": "utils.pformat"
+    },
+    {
+      "source": "filters.py",
+      "target": "utils.url_quote"
+    },
+    {
+      "source": "filters.py",
+      "target": "utils.urlize"
+    },
+    {
+      "source": "idtracking.py",
+      "target": "nodes"
+    },
+    {
+      "source": "idtracking.py",
+      "target": "typing"
+    },
+    {
+      "source": "idtracking.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "idtracking.py",
+      "target": "visitor.NodeVisitor"
+    },
+    {
+      "source": "lexer.py",
+      "target": "_identifier.pattern"
+    },
+    {
+      "source": "lexer.py",
+      "target": "ast.literal_eval"
+    },
+    {
+      "source": "lexer.py",
+      "target": "collections.deque"
+    },
+    {
+      "source": "lexer.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "lexer.py",
+      "target": "exceptions.TemplateSyntaxError"
+    },
+    {
+      "source": "lexer.py",
+      "target": "re"
+    },
+    {
+      "source": "lexer.py",
+      "target": "sys.intern"
+    },
+    {
+      "source": "lexer.py",
+      "target": "typing"
+    },
+    {
+      "source": "lexer.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "lexer.py",
+      "target": "utils.LRUCache"
+    },
+    {
+      "source": "loaders.py",
+      "target": "collections.abc"
+    },
+    {
+      "source": "loaders.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "loaders.py",
+      "target": "environment.Template"
+    },
+    {
+      "source": "loaders.py",
+      "target": "exceptions.TemplateNotFound"
+    },
+    {
+      "source": "loaders.py",
+      "target": "hashlib.sha1"
+    },
+    {
+      "source": "loaders.py",
+      "target": "importlib.import_module"
+    },
+    {
+      "source": "loaders.py",
+      "target": "importlib.util"
+    },
+    {
+      "source": "loaders.py",
+      "target": "os"
+    },
+    {
+      "source": "loaders.py",
+      "target": "posixpath"
+    },
+    {
+      "source": "loaders.py",
+      "target": "sys"
+    },
+    {
+      "source": "loaders.py",
+      "target": "types.ModuleType"
+    },
+    {
+      "source": "loaders.py",
+      "target": "typing"
+    },
+    {
+      "source": "loaders.py",
+      "target": "utils.internalcode"
+    },
+    {
+      "source": "loaders.py",
+      "target": "weakref"
+    },
+    {
+      "source": "loaders.py",
+      "target": "zipimport"
+    },
+    {
+      "source": "meta.py",
+      "target": "compiler.CodeGenerator"
+    },
+    {
+      "source": "meta.py",
+      "target": "compiler.Frame"
+    },
+    {
+      "source": "meta.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "meta.py",
+      "target": "nodes"
+    },
+    {
+      "source": "meta.py",
+      "target": "typing"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "ast.literal_eval"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "ast.parse"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "compiler.CodeGenerator"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "compiler.Frame"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "compiler.has_safe_repr"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "environment.Template"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "itertools.chain"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "itertools.islice"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "nodes"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "types.GeneratorType"
+    },
+    {
+      "source": "nativetypes.py",
+      "target": "typing"
+    },
+    {
+      "source": "nodes.py",
+      "target": "collections.deque"
+    },
+    {
+      "source": "nodes.py",
+      "target": "compiler.has_safe_repr"
+    },
+    {
+      "source": "nodes.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "nodes.py",
+      "target": "inspect"
+    },
+    {
+      "source": "nodes.py",
+      "target": "markupsafe.Markup"
+    },
+    {
+      "source": "nodes.py",
+      "target": "operator"
+    },
+    {
+      "source": "nodes.py",
+      "target": "typing"
+    },
+    {
+      "source": "nodes.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "nodes.py",
+      "target": "utils._PassArg"
+    },
+    {
+      "source": "optimizer.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "optimizer.py",
+      "target": "nodes"
+    },
+    {
+      "source": "optimizer.py",
+      "target": "typing"
+    },
+    {
+      "source": "optimizer.py",
+      "target": "visitor.NodeTransformer"
+    },
+    {
+      "source": "parser.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "parser.py",
+      "target": "exceptions.TemplateAssertionError"
+    },
+    {
+      "source": "parser.py",
+      "target": "exceptions.TemplateSyntaxError"
+    },
+    {
+      "source": "parser.py",
+      "target": "lexer.describe_token"
+    },
+    {
+      "source": "parser.py",
+      "target": "lexer.describe_token_expr"
+    },
+    {
+      "source": "parser.py",
+      "target": "nodes"
+    },
+    {
+      "source": "parser.py",
+      "target": "typing"
+    },
+    {
+      "source": "parser.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "runtime.py",
+      "target": "async_utils.auto_aiter"
+    },
+    {
+      "source": "runtime.py",
+      "target": "async_utils.auto_await"
+    },
+    {
+      "source": "runtime.py",
+      "target": "collections.abc"
+    },
+    {
+      "source": "runtime.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "runtime.py",
+      "target": "exceptions.TemplateNotFound"
+    },
+    {
+      "source": "runtime.py",
+      "target": "exceptions.TemplateRuntimeError"
+    },
+    {
+      "source": "runtime.py",
+      "target": "exceptions.UndefinedError"
+    },
+    {
+      "source": "runtime.py",
+      "target": "functools"
+    },
+    {
+      "source": "runtime.py",
+      "target": "itertools.chain"
+    },
+    {
+      "source": "runtime.py",
+      "target": "logging"
+    },
+    {
+      "source": "runtime.py",
+      "target": "markupsafe.Markup"
+    },
+    {
+      "source": "runtime.py",
+      "target": "markupsafe.escape"
+    },
+    {
+      "source": "runtime.py",
+      "target": "markupsafe.soft_str"
+    },
+    {
+      "source": "runtime.py",
+      "target": "nodes.EvalContext"
+    },
+    {
+      "source": "runtime.py",
+      "target": "sys"
+    },
+    {
+      "source": "runtime.py",
+      "target": "typing"
+    },
+    {
+      "source": "runtime.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "runtime.py",
+      "target": "utils.Namespace"
+    },
+    {
+      "source": "runtime.py",
+      "target": "utils._PassArg"
+    },
+    {
+      "source": "runtime.py",
+      "target": "utils.concat"
+    },
+    {
+      "source": "runtime.py",
+      "target": "utils.internalcode"
+    },
+    {
+      "source": "runtime.py",
+      "target": "utils.missing"
+    },
+    {
+      "source": "runtime.py",
+      "target": "utils.object_type_repr"
+    },
+    {
+      "source": "runtime.py",
+      "target": "utils.pass_eval_context"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "_string.formatter_field_name_split"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "collections.abc"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "collections.deque"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "exceptions.SecurityError"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "functools.update_wrapper"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "markupsafe.EscapeFormatter"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "markupsafe.Markup"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "operator"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "runtime.Context"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "runtime.Undefined"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "string.Formatter"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "types"
+    },
+    {
+      "source": "sandbox.py",
+      "target": "typing"
+    },
+    {
+      "source": "tests.py",
+      "target": "collections.abc"
+    },
+    {
+      "source": "tests.py",
+      "target": "environment.Environment"
+    },
+    {
+      "source": "tests.py",
+      "target": "numbers.Number"
+    },
+    {
+      "source": "tests.py",
+      "target": "operator"
+    },
+    {
+      "source": "tests.py",
+      "target": "runtime.Undefined"
+    },
+    {
+      "source": "tests.py",
+      "target": "typing"
+    },
+    {
+      "source": "tests.py",
+      "target": "utils.pass_environment"
+    },
+    {
+      "source": "utils.py",
+      "target": "collections.abc"
+    },
+    {
+      "source": "utils.py",
+      "target": "collections.deque"
+    },
+    {
+      "source": "utils.py",
+      "target": "constants.LOREM_IPSUM_WORDS"
+    },
+    {
+      "source": "utils.py",
+      "target": "enum"
+    },
+    {
+      "source": "utils.py",
+      "target": "environment.get_spontaneous_environment"
+    },
+    {
+      "source": "utils.py",
+      "target": "json"
+    },
+    {
+      "source": "utils.py",
+      "target": "lexer._lexer_cache"
+    },
+    {
+      "source": "utils.py",
+      "target": "markupsafe"
+    },
+    {
+      "source": "utils.py",
+      "target": "os"
+    },
+    {
+      "source": "utils.py",
+      "target": "pprint.pformat"
+    },
+    {
+      "source": "utils.py",
+      "target": "random.choice"
+    },
+    {
+      "source": "utils.py",
+      "target": "random.randrange"
+    },
+    {
+      "source": "utils.py",
+      "target": "re"
+    },
+    {
+      "source": "utils.py",
+      "target": "runtime.Undefined"
+    },
+    {
+      "source": "utils.py",
+      "target": "threading.Lock"
+    },
+    {
+      "source": "utils.py",
+      "target": "types.CodeType"
+    },
+    {
+      "source": "utils.py",
+      "target": "typing"
+    },
+    {
+      "source": "utils.py",
+      "target": "typing_extensions"
+    },
+    {
+      "source": "utils.py",
+      "target": "urllib.parse.quote_from_bytes"
+    },
+    {
+      "source": "visitor.py",
+      "target": "nodes.Node"
+    },
+    {
+      "source": "visitor.py",
+      "target": "typing"
+    },
+    {
+      "source": "visitor.py",
+      "target": "typing_extensions"
+    }
+  ],
+  "top_dependencies": [
+    [
+      "typing",
+      23
+    ],
+    [
+      "environment.Environment",
+      15
+    ],
+    [
+      "typing_extensions",
+      14
+    ],
+    [
+      "runtime.Undefined",
+      8
+    ],
+    [
+      "nodes",
+      8
+    ],
+    [
+      "markupsafe.Markup",
+      7
+    ],
+    [
+      "exceptions.TemplateSyntaxError",
+      6
+    ],
+    [
+      "collections.abc",
+      6
+    ],
+    [
+      "re",
+      5
+    ],
+    [
+      "utils._PassArg",
+      5
+    ],
+    [
+      "runtime.Context",
+      5
+    ],
+    [
+      "exceptions.TemplateAssertionError",
+      4
+    ],
+    [
+      "exceptions.TemplateNotFound",
+      4
+    ],
+    [
+      "utils.pass_eval_context",
+      4
+    ],
+    [
+      "os",
+      4
+    ],
+    [
+      "sys",
+      4
+    ],
+    [
+      "types.CodeType",
+      4
+    ],
+    [
+      "itertools.chain",
+      4
+    ],
+    [
+      "nodes.EvalContext",
+      4
+    ],
+    [
+      "collections.deque",
+      4
+    ],
+    [
+      "environment.Template",
+      3
+    ],
+    [
+      "exceptions.TemplateRuntimeError",
+      3
+    ],
+    [
+      "exceptions.UndefinedError",
+      3
+    ],
+    [
+      "utils.pass_context",
+      3
+    ],
+    [
+      "utils.pass_environment",
+      3
+    ],
+    [
+      "markupsafe.escape",
+      3
+    ],
+    [
+      "utils.concat",
+      3
+    ],
+    [
+      "utils.missing",
+      3
+    ],
+    [
+      "compiler.CodeGenerator",
+      3
+    ],
+    [
+      "utils.internalcode",
+      3
+    ]
+  ],
+  "file_imports": {
+    "__init__.py": [
+      "__future__.annotations",
+      "bccache.BytecodeCache",
+      "bccache.FileSystemBytecodeCache",
+      "bccache.MemcachedBytecodeCache",
+      "environment.Environment",
+      "environment.Template",
+      "exceptions.TemplateAssertionError",
+      "exceptions.TemplateError",
+      "exceptions.TemplateNotFound",
+      "exceptions.TemplateRuntimeError",
+      "exceptions.TemplateSyntaxError",
+      "exceptions.TemplatesNotFound",
+      "exceptions.UndefinedError",
+      "importlib.metadata",
+      "loaders.BaseLoader",
+      "loaders.ChoiceLoader",
+      "loaders.DictLoader",
+      "loaders.FileSystemLoader",
+      "loaders.FunctionLoader",
+      "loaders.ModuleLoader",
+      "loaders.PackageLoader",
+      "loaders.PrefixLoader",
+      "runtime.ChainableUndefined",
+      "runtime.DebugUndefined",
+      "runtime.StrictUndefined",
+      "runtime.Undefined",
+      "runtime.make_logging_undefined",
+      "typing",
+      "utils.clear_caches",
+      "utils.is_undefined",
+      "utils.pass_context",
+      "utils.pass_environment",
+      "utils.pass_eval_context",
+      "utils.select_autoescape",
+      "warnings"
+    ],
+    "_identifier.py": [
+      "re"
+    ],
+    "async_utils.py": [
+      "functools.WRAPPER_ASSIGNMENTS",
+      "functools.wraps",
+      "inspect",
+      "typing",
+      "typing_extensions",
+      "utils._PassArg",
+      "utils.pass_eval_context"
+    ],
+    "bccache.py": [
+      "environment.Environment",
+      "errno",
+      "fnmatch",
+      "hashlib.sha1",
+      "io.BytesIO",
+      "marshal",
+      "os",
+      "os.remove",
+      "pickle",
+      "stat",
+      "sys",
+      "tempfile",
+      "types.CodeType",
+      "typing",
+      "typing_extensions"
+    ],
+    "compiler.py": [
+      "contextlib.contextmanager",
+      "environment.Environment",
+      "exceptions.TemplateAssertionError",
+      "functools.update_wrapper",
+      "idtracking.Symbols",
+      "idtracking.VAR_LOAD_ALIAS",
+      "idtracking.VAR_LOAD_PARAMETER",
+      "idtracking.VAR_LOAD_RESOLVE",
+      "idtracking.VAR_LOAD_UNDEFINED",
+      "io.StringIO",
+      "itertools.chain",
+      "keyword.iskeyword",
+      "markupsafe.Markup",
+      "markupsafe.escape",
+      "nodes",
+      "nodes.EvalContext",
+      "optimizer.Optimizer",
+      "runtime.async_exported",
+      "runtime.exported",
+      "typing",
+      "typing_extensions",
+      "utils._PassArg",
+      "utils.concat",
+      "visitor.NodeVisitor"
+    ],
+    "constants.py": [],
+    "debug.py": [
+      "exceptions.TemplateSyntaxError",
+      "runtime.Context",
+      "sys",
+      "types.CodeType",
+      "types.TracebackType",
+      "typing",
+      "utils.internal_code",
+      "utils.missing"
+    ],
+    "defaults.py": [
+      "filters.FILTERS",
+      "tests.TESTS",
+      "typing",
+      "typing_extensions",
+      "utils.Cycler",
+      "utils.Joiner",
+      "utils.Namespace",
+      "utils.generate_lorem_ipsum"
+    ],
+    "environment.py": [
+      "asyncio",
+      "bccache.BytecodeCache",
+      "collections.ChainMap",
+      "compiler.CodeGenerator",
+      "compiler.generate",
+      "contextlib.aclosing",
+      "debug.rewrite_traceback_stack",
+      "defaults.BLOCK_END_STRING",
+      "defaults.BLOCK_START_STRING",
+      "defaults.COMMENT_END_STRING",
+      "defaults.COMMENT_START_STRING",
+      "defaults.DEFAULT_FILTERS",
+      "defaults.DEFAULT_NAMESPACE",
+      "defaults.DEFAULT_POLICIES",
+      "defaults.DEFAULT_TESTS",
+      "defaults.KEEP_TRAILING_NEWLINE",
+      "defaults.LINE_COMMENT_PREFIX",
+      "defaults.LINE_STATEMENT_PREFIX",
+      "defaults.LSTRIP_BLOCKS",
+      "defaults.NEWLINE_SEQUENCE",
+      "defaults.TRIM_BLOCKS",
+      "defaults.VARIABLE_END_STRING",
+      "defaults.VARIABLE_START_STRING",
+      "exceptions.TemplateNotFound",
+      "exceptions.TemplateRuntimeError",
+      "exceptions.TemplateSyntaxError",
+      "exceptions.TemplatesNotFound",
+      "exceptions.UndefinedError",
+      "ext.Extension",
+      "functools.lru_cache",
+      "functools.partial",
+      "functools.reduce",
+      "lexer.Lexer",
+      "lexer.TokenStream",
+      "lexer.get_lexer",
+      "loaders.BaseLoader",
+      "loaders.ModuleLoader",
+      "markupsafe.Markup",
+      "nodes",
+      "nodes.EvalContext",
+      "os",
+      "parser.Parser",
+      "runtime.Context",
+      "runtime.Undefined",
+      "runtime.new_context",
+      "types.CodeType",
+      "typing",
+      "typing_extensions",
+      "utils.LRUCache",
+      "utils._PassArg",
+      "utils.concat",
+      "utils.consume",
+      "utils.import_string",
+      "utils.internalcode",
+      "utils.missing",
+      "weakref",
+      "zipfile.ZIP_DEFLATED",
+      "zipfile.ZIP_STORED",
+      "zipfile.ZipFile",
+      "zipfile.ZipInfo"
+    ],
+    "exceptions.py": [
+      "runtime.Undefined",
+      "typing"
+    ],
+    "ext.py": [
+      "defaults",
+      "environment.Environment",
+      "exceptions.TemplateAssertionError",
+      "exceptions.TemplateSyntaxError",
+      "gettext",
+      "lexer.Token",
+      "lexer.TokenStream",
+      "markupsafe.Markup",
+      "nodes",
+      "parser.Parser",
+      "pprint",
+      "re",
+      "runtime.Context",
+      "runtime.Undefined",
+      "runtime.concat",
+      "typing",
+      "typing_extensions",
+      "utils.import_string",
+      "utils.pass_context"
+    ],
+    "filters.py": [
+      "async_utils.async_variant",
+      "async_utils.auto_aiter",
+      "async_utils.auto_await",
+      "async_utils.auto_to_list",
+      "collections.abc",
+      "environment.Environment",
+      "exceptions.FilterArgumentError",
+      "inspect.getattr_static",
+      "itertools.chain",
+      "itertools.groupby",
+      "markupsafe.Markup",
+      "markupsafe.escape",
+      "markupsafe.soft_str",
+      "math",
+      "nodes.EvalContext",
+      "random",
+      "re",
+      "runtime.Context",
+      "runtime.Undefined",
+      "sandbox.SandboxedEnvironment",
+      "textwrap",
+      "typing",
+      "typing_extensions",
+      "utils.htmlsafe_json_dumps",
+      "utils.pass_context",
+      "utils.pass_environment",
+      "utils.pass_eval_context",
+      "utils.pformat",
+      "utils.url_quote",
+      "utils.urlize"
+    ],
+    "idtracking.py": [
+      "nodes",
+      "typing",
+      "typing_extensions",
+      "visitor.NodeVisitor"
+    ],
+    "lexer.py": [
+      "_identifier.pattern",
+      "ast.literal_eval",
+      "collections.deque",
+      "environment.Environment",
+      "exceptions.TemplateSyntaxError",
+      "re",
+      "sys.intern",
+      "typing",
+      "typing_extensions",
+      "utils.LRUCache"
+    ],
+    "loaders.py": [
+      "collections.abc",
+      "environment.Environment",
+      "environment.Template",
+      "exceptions.TemplateNotFound",
+      "hashlib.sha1",
+      "importlib.import_module",
+      "importlib.util",
+      "os",
+      "posixpath",
+      "sys",
+      "types.ModuleType",
+      "typing",
+      "utils.internalcode",
+      "weakref",
+      "zipimport"
+    ],
+    "meta.py": [
+      "compiler.CodeGenerator",
+      "compiler.Frame",
+      "environment.Environment",
+      "nodes",
+      "typing"
+    ],
+    "nativetypes.py": [
+      "ast.literal_eval",
+      "ast.parse",
+      "compiler.CodeGenerator",
+      "compiler.Frame",
+      "compiler.has_safe_repr",
+      "environment.Environment",
+      "environment.Template",
+      "itertools.chain",
+      "itertools.islice",
+      "nodes",
+      "types.GeneratorType",
+      "typing"
+    ],
+    "nodes.py": [
+      "collections.deque",
+      "compiler.has_safe_repr",
+      "environment.Environment",
+      "inspect",
+      "markupsafe.Markup",
+      "operator",
+      "typing",
+      "typing_extensions",
+      "utils._PassArg"
+    ],
+    "optimizer.py": [
+      "environment.Environment",
+      "nodes",
+      "typing",
+      "visitor.NodeTransformer"
+    ],
+    "parser.py": [
+      "environment.Environment",
+      "exceptions.TemplateAssertionError",
+      "exceptions.TemplateSyntaxError",
+      "lexer.describe_token",
+      "lexer.describe_token_expr",
+      "nodes",
+      "typing",
+      "typing_extensions"
+    ],
+    "runtime.py": [
+      "async_utils.auto_aiter",
+      "async_utils.auto_await",
+      "collections.abc",
+      "environment.Environment",
+      "exceptions.TemplateNotFound",
+      "exceptions.TemplateRuntimeError",
+      "exceptions.UndefinedError",
+      "functools",
+      "itertools.chain",
+      "logging",
+      "markupsafe.Markup",
+      "markupsafe.escape",
+      "markupsafe.soft_str",
+      "nodes.EvalContext",
+      "sys",
+      "typing",
+      "typing_extensions",
+      "utils.Namespace",
+      "utils._PassArg",
+      "utils.concat",
+      "utils.internalcode",
+      "utils.missing",
+      "utils.object_type_repr",
+      "utils.pass_eval_context"
+    ],
+    "sandbox.py": [
+      "_string.formatter_field_name_split",
+      "collections.abc",
+      "collections.deque",
+      "environment.Environment",
+      "exceptions.SecurityError",
+      "functools.update_wrapper",
+      "markupsafe.EscapeFormatter",
+      "markupsafe.Markup",
+      "operator",
+      "runtime.Context",
+      "runtime.Undefined",
+      "string.Formatter",
+      "types",
+      "typing"
+    ],
+    "tests.py": [
+      "collections.abc",
+      "environment.Environment",
+      "numbers.Number",
+      "operator",
+      "runtime.Undefined",
+      "typing",
+      "utils.pass_environment"
+    ],
+    "utils.py": [
+      "collections.abc",
+      "collections.deque",
+      "constants.LOREM_IPSUM_WORDS",
+      "enum",
+      "environment.get_spontaneous_environment",
+      "json",
+      "lexer._lexer_cache",
+      "markupsafe",
+      "os",
+      "pprint.pformat",
+      "random.choice",
+      "random.randrange",
+      "re",
+      "runtime.Undefined",
+      "threading.Lock",
+      "types.CodeType",
+      "typing",
+      "typing_extensions",
+      "urllib.parse.quote_from_bytes"
+    ],
+    "visitor.py": [
+      "nodes.Node",
+      "typing",
+      "typing_extensions"
+    ]
+  },
+  "decorator_usage": {
+    "property": 24,
+    "internalcode": 18,
+    "pass_environment": 13,
+    "pass_context": 11,
+    "optimizeconst": 10,
+    "typing.overload": 10,
+    "staticmethod": 6,
+    "pass_eval_context": 6,
+    "classmethod": 5,
+    "wraps(normal_func, assigned=normal_func_attrs)": 1,
+    "wraps(async_func, assigned=async_func_attrs, updated=())": 1,
+    "contextmanager": 1,
+    "lru_cache(maxsize=10)": 1,
+    "async_variant(sync_do_unique)": 1,
+    "async_variant(sync_do_join)": 1,
+    "async_variant(sync_do_first)": 1,
+    "async_variant(sync_do_slice)": 1,
+    "async_variant(sync_do_groupby)": 1,
+    "async_variant(sync_do_sum)": 1,
+    "async_variant(sync_do_list)": 1,
+    "async_variant(sync_do_map)": 1,
+    "async_variant(sync_do_select)": 1,
+    "async_variant(sync_do_reject)": 1,
+    "async_variant(sync_do_selectattr)": 1,
+    "async_variant(sync_do_rejectattr)": 1,
+    "functools.wraps(dict_method)": 1,
+    "abc.Mapping.register": 1,
+    "abc.MutableMapping.register": 1
+  },
+  "function_arg_distribution": {
+    "0": 12,
+    "1": 268,
+    "2": 191,
+    "3": 164,
+    "4": 87,
+    "5": 26,
+    "6": 12,
+    "7": 8,
+    "8": 2,
+    "9": 1,
+    "20": 1,
+    "23": 2
+  },
+  "file_metrics": [
+    {
+      "file": "__init__.py",
+      "functions": 1,
+      "async_functions": 0,
+      "classes": 0,
+      "imports": 35,
+      "decorators": 0
+    },
+    {
+      "file": "_identifier.py",
+      "functions": 0,
+      "async_functions": 0,
+      "classes": 0,
+      "imports": 1,
+      "decorators": 0
+    },
+    {
+      "file": "async_utils.py",
+      "functions": 8,
+      "async_functions": 3,
+      "classes": 1,
+      "imports": 7,
+      "decorators": 2
+    },
+    {
+      "file": "bccache.py",
+      "functions": 26,
+      "async_functions": 0,
+      "classes": 5,
+      "imports": 15,
+      "decorators": 0
+    },
+    {
+      "file": "compiler.py",
+      "functions": 118,
+      "async_functions": 0,
+      "classes": 8,
+      "imports": 24,
+      "decorators": 13
+    },
+    {
+      "file": "constants.py",
+      "functions": 0,
+      "async_functions": 0,
+      "classes": 0,
+      "imports": 0,
+      "decorators": 0
+    },
+    {
+      "file": "debug.py",
+      "functions": 3,
+      "async_functions": 0,
+      "classes": 0,
+      "imports": 8,
+      "decorators": 0
+    },
+    {
+      "file": "defaults.py",
+      "functions": 0,
+      "async_functions": 0,
+      "classes": 0,
+      "imports": 8,
+      "decorators": 0
+    },
+    {
+      "file": "environment.py",
+      "functions": 68,
+      "async_functions": 5,
+      "classes": 5,
+      "imports": 60,
+      "decorators": 17
+    },
+    {
+      "file": "exceptions.py",
+      "functions": 8,
+      "async_functions": 0,
+      "classes": 9,
+      "imports": 2,
+      "decorators": 1
+    },
+    {
+      "file": "ext.py",
+      "functions": 41,
+      "async_functions": 0,
+      "classes": 8,
+      "imports": 19,
+      "decorators": 5
+    },
+    {
+      "file": "filters.py",
+      "functions": 72,
+      "async_functions": 13,
+      "classes": 2,
+      "imports": 30,
+      "decorators": 40
+    },
+    {
+      "file": "idtracking.py",
+      "functions": 40,
+      "async_functions": 0,
+      "classes": 3,
+      "imports": 4,
+      "decorators": 0
+    },
+    {
+      "file": "lexer.py",
+      "functions": 33,
+      "async_functions": 0,
+      "classes": 7,
+      "imports": 10,
+      "decorators": 1
+    },
+    {
+      "file": "loaders.py",
+      "functions": 32,
+      "async_functions": 0,
+      "classes": 9,
+      "imports": 15,
+      "decorators": 6
+    },
+    {
+      "file": "meta.py",
+      "functions": 5,
+      "async_functions": 0,
+      "classes": 1,
+      "imports": 5,
+      "decorators": 0
+    },
+    {
+      "file": "nativetypes.py",
+      "functions": 7,
+      "async_functions": 1,
+      "classes": 3,
+      "imports": 12,
+      "decorators": 1
+    },
+    {
+      "file": "nodes.py",
+      "functions": 48,
+      "async_functions": 0,
+      "classes": 72,
+      "imports": 9,
+      "decorators": 1
+    },
+    {
+      "file": "optimizer.py",
+      "functions": 3,
+      "async_functions": 0,
+      "classes": 1,
+      "imports": 4,
+      "decorators": 0
+    },
+    {
+      "file": "parser.py",
+      "functions": 58,
+      "async_functions": 0,
+      "classes": 1,
+      "imports": 8,
+      "decorators": 2
+    },
+    {
+      "file": "runtime.py",
+      "functions": 72,
+      "async_functions": 10,
+      "classes": 12,
+      "imports": 24,
+      "decorators": 28
+    },
+    {
+      "file": "sandbox.py",
+      "functions": 18,
+      "async_functions": 0,
+      "classes": 4,
+      "imports": 14,
+      "decorators": 0
+    },
+    {
+      "file": "tests.py",
+      "functions": 23,
+      "async_functions": 0,
+      "classes": 0,
+      "imports": 7,
+      "decorators": 2
+    },
+    {
+      "file": "utils.py",
+      "functions": 52,
+      "async_functions": 0,
+      "classes": 6,
+      "imports": 19,
+      "decorators": 3
+    },
+    {
+      "file": "visitor.py",
+      "functions": 6,
+      "async_functions": 0,
+      "classes": 3,
+      "imports": 3,
+      "decorators": 0
+    }
+  ],
+  "parse_failures": []
+}
