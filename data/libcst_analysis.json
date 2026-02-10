@@ -1,0 +1,1662 @@
+{
+  "analyzer": "libcst",
+  "status": "ok",
+  "source_root": "/mnt/c/Users/l/Desktop/opensource/group4/jinja/src/jinja2",
+  "collected_at": "2026-02-10T05:59:00.588252+00:00",
+  "totals": {
+    "python_files": 25,
+    "functions": 774,
+    "classes": 160
+  },
+  "type_annotation_coverage": {
+    "parameter": {
+      "total": 1839,
+      "annotated": 1277,
+      "coverage": 0.6943991299619359
+    },
+    "return": {
+      "total": 774,
+      "annotated": 762,
+      "coverage": 0.9844961240310077
+    },
+    "variable": {
+      "total": 1800,
+      "annotated": 251,
+      "coverage": 0.13944444444444445
+    },
+    "module_coverage": [
+      {
+        "file": "__init__.py",
+        "parameter_coverage": 1.0,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.0
+      },
+      {
+        "file": "_identifier.py",
+        "parameter_coverage": 0.0,
+        "return_coverage": 0.0,
+        "variable_coverage": 0.0
+      },
+      {
+        "file": "async_utils.py",
+        "parameter_coverage": 0.46153846153846156,
+        "return_coverage": 0.6363636363636364,
+        "variable_coverage": 0.0
+      },
+      {
+        "file": "bccache.py",
+        "parameter_coverage": 0.5636363636363636,
+        "return_coverage": 0.9615384615384616,
+        "variable_coverage": 0.029411764705882353
+      },
+      {
+        "file": "compiler.py",
+        "parameter_coverage": 0.654485049833887,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.09433962264150944
+      },
+      {
+        "file": "constants.py",
+        "parameter_coverage": 0.0,
+        "return_coverage": 0.0,
+        "variable_coverage": 0.0
+      },
+      {
+        "file": "debug.py",
+        "parameter_coverage": 1.0,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.11764705882352941
+      },
+      {
+        "file": "defaults.py",
+        "parameter_coverage": 0.0,
+        "return_coverage": 0.0,
+        "variable_coverage": 0.2857142857142857
+      },
+      {
+        "file": "environment.py",
+        "parameter_coverage": 0.7655677655677655,
+        "return_coverage": 0.9863013698630136,
+        "variable_coverage": 0.11875
+      },
+      {
+        "file": "exceptions.py",
+        "parameter_coverage": 0.5294117647058824,
+        "return_coverage": 0.875,
+        "variable_coverage": 0.10526315789473684
+      },
+      {
+        "file": "ext.py",
+        "parameter_coverage": 0.7603305785123967,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.08870967741935484
+      },
+      {
+        "file": "filters.py",
+        "parameter_coverage": 0.9877049180327869,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.0423728813559322
+      },
+      {
+        "file": "idtracking.py",
+        "parameter_coverage": 0.6442307692307693,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.14814814814814814
+      },
+      {
+        "file": "lexer.py",
+        "parameter_coverage": 0.5555555555555556,
+        "return_coverage": 0.9393939393939394,
+        "variable_coverage": 0.08783783783783784
+      },
+      {
+        "file": "loaders.py",
+        "parameter_coverage": 0.6376811594202898,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.037037037037037035
+      },
+      {
+        "file": "meta.py",
+        "parameter_coverage": 0.625,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.5
+      },
+      {
+        "file": "nativetypes.py",
+        "parameter_coverage": 0.7272727272727273,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.0
+      },
+      {
+        "file": "nodes.py",
+        "parameter_coverage": 0.5157894736842106,
+        "return_coverage": 0.9791666666666666,
+        "variable_coverage": 0.4851063829787234
+      },
+      {
+        "file": "optimizer.py",
+        "parameter_coverage": 0.75,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.0
+      },
+      {
+        "file": "parser.py",
+        "parameter_coverage": 0.4803921568627451,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.08502024291497975
+      },
+      {
+        "file": "runtime.py",
+        "parameter_coverage": 0.5167785234899329,
+        "return_coverage": 0.975609756097561,
+        "variable_coverage": 0.057692307692307696
+      },
+      {
+        "file": "sandbox.py",
+        "parameter_coverage": 0.7547169811320755,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.2702702702702703
+      },
+      {
+        "file": "tests.py",
+        "parameter_coverage": 1.0,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.0
+      },
+      {
+        "file": "utils.py",
+        "parameter_coverage": 0.6235294117647059,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.04597701149425287
+      },
+      {
+        "file": "visitor.py",
+        "parameter_coverage": 0.7272727272727273,
+        "return_coverage": 1.0,
+        "variable_coverage": 0.0
+      }
+    ]
+  },
+  "exception_patterns": {
+    "try_blocks": 105,
+    "except_handlers": 101,
+    "bare_except": 0,
+    "finally_blocks": 5,
+    "except_type_distribution": {
+      "Exception": 21,
+      "AttributeError": 8,
+      "StopIteration": 7,
+      "OSError": 7,
+      "TemplateSyntaxError": 6,
+      "TypeError": 5,
+      "KeyError": 5,
+      "IndexError": 4,
+      "ValueError": 4,
+      "LookupError": 4,
+      "TemplateNotFound": 4,
+      "BaseException": 3,
+      "nodes.Impossible": 3,
+      "StopAsyncIteration": 2,
+      "(TypeError, ValueError)": 2,
+      "(TypeError, LookupError)": 2,
+      "(EOFError, ValueError, TypeError)": 1,
+      "(FileNotFoundError, IsADirectoryError, PermissionError)": 1,
+      "VisitorExit": 1,
+      "CompilerExit": 1,
+      "(nodes.Impossible, Exception)": 1,
+      "(AttributeError, TypeError, LookupError)": 1,
+      "(TypeError, LookupError, AttributeError)": 1,
+      "(TemplateNotFound, UndefinedError)": 1,
+      "(TypeError, ValueError, OverflowError)": 1,
+      "(ValueError, KeyError)": 1,
+      "ImportError": 1,
+      "(ValueError, SyntaxError, MemoryError)": 1,
+      "self._undefined_exception": 1,
+      "(ImportError, AttributeError)": 1
+    }
+  },
+  "string_patterns": {
+    "string_literals": 2326,
+    "fstrings": 252,
+    "string_addition": 21,
+    "method_calls": {
+      "join": 51,
+      "replace": 19,
+      "split": 19,
+      "startswith": 15,
+      "lower": 8,
+      "strip": 6,
+      "endswith": 5,
+      "rstrip": 4,
+      "lstrip": 4,
+      "upper": 2,
+      "find": 1,
+      "rfind": 1,
+      "rpartition": 1
+    }
+  },
+  "fuzz_entry_points": [
+    {
+      "file": "bccache.py",
+      "function": "Bucket.bytecode_from_string",
+      "typed_parameters": [
+        "string"
+      ]
+    },
+    {
+      "file": "bccache.py",
+      "function": "Bucket.write_bytecode",
+      "typed_parameters": [
+        "f"
+      ]
+    },
+    {
+      "file": "bccache.py",
+      "function": "BytecodeCache.get_bucket",
+      "typed_parameters": [
+        "name",
+        "filename",
+        "source"
+      ]
+    },
+    {
+      "file": "bccache.py",
+      "function": "BytecodeCache.get_cache_key",
+      "typed_parameters": [
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "bccache.py",
+      "function": "BytecodeCache.get_source_checksum",
+      "typed_parameters": [
+        "source"
+      ]
+    },
+    {
+      "file": "bccache.py",
+      "function": "_MemcachedClient.get",
+      "typed_parameters": [
+        "key"
+      ]
+    },
+    {
+      "file": "bccache.py",
+      "function": "_MemcachedClient.set",
+      "typed_parameters": [
+        "key",
+        "value"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.choose_async",
+      "typed_parameters": [
+        "async_value",
+        "sync_value"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.fail",
+      "typed_parameters": [
+        "msg"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.func",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.mark_parameter_stored",
+      "typed_parameters": [
+        "target"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.parameter_is_undeclared",
+      "typed_parameters": [
+        "target"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.push_context_reference",
+      "typed_parameters": [
+        "target"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.signature",
+      "typed_parameters": [
+        "extra_kwargs"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.simple_write",
+      "typed_parameters": [
+        "s"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.write",
+      "typed_parameters": [
+        "x"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "CodeGenerator.writeline",
+      "typed_parameters": [
+        "x"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "find_undeclared",
+      "typed_parameters": [
+        "names"
+      ]
+    },
+    {
+      "file": "compiler.py",
+      "function": "generate",
+      "typed_parameters": [
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "debug.py",
+      "function": "fake_traceback",
+      "typed_parameters": [
+        "filename"
+      ]
+    },
+    {
+      "file": "debug.py",
+      "function": "get_template_locals",
+      "typed_parameters": [
+        "real_locals"
+      ]
+    },
+    {
+      "file": "debug.py",
+      "function": "rewrite_traceback_stack",
+      "typed_parameters": [
+        "source"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.add_extension",
+      "typed_parameters": [
+        "extension"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.call_filter",
+      "typed_parameters": [
+        "name",
+        "kwargs"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.call_test",
+      "typed_parameters": [
+        "name",
+        "kwargs"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.compile",
+      "typed_parameters": [
+        "source",
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.compile",
+      "typed_parameters": [
+        "source",
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.compile",
+      "typed_parameters": [
+        "source",
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.compile_expression",
+      "typed_parameters": [
+        "source"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.compile_templates",
+      "typed_parameters": [
+        "target",
+        "extensions",
+        "filter_func",
+        "zip",
+        "log_function"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.filter_func",
+      "typed_parameters": [
+        "x"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.from_string",
+      "typed_parameters": [
+        "source",
+        "globals"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.get_or_select_template",
+      "typed_parameters": [
+        "template_name_or_list",
+        "parent",
+        "globals"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.get_template",
+      "typed_parameters": [
+        "name",
+        "parent",
+        "globals"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.getattr",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.getitem",
+      "typed_parameters": [
+        "argument"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.handle_exception",
+      "typed_parameters": [
+        "source"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.join_path",
+      "typed_parameters": [
+        "template",
+        "parent"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.lex",
+      "typed_parameters": [
+        "source",
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.list_templates",
+      "typed_parameters": [
+        "extensions",
+        "filter_func"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.log_function",
+      "typed_parameters": [
+        "x"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.make_globals",
+      "typed_parameters": [
+        "d"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.overlay",
+      "typed_parameters": [
+        "block_start_string",
+        "block_end_string",
+        "variable_start_string",
+        "variable_end_string",
+        "comment_start_string",
+        "comment_end_string",
+        "line_statement_prefix",
+        "line_comment_prefix",
+        "extensions",
+        "autoescape"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.parse",
+      "typed_parameters": [
+        "source",
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.preprocess",
+      "typed_parameters": [
+        "source",
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.select_template",
+      "typed_parameters": [
+        "names",
+        "parent",
+        "globals"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Environment.write_file",
+      "typed_parameters": [
+        "filename",
+        "data"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Template.from_code",
+      "typed_parameters": [
+        "globals"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Template.from_module_dict",
+      "typed_parameters": [
+        "module_dict",
+        "globals"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Template.make_module",
+      "typed_parameters": [
+        "vars",
+        "locals"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Template.make_module_async",
+      "typed_parameters": [
+        "vars",
+        "locals"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "Template.new_context",
+      "typed_parameters": [
+        "vars",
+        "locals"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "TemplateStream.dump",
+      "typed_parameters": [
+        "fp",
+        "encoding",
+        "errors"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "copy_cache",
+      "typed_parameters": [
+        "cache"
+      ]
+    },
+    {
+      "file": "environment.py",
+      "function": "load_extensions",
+      "typed_parameters": [
+        "extensions"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "Extension.attr",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "Extension.call_method",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "Extension.preprocess",
+      "typed_parameters": [
+        "source",
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "_TranslationsBasic.gettext",
+      "typed_parameters": [
+        "message"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "_TranslationsBasic.ngettext",
+      "typed_parameters": [
+        "singular",
+        "plural"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "_TranslationsContext.npgettext",
+      "typed_parameters": [
+        "context",
+        "singular",
+        "plural"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "_TranslationsContext.pgettext",
+      "typed_parameters": [
+        "context",
+        "message"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "babel_extract",
+      "typed_parameters": [
+        "keywords",
+        "comment_tags",
+        "options"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "extract_from_ast",
+      "typed_parameters": [
+        "gettext_functions"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "getbool",
+      "typed_parameters": [
+        "options",
+        "key"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "gettext",
+      "typed_parameters": [
+        "__string"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "ngettext",
+      "typed_parameters": [
+        "__singular",
+        "__plural"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "npgettext",
+      "typed_parameters": [
+        "__string_ctx",
+        "__singular",
+        "__plural"
+      ]
+    },
+    {
+      "file": "ext.py",
+      "function": "pgettext",
+      "typed_parameters": [
+        "__string_ctx",
+        "__string"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "async_select_or_reject",
+      "typed_parameters": [
+        "kwargs"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_attr",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_capitalize",
+      "typed_parameters": [
+        "s"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_center",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_filesizeformat",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_forceescape",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_format",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_groupby",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_indent",
+      "typed_parameters": [
+        "s",
+        "width"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_join",
+      "typed_parameters": [
+        "d",
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_lower",
+      "typed_parameters": [
+        "s"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_map",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_map",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_mark_safe",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_mark_unsafe",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_max",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_min",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_replace",
+      "typed_parameters": [
+        "s",
+        "old",
+        "new"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_reverse",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_reverse",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_sort",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_striptags",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_sum",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_title",
+      "typed_parameters": [
+        "s"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_trim",
+      "typed_parameters": [
+        "value",
+        "chars"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_truncate",
+      "typed_parameters": [
+        "s",
+        "end"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_unique",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_upper",
+      "typed_parameters": [
+        "s"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_urlencode",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_urlize",
+      "typed_parameters": [
+        "value",
+        "target",
+        "rel",
+        "extra_schemes"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_wordcount",
+      "typed_parameters": [
+        "s"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_wordwrap",
+      "typed_parameters": [
+        "s",
+        "wrapstring"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "do_xmlattr",
+      "typed_parameters": [
+        "d"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "make_attrgetter",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "make_multi_attrgetter",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "prepare_map",
+      "typed_parameters": [
+        "kwargs"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "prepare_select_or_reject",
+      "typed_parameters": [
+        "kwargs"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "select_or_reject",
+      "typed_parameters": [
+        "kwargs"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "sync_do_groupby",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "sync_do_join",
+      "typed_parameters": [
+        "d",
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "sync_do_map",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "sync_do_map",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "sync_do_sum",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "filters.py",
+      "function": "sync_do_unique",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "idtracking.py",
+      "function": "RootVisitor.visit_For",
+      "typed_parameters": [
+        "for_branch"
+      ]
+    },
+    {
+      "file": "idtracking.py",
+      "function": "Symbols.declare_parameter",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "idtracking.py",
+      "function": "Symbols.find_load",
+      "typed_parameters": [
+        "target"
+      ]
+    },
+    {
+      "file": "idtracking.py",
+      "function": "Symbols.find_ref",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "idtracking.py",
+      "function": "Symbols.load",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "idtracking.py",
+      "function": "Symbols.ref",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "idtracking.py",
+      "function": "Symbols.store",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "Lexer.c",
+      "typed_parameters": [
+        "x"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "Lexer.tokeniter",
+      "typed_parameters": [
+        "source",
+        "name",
+        "filename",
+        "state"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "Lexer.tokenize",
+      "typed_parameters": [
+        "source",
+        "name",
+        "filename",
+        "state"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "Lexer.wrap",
+      "typed_parameters": [
+        "stream",
+        "name",
+        "filename"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "Token.test",
+      "typed_parameters": [
+        "expr"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "Token.test_any",
+      "typed_parameters": [
+        "iterable"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "TokenStream.expect",
+      "typed_parameters": [
+        "expr"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "TokenStream.next_if",
+      "typed_parameters": [
+        "expr"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "TokenStream.skip_if",
+      "typed_parameters": [
+        "expr"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "count_newlines",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "lexer.py",
+      "function": "describe_token_expr",
+      "typed_parameters": [
+        "expr"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "BaseLoader.get_source",
+      "typed_parameters": [
+        "template"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "BaseLoader.load",
+      "typed_parameters": [
+        "name",
+        "globals"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "ChoiceLoader.get_source",
+      "typed_parameters": [
+        "template"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "ChoiceLoader.load",
+      "typed_parameters": [
+        "name",
+        "globals"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "DictLoader.get_source",
+      "typed_parameters": [
+        "template"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "FileSystemLoader.get_source",
+      "typed_parameters": [
+        "template"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "FunctionLoader.get_source",
+      "typed_parameters": [
+        "template"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "ModuleLoader.get_module_filename",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "ModuleLoader.get_template_key",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "ModuleLoader.load",
+      "typed_parameters": [
+        "name",
+        "globals"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "PackageLoader.get_source",
+      "typed_parameters": [
+        "template"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "PrefixLoader.get_loader",
+      "typed_parameters": [
+        "template"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "PrefixLoader.get_source",
+      "typed_parameters": [
+        "template"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "PrefixLoader.load",
+      "typed_parameters": [
+        "name",
+        "globals"
+      ]
+    },
+    {
+      "file": "loaders.py",
+      "function": "split_template_path",
+      "typed_parameters": [
+        "template"
+      ]
+    },
+    {
+      "file": "meta.py",
+      "function": "TrackingCodeGenerator.write",
+      "typed_parameters": [
+        "x"
+      ]
+    },
+    {
+      "file": "nodes.py",
+      "function": "EvalContext.revert",
+      "typed_parameters": [
+        "old"
+      ]
+    },
+    {
+      "file": "nodes.py",
+      "function": "Node.iter_child_nodes",
+      "typed_parameters": [
+        "exclude",
+        "only"
+      ]
+    },
+    {
+      "file": "nodes.py",
+      "function": "Node.iter_fields",
+      "typed_parameters": [
+        "exclude",
+        "only"
+      ]
+    },
+    {
+      "file": "nodes.py",
+      "function": "Node.set_ctx",
+      "typed_parameters": [
+        "ctx"
+      ]
+    },
+    {
+      "file": "parser.py",
+      "function": "Parser.fail",
+      "typed_parameters": [
+        "msg"
+      ]
+    },
+    {
+      "file": "parser.py",
+      "function": "Parser.fail_eof",
+      "typed_parameters": [
+        "end_tokens"
+      ]
+    },
+    {
+      "file": "parser.py",
+      "function": "Parser.fail_unknown_tag",
+      "typed_parameters": [
+        "name"
+      ]
+    },
+    {
+      "file": "parser.py",
+      "function": "Parser.is_tuple_end",
+      "typed_parameters": [
+        "extra_end_rules"
+      ]
+    },
+    {
+      "file": "parser.py",
+      "function": "Parser.parse_assign_target",
+      "typed_parameters": [
+        "extra_end_rules"
+      ]
+    },
+    {
+      "file": "parser.py",
+      "function": "Parser.parse_assign_target",
+      "typed_parameters": [
+        "extra_end_rules"
+      ]
+    },
+    {
+      "file": "parser.py",
+      "function": "Parser.parse_statements",
+      "typed_parameters": [
+        "end_tokens"
+      ]
+    },
+    {
+      "file": "parser.py",
+      "function": "Parser.parse_tuple",
+      "typed_parameters": [
+        "extra_end_rules"
+      ]
+    },
+    {
+      "file": "parser.py",
+      "function": "Parser.subparse",
+      "typed_parameters": [
+        "end_tokens"
+      ]
+    },
+    {
+      "file": "runtime.py",
+      "function": "Context.derived",
+      "typed_parameters": [
+        "locals"
+      ]
+    },
+    {
+      "file": "runtime.py",
+      "function": "Context.get",
+      "typed_parameters": [
+        "key"
+      ]
+    },
+    {
+      "file": "runtime.py",
+      "function": "Context.resolve",
+      "typed_parameters": [
+        "key"
+      ]
+    },
+    {
+      "file": "runtime.py",
+      "function": "Context.resolve_or_missing",
+      "typed_parameters": [
+        "key"
+      ]
+    },
+    {
+      "file": "runtime.py",
+      "function": "Context.super",
+      "typed_parameters": [
+        "name",
+        "current"
+      ]
+    },
+    {
+      "file": "runtime.py",
+      "function": "new_context",
+      "typed_parameters": [
+        "template_name",
+        "blocks",
+        "vars",
+        "globals",
+        "locals"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "ImmutableSandboxedEnvironment.is_safe_attribute",
+      "typed_parameters": [
+        "attr"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "SandboxedEnvironment.call_binop",
+      "typed_parameters": [
+        "operator"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "SandboxedEnvironment.call_unop",
+      "typed_parameters": [
+        "operator"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "SandboxedEnvironment.getattr",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "SandboxedEnvironment.getitem",
+      "typed_parameters": [
+        "argument"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "SandboxedEnvironment.is_safe_attribute",
+      "typed_parameters": [
+        "attr"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "SandboxedEnvironment.unsafe_undefined",
+      "typed_parameters": [
+        "attribute"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "SandboxedFormatter.get_field",
+      "typed_parameters": [
+        "field_name",
+        "kwargs"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "is_internal_attribute",
+      "typed_parameters": [
+        "attr"
+      ]
+    },
+    {
+      "file": "sandbox.py",
+      "function": "modifies_known_mutable",
+      "typed_parameters": [
+        "attr"
+      ]
+    },
+    {
+      "file": "tests.py",
+      "function": "test_filter",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "tests.py",
+      "function": "test_lower",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "tests.py",
+      "function": "test_test",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "tests.py",
+      "function": "test_upper",
+      "typed_parameters": [
+        "value"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "function": "autoescape",
+      "typed_parameters": [
+        "template_name"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "function": "htmlsafe_json_dumps",
+      "typed_parameters": [
+        "dumps"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "function": "import_string",
+      "typed_parameters": [
+        "import_name"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "function": "open_if_exists",
+      "typed_parameters": [
+        "filename",
+        "mode"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "function": "select_autoescape",
+      "typed_parameters": [
+        "enabled_extensions",
+        "disabled_extensions"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "function": "trim_url",
+      "typed_parameters": [
+        "x"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "function": "trim_url",
+      "typed_parameters": [
+        "x"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "function": "url_quote",
+      "typed_parameters": [
+        "charset"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "function": "urlize",
+      "typed_parameters": [
+        "text",
+        "rel",
+        "target",
+        "extra_schemes"
+      ]
+    }
+  ],
+  "parse_failures": []
+}

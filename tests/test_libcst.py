@@ -7,4 +7,4 @@ from config import JINJA_SRC_ROOT
 def test_libcst_analyzer_smoke() -> None:
     result = analyze_libcst(JINJA_SRC_ROOT)
     assert result["analyzer"] == "libcst"
-    assert result["status"] == "pending"
+    assert result["status"] == "ok"
