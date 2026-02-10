@@ -3,9 +3,9 @@
   "iterations": 10000,
   "coverage_metrics": {
     "cov": 373,
-    "features": 881,
-    "corpus": 81,
-    "exec_per_sec": 9683
+    "features": 990,
+    "corpus": 92,
+    "exec_per_sec": 9983
   },
   "return_code": 0,
   "summary_path": "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/fuzz_coverage/parse_summary.json"

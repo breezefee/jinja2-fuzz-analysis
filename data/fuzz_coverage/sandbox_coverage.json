@@ -2,10 +2,10 @@
   "target": "sandbox",
   "iterations": 10000,
   "coverage_metrics": {
-    "cov": 544,
-    "features": 1086,
-    "corpus": 113,
-    "exec_per_sec": 4904
+    "cov": 533,
+    "features": 1118,
+    "corpus": 91,
+    "exec_per_sec": 4972
   },
   "return_code": 0,
   "summary_path": "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/fuzz_coverage/sandbox_summary.json"

@@ -3,8 +3,8 @@
   "iterations": 10000,
   "coverage_metrics": {
     "cov": 29,
-    "features": 41,
-    "corpus": 9,
+    "features": 44,
+    "corpus": 11,
     "exec_per_sec": 0
   },
   "return_code": 0,

@@ -2,7 +2,7 @@
   "commit_collect": {
     "collector": "pydriller",
     "status": "ok",
-    "collected_at": "2026-02-10T06:44:44.918846+00:00",
+    "collected_at": "2026-02-10T06:57:12.327834+00:00",
     "total_commits": 2949,
     "bugfix_commits": 802,
     "bugfix_ratio": 0.2719565954560868,
@@ -1731,7 +1731,7 @@
   "github_collect": {
     "collector": "github_api",
     "status": "cached",
-    "collected_at": "2026-02-10T06:48:25.966911+00:00",
+    "collected_at": "2026-02-10T07:00:49.762516+00:00",
     "repo": {
       "name": "jinja",
       "full_name": "pallets/jinja",
@@ -1958,7 +1958,7 @@
     "analyzer": "ast",
     "status": "ok",
     "source_root": "/mnt/c/Users/l/Desktop/opensource/group4/jinja/src/jinja2",
-    "collected_at": "2026-02-10T06:48:26.329350+00:00",
+    "collected_at": "2026-02-10T07:00:50.122801+00:00",
     "totals": {
       "python_files": 25,
       "functions": 742,
@@ -4333,7 +4333,7 @@
     "analyzer": "libcst",
     "status": "ok",
     "source_root": "/mnt/c/Users/l/Desktop/opensource/group4/jinja/src/jinja2",
-    "collected_at": "2026-02-10T06:48:28.460246+00:00",
+    "collected_at": "2026-02-10T07:00:52.379775+00:00",
     "totals": {
       "python_files": 25,
       "functions": 774,
@@ -5994,7 +5994,7 @@
   "z3": {
     "analyzer": "z3",
     "status": "ok",
-    "collected_at": "2026-02-10T06:48:28.920422+00:00",
+    "collected_at": "2026-02-10T07:00:52.813643+00:00",
     "template_syntax_constraints": {
       "valid_model_count": 5,
       "valid_models": [
@@ -6118,7 +6118,7 @@
   "trace": {
     "analyzer": "pysnooper",
     "status": "ok",
-    "collected_at": "2026-02-10T06:48:30.384687+00:00",
+    "collected_at": "2026-02-10T07:00:54.049653+00:00",
     "records": [
       {
         "stage": "parse",
@@ -6201,7 +6201,7 @@
   "fuzz": {
     "fuzzer": "atheris",
     "status": "ok",
-    "collected_at": "2026-02-10T06:48:47.701671+00:00",
+    "collected_at": "2026-02-10T07:01:11.744393+00:00",
     "iterations": 10000,
     "targets": [
       {
@@ -6211,9 +6211,9 @@
         "return_code": 0,
         "coverage_metrics": {
           "cov": 373,
-          "features": 881,
-          "corpus": 81,
-          "exec_per_sec": 9683
+          "features": 990,
+          "corpus": 92,
+          "exec_per_sec": 9983
         },
         "crash_files": [
           "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/crashes/parse_TemplateSyntaxError.txt"
@@ -6221,14 +6221,14 @@
         "summary": {
           "target": "parse",
           "status": "ok",
-          "collected_at": "2026-02-10T06:48:34.012189+00:00",
+          "collected_at": "2026-02-10T07:00:57.841065+00:00",
           "runs_configured": 10000,
           "iterations_observed": 10000,
           "exception_counts": {
-            "TemplateSyntaxError": 5098
+            "TemplateSyntaxError": 5787
           },
           "exception_samples": {
-            "TemplateSyntaxError": "wwwwww{%\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000w\u0006"
+            "TemplateSyntaxError": "{{\u0000\u0000\u0000"
           },
           "crash_files": [
             "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/crashes/parse_TemplateSyntaxError.txt"
@@ -6266,198 +6266,198 @@
             },
             {
               "iteration": 1750,
-              "unique_exceptions": 0,
-              "total_exceptions": 0
+              "unique_exceptions": 1,
+              "total_exceptions": 96
             },
             {
               "iteration": 2000,
               "unique_exceptions": 1,
-              "total_exceptions": 14
+              "total_exceptions": 244
             },
             {
               "iteration": 2250,
               "unique_exceptions": 1,
-              "total_exceptions": 191
+              "total_exceptions": 395
             },
             {
               "iteration": 2500,
               "unique_exceptions": 1,
-              "total_exceptions": 346
+              "total_exceptions": 559
             },
             {
               "iteration": 2750,
               "unique_exceptions": 1,
-              "total_exceptions": 497
+              "total_exceptions": 738
             },
             {
               "iteration": 3000,
               "unique_exceptions": 1,
-              "total_exceptions": 654
+              "total_exceptions": 901
             },
             {
               "iteration": 3250,
               "unique_exceptions": 1,
-              "total_exceptions": 816
+              "total_exceptions": 1071
             },
             {
               "iteration": 3500,
               "unique_exceptions": 1,
-              "total_exceptions": 959
+              "total_exceptions": 1247
             },
             {
               "iteration": 3750,
               "unique_exceptions": 1,
-              "total_exceptions": 1108
+              "total_exceptions": 1399
             },
             {
               "iteration": 4000,
               "unique_exceptions": 1,
-              "total_exceptions": 1261
+              "total_exceptions": 1564
             },
             {
               "iteration": 4250,
               "unique_exceptions": 1,
-              "total_exceptions": 1430
+              "total_exceptions": 1750
             },
             {
               "iteration": 4500,
               "unique_exceptions": 1,
-              "total_exceptions": 1596
+              "total_exceptions": 1930
             },
             {
               "iteration": 4750,
               "unique_exceptions": 1,
-              "total_exceptions": 1757
+              "total_exceptions": 2090
             },
             {
               "iteration": 5000,
               "unique_exceptions": 1,
-              "total_exceptions": 1910
+              "total_exceptions": 2271
             },
             {
               "iteration": 5250,
               "unique_exceptions": 1,
-              "total_exceptions": 2061
+              "total_exceptions": 2473
             },
             {
               "iteration": 5500,
               "unique_exceptions": 1,
-              "total_exceptions": 2210
+              "total_exceptions": 2665
             },
             {
               "iteration": 5750,
               "unique_exceptions": 1,
-              "total_exceptions": 2355
+              "total_exceptions": 2846
             },
             {
               "iteration": 6000,
               "unique_exceptions": 1,
-              "total_exceptions": 2519
+              "total_exceptions": 3036
             },
             {
               "iteration": 6250,
               "unique_exceptions": 1,
-              "total_exceptions": 2686
+              "total_exceptions": 3191
             },
             {
               "iteration": 6500,
               "unique_exceptions": 1,
-              "total_exceptions": 2859
+              "total_exceptions": 3342
             },
             {
               "iteration": 6750,
               "unique_exceptions": 1,
-              "total_exceptions": 3021
+              "total_exceptions": 3526
             },
             {
               "iteration": 7000,
               "unique_exceptions": 1,
-              "total_exceptions": 3207
+              "total_exceptions": 3695
             },
             {
               "iteration": 7250,
               "unique_exceptions": 1,
-              "total_exceptions": 3359
+              "total_exceptions": 3880
             },
             {
               "iteration": 7500,
               "unique_exceptions": 1,
-              "total_exceptions": 3523
+              "total_exceptions": 4059
             },
             {
               "iteration": 7750,
               "unique_exceptions": 1,
-              "total_exceptions": 3704
+              "total_exceptions": 4218
             },
             {
               "iteration": 8000,
               "unique_exceptions": 1,
-              "total_exceptions": 3871
+              "total_exceptions": 4388
             },
             {
               "iteration": 8250,
               "unique_exceptions": 1,
-              "total_exceptions": 4019
+              "total_exceptions": 4560
             },
             {
               "iteration": 8500,
               "unique_exceptions": 1,
-              "total_exceptions": 4185
+              "total_exceptions": 4737
             },
             {
               "iteration": 8750,
               "unique_exceptions": 1,
-              "total_exceptions": 4322
+              "total_exceptions": 4915
             },
             {
               "iteration": 9000,
               "unique_exceptions": 1,
-              "total_exceptions": 4480
+              "total_exceptions": 5083
             },
             {
               "iteration": 9250,
               "unique_exceptions": 1,
-              "total_exceptions": 4635
+              "total_exceptions": 5252
             },
             {
               "iteration": 9500,
               "unique_exceptions": 1,
-              "total_exceptions": 4804
+              "total_exceptions": 5419
             },
             {
               "iteration": 9750,
               "unique_exceptions": 1,
-              "total_exceptions": 4968
+              "total_exceptions": 5605
             },
             {
               "iteration": 10000,
               "unique_exceptions": 1,
-              "total_exceptions": 5098
+              "total_exceptions": 5786
             }
           ]
         },
         "stdout_tail": [],
         "stderr_tail": [
-          "#8127\tREDUCE cov: 370 ft: 865 corp: 74/997b lim: 21 exec/s: 0 rss: 176Mb L: 16/21 MS: 1 EraseBytes-",
-          "#8145\tREDUCE cov: 370 ft: 865 corp: 74/996b lim: 21 exec/s: 0 rss: 176Mb L: 20/21 MS: 3 CopyPart-ChangeByte-EraseBytes-",
-          "#8170\tNEW    cov: 370 ft: 866 corp: 75/1017b lim: 21 exec/s: 0 rss: 176Mb L: 21/21 MS: 5 CrossOver-ChangeBit-CopyPart-ShuffleBytes-CrossOver-",
-          "#8297\tNEW    cov: 370 ft: 867 corp: 76/1035b lim: 21 exec/s: 0 rss: 176Mb L: 18/21 MS: 2 CMP-EraseBytes- DE: \"name\"-",
-          "#8473\tNEW    cov: 370 ft: 868 corp: 77/1053b lim: 21 exec/s: 8473 rss: 176Mb L: 18/21 MS: 1 InsertByte-",
-          "#8685\tREDUCE cov: 370 ft: 868 corp: 77/1052b lim: 21 exec/s: 8685 rss: 176Mb L: 20/21 MS: 2 ChangeBit-CrossOver-",
-          "#8716\tREDUCE cov: 370 ft: 870 corp: 78/1073b lim: 21 exec/s: 8716 rss: 176Mb L: 21/21 MS: 1 CopyPart-",
-          "#8776\tREDUCE cov: 370 ft: 870 corp: 78/1072b lim: 21 exec/s: 8776 rss: 176Mb L: 6/21 MS: 5 CrossOver-EraseBytes-ChangeByte-ChangeByte-EraseBytes-",
-          "#8877\tNEW    cov: 373 ft: 873 corp: 79/1093b lim: 21 exec/s: 8877 rss: 176Mb L: 21/21 MS: 1 ChangeByte-",
-          "#9033\tREDUCE cov: 373 ft: 873 corp: 79/1092b lim: 21 exec/s: 9033 rss: 176Mb L: 5/21 MS: 1 EraseBytes-",
-          "#9065\tREDUCE cov: 373 ft: 873 corp: 79/1091b lim: 21 exec/s: 9065 rss: 176Mb L: 17/21 MS: 2 EraseBytes-CopyPart-",
-          "#9282\tREDUCE cov: 373 ft: 873 corp: 79/1090b lim: 21 exec/s: 9282 rss: 176Mb L: 13/21 MS: 2 ShuffleBytes-EraseBytes-",
-          "#9353\tNEW    cov: 373 ft: 874 corp: 80/1111b lim: 21 exec/s: 9353 rss: 176Mb L: 21/21 MS: 1 CrossOver-",
-          "#9464\tNEW    cov: 373 ft: 881 corp: 81/1132b lim: 21 exec/s: 9464 rss: 176Mb L: 21/21 MS: 1 CopyPart-",
-          "#9625\tREDUCE cov: 373 ft: 881 corp: 81/1130b lim: 21 exec/s: 9625 rss: 176Mb L: 4/21 MS: 1 EraseBytes-",
-          "#9656\tREDUCE cov: 373 ft: 881 corp: 81/1127b lim: 21 exec/s: 9656 rss: 176Mb L: 13/21 MS: 1 EraseBytes-",
-          "#9677\tREDUCE cov: 373 ft: 881 corp: 81/1126b lim: 21 exec/s: 9677 rss: 176Mb L: 11/21 MS: 1 CrossOver-",
-          "#9679\tREDUCE cov: 373 ft: 881 corp: 81/1125b lim: 21 exec/s: 9679 rss: 176Mb L: 9/21 MS: 2 PersAutoDict-EraseBytes- DE: \"{%\"-",
-          "#9683\tREDUCE cov: 373 ft: 881 corp: 81/1119b lim: 21 exec/s: 9683 rss: 176Mb L: 15/21 MS: 4 ChangeByte-ChangeBit-CopyPart-EraseBytes-",
-          "Done 10000 in 2 second(s)"
+          "#8714\tNEW    cov: 356 ft: 939 corp: 83/938b lim: 21 exec/s: 8714 rss: 167Mb L: 20/21 MS: 1 ChangeBit-",
+          "#8760\tREDUCE cov: 356 ft: 939 corp: 83/935b lim: 21 exec/s: 8760 rss: 167Mb L: 13/21 MS: 1 EraseBytes-",
+          "#8851\tREDUCE cov: 356 ft: 942 corp: 84/954b lim: 21 exec/s: 8851 rss: 167Mb L: 19/21 MS: 1 InsertRepeatedBytes-",
+          "#8902\tREDUCE cov: 356 ft: 942 corp: 84/953b lim: 21 exec/s: 8902 rss: 167Mb L: 9/21 MS: 1 EraseBytes-",
+          "#9091\tREDUCE cov: 356 ft: 942 corp: 84/950b lim: 21 exec/s: 9091 rss: 167Mb L: 9/21 MS: 4 CrossOver-ShuffleBytes-ChangeBit-EraseBytes-",
+          "#9137\tREDUCE cov: 372 ft: 958 corp: 85/955b lim: 21 exec/s: 9137 rss: 167Mb L: 5/21 MS: 1 ChangeBinInt-",
+          "#9184\tREDUCE cov: 372 ft: 958 corp: 85/949b lim: 21 exec/s: 9184 rss: 167Mb L: 9/21 MS: 2 ChangeBit-EraseBytes-",
+          "#9226\tNEW    cov: 372 ft: 959 corp: 86/967b lim: 21 exec/s: 9226 rss: 167Mb L: 18/21 MS: 2 ChangeByte-EraseBytes-",
+          "#9237\tREDUCE cov: 372 ft: 959 corp: 86/963b lim: 21 exec/s: 9237 rss: 167Mb L: 6/21 MS: 1 EraseBytes-",
+          "#9348\tNEW    cov: 372 ft: 971 corp: 87/984b lim: 21 exec/s: 9348 rss: 167Mb L: 21/21 MS: 1 CopyPart-",
+          "#9391\tREDUCE cov: 372 ft: 979 corp: 88/999b lim: 21 exec/s: 9391 rss: 167Mb L: 15/21 MS: 3 ChangeBinInt-CopyPart-CrossOver-",
+          "#9444\tNEW    cov: 372 ft: 981 corp: 89/1018b lim: 21 exec/s: 9444 rss: 167Mb L: 19/21 MS: 3 ChangeBit-CMP-ChangeBit- DE: \"\\000\\000\\000\\000\"-",
+          "#9505\tREDUCE cov: 372 ft: 981 corp: 89/1017b lim: 21 exec/s: 9505 rss: 167Mb L: 8/21 MS: 1 EraseBytes-",
+          "#9577\tNEW    cov: 372 ft: 982 corp: 90/1038b lim: 21 exec/s: 9577 rss: 167Mb L: 21/21 MS: 2 PersAutoDict-InsertByte- DE: \"{#\"-",
+          "#9697\tREDUCE cov: 373 ft: 984 corp: 91/1057b lim: 21 exec/s: 9697 rss: 167Mb L: 19/21 MS: 5 ChangeByte-InsertByte-InsertByte-ChangeBit-CopyPart-",
+          "#9698\tNEW    cov: 373 ft: 990 corp: 92/1078b lim: 21 exec/s: 9698 rss: 167Mb L: 21/21 MS: 1 ChangeBit-",
+          "#9704\tREDUCE cov: 373 ft: 990 corp: 92/1077b lim: 21 exec/s: 9704 rss: 167Mb L: 20/21 MS: 1 EraseBytes-",
+          "#9835\tREDUCE cov: 373 ft: 990 corp: 92/1074b lim: 21 exec/s: 9835 rss: 167Mb L: 9/21 MS: 1 EraseBytes-",
+          "#9983\tREDUCE cov: 373 ft: 990 corp: 92/1072b lim: 21 exec/s: 9983 rss: 167Mb L: 17/21 MS: 3 ShuffleBytes-ChangeBit-EraseBytes-",
+          "Done 10000 in 1 second(s)"
         ]
       },
       {
@@ -6466,10 +6466,10 @@
         "status": "ok",
         "return_code": 0,
         "coverage_metrics": {
-          "cov": 537,
-          "features": 1157,
-          "corpus": 84,
-          "exec_per_sec": 4994
+          "cov": 528,
+          "features": 1123,
+          "corpus": 92,
+          "exec_per_sec": 4981
         },
         "crash_files": [
           "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/crashes/render_TemplateSyntaxError.txt"
@@ -6477,14 +6477,14 @@
         "summary": {
           "target": "render",
           "status": "ok",
-          "collected_at": "2026-02-10T06:48:38.788614+00:00",
+          "collected_at": "2026-02-10T07:01:02.471581+00:00",
           "runs_configured": 10000,
           "iterations_observed": 10000,
           "exception_counts": {
-            "TemplateSyntaxError": 5368
+            "TemplateSyntaxError": 5282
           },
           "exception_samples": {
-            "TemplateSyntaxError": "\u001a{{{\u0000"
+            "TemplateSyntaxError": "{%"
           },
           "crash_files": [
             "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/crashes/render_TemplateSyntaxError.txt"
@@ -6492,228 +6492,228 @@
           "trend": [
             {
               "iteration": 250,
-              "unique_exceptions": 0,
-              "total_exceptions": 0
+              "unique_exceptions": 1,
+              "total_exceptions": 11
             },
             {
               "iteration": 500,
-              "unique_exceptions": 0,
-              "total_exceptions": 0
+              "unique_exceptions": 1,
+              "total_exceptions": 107
             },
             {
               "iteration": 750,
-              "unique_exceptions": 0,
-              "total_exceptions": 0
+              "unique_exceptions": 1,
+              "total_exceptions": 221
             },
             {
               "iteration": 1000,
-              "unique_exceptions": 0,
-              "total_exceptions": 0
+              "unique_exceptions": 1,
+              "total_exceptions": 333
             },
             {
               "iteration": 1250,
-              "unique_exceptions": 0,
-              "total_exceptions": 0
+              "unique_exceptions": 1,
+              "total_exceptions": 454
             },
             {
               "iteration": 1500,
-              "unique_exceptions": 0,
-              "total_exceptions": 0
+              "unique_exceptions": 1,
+              "total_exceptions": 572
             },
             {
               "iteration": 1750,
-              "unique_exceptions": 0,
-              "total_exceptions": 0
+              "unique_exceptions": 1,
+              "total_exceptions": 714
             },
             {
               "iteration": 2000,
               "unique_exceptions": 1,
-              "total_exceptions": 66
+              "total_exceptions": 845
             },
             {
               "iteration": 2250,
               "unique_exceptions": 1,
-              "total_exceptions": 201
+              "total_exceptions": 984
             },
             {
               "iteration": 2500,
               "unique_exceptions": 1,
-              "total_exceptions": 350
+              "total_exceptions": 1112
             },
             {
               "iteration": 2750,
               "unique_exceptions": 1,
-              "total_exceptions": 510
+              "total_exceptions": 1284
             },
             {
               "iteration": 3000,
               "unique_exceptions": 1,
-              "total_exceptions": 693
+              "total_exceptions": 1399
             },
             {
               "iteration": 3250,
               "unique_exceptions": 1,
-              "total_exceptions": 847
+              "total_exceptions": 1540
             },
             {
               "iteration": 3500,
               "unique_exceptions": 1,
-              "total_exceptions": 1023
+              "total_exceptions": 1652
             },
             {
               "iteration": 3750,
               "unique_exceptions": 1,
-              "total_exceptions": 1188
+              "total_exceptions": 1750
             },
             {
               "iteration": 4000,
               "unique_exceptions": 1,
-              "total_exceptions": 1358
+              "total_exceptions": 1872
             },
             {
               "iteration": 4250,
               "unique_exceptions": 1,
-              "total_exceptions": 1509
+              "total_exceptions": 1998
             },
             {
               "iteration": 4500,
               "unique_exceptions": 1,
-              "total_exceptions": 1662
+              "total_exceptions": 2131
             },
             {
               "iteration": 4750,
               "unique_exceptions": 1,
-              "total_exceptions": 1819
+              "total_exceptions": 2276
             },
             {
               "iteration": 5000,
               "unique_exceptions": 1,
-              "total_exceptions": 2001
+              "total_exceptions": 2436
             },
             {
               "iteration": 5250,
               "unique_exceptions": 1,
-              "total_exceptions": 2167
+              "total_exceptions": 2593
             },
             {
               "iteration": 5500,
               "unique_exceptions": 1,
-              "total_exceptions": 2296
+              "total_exceptions": 2737
             },
             {
               "iteration": 5750,
               "unique_exceptions": 1,
-              "total_exceptions": 2455
+              "total_exceptions": 2882
             },
             {
               "iteration": 6000,
               "unique_exceptions": 1,
-              "total_exceptions": 2628
+              "total_exceptions": 3022
             },
             {
               "iteration": 6250,
               "unique_exceptions": 1,
-              "total_exceptions": 2805
+              "total_exceptions": 3166
             },
             {
               "iteration": 6500,
               "unique_exceptions": 1,
-              "total_exceptions": 2962
+              "total_exceptions": 3290
             },
             {
               "iteration": 6750,
               "unique_exceptions": 1,
-              "total_exceptions": 3172
+              "total_exceptions": 3437
             },
             {
               "iteration": 7000,
               "unique_exceptions": 1,
-              "total_exceptions": 3337
+              "total_exceptions": 3613
             },
             {
               "iteration": 7250,
               "unique_exceptions": 1,
-              "total_exceptions": 3517
+              "total_exceptions": 3742
             },
             {
               "iteration": 7500,
               "unique_exceptions": 1,
-              "total_exceptions": 3669
+              "total_exceptions": 3891
             },
             {
               "iteration": 7750,
               "unique_exceptions": 1,
-              "total_exceptions": 3839
+              "total_exceptions": 4034
             },
             {
               "iteration": 8000,
               "unique_exceptions": 1,
-              "total_exceptions": 4003
+              "total_exceptions": 4172
             },
             {
               "iteration": 8250,
               "unique_exceptions": 1,
-              "total_exceptions": 4153
+              "total_exceptions": 4304
             },
             {
               "iteration": 8500,
               "unique_exceptions": 1,
-              "total_exceptions": 4334
+              "total_exceptions": 4457
             },
             {
               "iteration": 8750,
               "unique_exceptions": 1,
-              "total_exceptions": 4499
+              "total_exceptions": 4598
             },
             {
               "iteration": 9000,
               "unique_exceptions": 1,
-              "total_exceptions": 4667
+              "total_exceptions": 4746
             },
             {
               "iteration": 9250,
               "unique_exceptions": 1,
-              "total_exceptions": 4845
+              "total_exceptions": 4878
             },
             {
               "iteration": 9500,
               "unique_exceptions": 1,
-              "total_exceptions": 5019
+              "total_exceptions": 5012
             },
             {
               "iteration": 9750,
               "unique_exceptions": 1,
-              "total_exceptions": 5190
+              "total_exceptions": 5136
             },
             {
               "iteration": 10000,
               "unique_exceptions": 1,
-              "total_exceptions": 5367
+              "total_exceptions": 5282
             }
           ]
         },
         "stdout_tail": [],
         "stderr_tail": [
-          "#8552\tREDUCE cov: 518 ft: 1135 corp: 78/926b lim: 21 exec/s: 4276 rss: 176Mb L: 12/21 MS: 2 ChangeBinInt-EraseBytes-",
-          "#8588\tREDUCE cov: 518 ft: 1135 corp: 78/924b lim: 21 exec/s: 4294 rss: 176Mb L: 13/21 MS: 1 EraseBytes-",
-          "#8589\tREDUCE cov: 518 ft: 1135 corp: 78/921b lim: 21 exec/s: 4294 rss: 176Mb L: 18/21 MS: 1 EraseBytes-",
-          "#8651\tREDUCE cov: 518 ft: 1135 corp: 78/917b lim: 21 exec/s: 4325 rss: 176Mb L: 8/21 MS: 2 CrossOver-EraseBytes-",
-          "#8847\tREDUCE cov: 518 ft: 1135 corp: 78/912b lim: 21 exec/s: 4423 rss: 176Mb L: 15/21 MS: 1 EraseBytes-",
-          "#8948\tREDUCE cov: 518 ft: 1135 corp: 78/911b lim: 21 exec/s: 4474 rss: 176Mb L: 8/21 MS: 1 CrossOver-",
-          "#8971\tREDUCE cov: 518 ft: 1136 corp: 79/932b lim: 21 exec/s: 4485 rss: 176Mb L: 21/21 MS: 3 CopyPart-ChangeByte-InsertByte-",
-          "#9040\tREDUCE cov: 524 ft: 1142 corp: 80/948b lim: 21 exec/s: 4520 rss: 176Mb L: 16/21 MS: 4 ShuffleBytes-ChangeBinInt-CopyPart-ShuffleBytes-",
-          "#9047\tREDUCE cov: 524 ft: 1142 corp: 80/947b lim: 21 exec/s: 4523 rss: 176Mb L: 9/21 MS: 2 InsertByte-EraseBytes-",
-          "#9170\tREDUCE cov: 524 ft: 1142 corp: 80/944b lim: 21 exec/s: 4585 rss: 176Mb L: 14/21 MS: 3 ChangeBit-CopyPart-EraseBytes-",
-          "#9308\tREDUCE cov: 524 ft: 1142 corp: 80/940b lim: 21 exec/s: 4654 rss: 176Mb L: 9/21 MS: 3 InsertByte-EraseBytes-CopyPart-",
-          "#9362\tREDUCE cov: 524 ft: 1142 corp: 80/939b lim: 21 exec/s: 4681 rss: 176Mb L: 20/21 MS: 4 CopyPart-ChangeBit-ChangeByte-EraseBytes-",
-          "#9578\tREDUCE cov: 524 ft: 1142 corp: 80/938b lim: 21 exec/s: 4789 rss: 176Mb L: 15/21 MS: 1 EraseBytes-",
-          "#9589\tREDUCE cov: 524 ft: 1143 corp: 81/958b lim: 21 exec/s: 4794 rss: 176Mb L: 20/21 MS: 1 CMP- DE: \"\\010\\000\\000\\000\\000\\000\\000\\000\"-",
-          "#9630\tREDUCE cov: 524 ft: 1143 corp: 81/955b lim: 21 exec/s: 4815 rss: 176Mb L: 14/21 MS: 1 EraseBytes-",
-          "#9656\tNEW    cov: 526 ft: 1145 corp: 82/976b lim: 21 exec/s: 4828 rss: 176Mb L: 21/21 MS: 1 CopyPart-",
-          "#9767\tREDUCE cov: 526 ft: 1145 corp: 82/975b lim: 21 exec/s: 4883 rss: 176Mb L: 15/21 MS: 1 EraseBytes-",
-          "#9886\tREDUCE cov: 533 ft: 1152 corp: 83/993b lim: 21 exec/s: 4943 rss: 176Mb L: 18/21 MS: 4 CMP-ChangeBinInt-ShuffleBytes-CMP- DE: \"name\"-\"name:if\"-",
-          "#9988\tNEW    cov: 537 ft: 1157 corp: 84/1014b lim: 21 exec/s: 4994 rss: 176Mb L: 21/21 MS: 2 ShuffleBytes-InsertRepeatedBytes-",
-          "Done 10000 in 2 second(s)"
+          "#8192\tpulse  cov: 517 ft: 1016 corp: 78/570b lim: 17 exec/s: 4096 rss: 167Mb",
+          "#8199\tREDUCE cov: 517 ft: 1016 corp: 78/567b lim: 17 exec/s: 4099 rss: 167Mb L: 12/17 MS: 1 EraseBytes-",
+          "#8720\tNEW    cov: 518 ft: 1018 corp: 79/576b lim: 21 exec/s: 4360 rss: 167Mb L: 9/17 MS: 1 ChangeBinInt-",
+          "#8746\tNEW    cov: 519 ft: 1049 corp: 80/597b lim: 21 exec/s: 4373 rss: 167Mb L: 21/21 MS: 1 InsertRepeatedBytes-",
+          "#8759\tNEW    cov: 519 ft: 1051 corp: 81/618b lim: 21 exec/s: 4379 rss: 167Mb L: 21/21 MS: 3 ChangeBit-InsertRepeatedBytes-CopyPart-",
+          "#8920\tREDUCE cov: 519 ft: 1051 corp: 81/617b lim: 21 exec/s: 4460 rss: 167Mb L: 10/21 MS: 1 EraseBytes-",
+          "#8950\tNEW    cov: 524 ft: 1056 corp: 82/630b lim: 21 exec/s: 4475 rss: 167Mb L: 13/21 MS: 5 ChangeByte-CrossOver-ChangeBit-ChangeBinInt-ChangeBinInt-",
+          "#9180\tREDUCE cov: 524 ft: 1056 corp: 82/629b lim: 21 exec/s: 4590 rss: 167Mb L: 4/21 MS: 5 ShuffleBytes-ShuffleBytes-ShuffleBytes-EraseBytes-CopyPart-",
+          "#9382\tREDUCE cov: 524 ft: 1056 corp: 82/628b lim: 21 exec/s: 4691 rss: 167Mb L: 20/21 MS: 2 ChangeBit-EraseBytes-",
+          "#9405\tREDUCE cov: 527 ft: 1059 corp: 83/640b lim: 21 exec/s: 4702 rss: 167Mb L: 12/21 MS: 3 ChangeByte-CopyPart-ChangeByte-",
+          "#9417\tNEW    cov: 527 ft: 1060 corp: 84/659b lim: 21 exec/s: 4708 rss: 167Mb L: 19/21 MS: 2 CrossOver-InsertByte-",
+          "#9443\tNEW    cov: 527 ft: 1061 corp: 85/680b lim: 21 exec/s: 4721 rss: 167Mb L: 21/21 MS: 1 ChangeByte-",
+          "#9592\tNEW    cov: 527 ft: 1065 corp: 86/695b lim: 21 exec/s: 4796 rss: 167Mb L: 15/21 MS: 4 InsertByte-ShuffleBytes-ChangeBit-InsertByte-",
+          "#9640\tNEW    cov: 528 ft: 1066 corp: 87/708b lim: 21 exec/s: 4820 rss: 167Mb L: 13/21 MS: 3 CopyPart-ChangeBit-ShuffleBytes-",
+          "#9686\tNEW    cov: 528 ft: 1068 corp: 88/720b lim: 21 exec/s: 4843 rss: 167Mb L: 12/21 MS: 1 CrossOver-",
+          "#9732\tNEW    cov: 528 ft: 1087 corp: 89/738b lim: 21 exec/s: 4866 rss: 167Mb L: 18/21 MS: 1 CopyPart-",
+          "#9753\tNEW    cov: 528 ft: 1106 corp: 90/753b lim: 21 exec/s: 4876 rss: 167Mb L: 15/21 MS: 1 CopyPart-",
+          "#9775\tNEW    cov: 528 ft: 1107 corp: 91/768b lim: 21 exec/s: 4887 rss: 167Mb L: 15/21 MS: 2 ChangeByte-InsertByte-",
+          "#9962\tNEW    cov: 528 ft: 1123 corp: 92/789b lim: 21 exec/s: 4981 rss: 167Mb L: 21/21 MS: 2 CopyPart-CrossOver-",
+          "Done 10000 in 3 second(s)"
         ]
       },
       {
@@ -6722,10 +6722,10 @@
         "status": "ok",
         "return_code": 0,
         "coverage_metrics": {
-          "cov": 544,
-          "features": 1086,
-          "corpus": 113,
-          "exec_per_sec": 4904
+          "cov": 533,
+          "features": 1118,
+          "corpus": 91,
+          "exec_per_sec": 4972
         },
         "crash_files": [
           "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/crashes/sandbox_TemplateSyntaxError.txt"
@@ -6733,14 +6733,14 @@
         "summary": {
           "target": "sandbox",
           "status": "ok",
-          "collected_at": "2026-02-10T06:48:43.789450+00:00",
+          "collected_at": "2026-02-10T07:01:07.635184+00:00",
           "runs_configured": 10000,
           "iterations_observed": 10000,
           "exception_counts": {
-            "TemplateSyntaxError": 4641
+            "TemplateSyntaxError": 4935
           },
           "exception_samples": {
-            "TemplateSyntaxError": "{{"
+            "TemplateSyntaxError": "{%~"
           },
           "crash_files": [
             "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/crashes/sandbox_TemplateSyntaxError.txt"
@@ -6753,222 +6753,222 @@
             },
             {
               "iteration": 500,
-              "unique_exceptions": 1,
-              "total_exceptions": 42
+              "unique_exceptions": 0,
+              "total_exceptions": 0
             },
             {
               "iteration": 750,
-              "unique_exceptions": 1,
-              "total_exceptions": 103
+              "unique_exceptions": 0,
+              "total_exceptions": 0
             },
             {
               "iteration": 1000,
-              "unique_exceptions": 1,
-              "total_exceptions": 162
+              "unique_exceptions": 0,
+              "total_exceptions": 0
             },
             {
               "iteration": 1250,
-              "unique_exceptions": 1,
-              "total_exceptions": 267
+              "unique_exceptions": 0,
+              "total_exceptions": 0
             },
             {
               "iteration": 1500,
-              "unique_exceptions": 1,
-              "total_exceptions": 361
+              "unique_exceptions": 0,
+              "total_exceptions": 0
             },
             {
               "iteration": 1750,
-              "unique_exceptions": 1,
-              "total_exceptions": 476
+              "unique_exceptions": 0,
+              "total_exceptions": 0
             },
             {
               "iteration": 2000,
               "unique_exceptions": 1,
-              "total_exceptions": 582
+              "total_exceptions": 25
             },
             {
               "iteration": 2250,
               "unique_exceptions": 1,
-              "total_exceptions": 682
+              "total_exceptions": 158
             },
             {
               "iteration": 2500,
               "unique_exceptions": 1,
-              "total_exceptions": 796
+              "total_exceptions": 281
             },
             {
               "iteration": 2750,
               "unique_exceptions": 1,
-              "total_exceptions": 905
+              "total_exceptions": 423
             },
             {
               "iteration": 3000,
               "unique_exceptions": 1,
-              "total_exceptions": 1024
+              "total_exceptions": 535
             },
             {
               "iteration": 3250,
               "unique_exceptions": 1,
-              "total_exceptions": 1122
+              "total_exceptions": 684
             },
             {
               "iteration": 3500,
               "unique_exceptions": 1,
-              "total_exceptions": 1255
+              "total_exceptions": 818
             },
             {
               "iteration": 3750,
               "unique_exceptions": 1,
-              "total_exceptions": 1355
+              "total_exceptions": 971
             },
             {
               "iteration": 4000,
               "unique_exceptions": 1,
-              "total_exceptions": 1477
+              "total_exceptions": 1142
             },
             {
               "iteration": 4250,
               "unique_exceptions": 1,
-              "total_exceptions": 1591
+              "total_exceptions": 1304
             },
             {
               "iteration": 4500,
               "unique_exceptions": 1,
-              "total_exceptions": 1709
+              "total_exceptions": 1464
             },
             {
               "iteration": 4750,
               "unique_exceptions": 1,
-              "total_exceptions": 1825
+              "total_exceptions": 1600
             },
             {
               "iteration": 5000,
               "unique_exceptions": 1,
-              "total_exceptions": 1938
+              "total_exceptions": 1758
             },
             {
               "iteration": 5250,
               "unique_exceptions": 1,
-              "total_exceptions": 2072
+              "total_exceptions": 1911
             },
             {
               "iteration": 5500,
               "unique_exceptions": 1,
-              "total_exceptions": 2229
+              "total_exceptions": 2076
             },
             {
               "iteration": 5750,
               "unique_exceptions": 1,
-              "total_exceptions": 2362
+              "total_exceptions": 2217
             },
             {
               "iteration": 6000,
               "unique_exceptions": 1,
-              "total_exceptions": 2496
+              "total_exceptions": 2404
             },
             {
               "iteration": 6250,
               "unique_exceptions": 1,
-              "total_exceptions": 2613
+              "total_exceptions": 2590
             },
             {
               "iteration": 6500,
               "unique_exceptions": 1,
-              "total_exceptions": 2756
+              "total_exceptions": 2746
             },
             {
               "iteration": 6750,
               "unique_exceptions": 1,
-              "total_exceptions": 2885
+              "total_exceptions": 2914
             },
             {
               "iteration": 7000,
               "unique_exceptions": 1,
-              "total_exceptions": 3002
+              "total_exceptions": 3059
             },
             {
               "iteration": 7250,
               "unique_exceptions": 1,
-              "total_exceptions": 3141
+              "total_exceptions": 3223
             },
             {
               "iteration": 7500,
               "unique_exceptions": 1,
-              "total_exceptions": 3288
+              "total_exceptions": 3384
             },
             {
               "iteration": 7750,
               "unique_exceptions": 1,
-              "total_exceptions": 3392
+              "total_exceptions": 3544
             },
             {
               "iteration": 8000,
               "unique_exceptions": 1,
-              "total_exceptions": 3517
+              "total_exceptions": 3698
             },
             {
               "iteration": 8250,
               "unique_exceptions": 1,
-              "total_exceptions": 3649
+              "total_exceptions": 3857
             },
             {
               "iteration": 8500,
               "unique_exceptions": 1,
-              "total_exceptions": 3804
+              "total_exceptions": 4018
             },
             {
               "iteration": 8750,
               "unique_exceptions": 1,
-              "total_exceptions": 3940
+              "total_exceptions": 4187
             },
             {
               "iteration": 9000,
               "unique_exceptions": 1,
-              "total_exceptions": 4111
+              "total_exceptions": 4361
             },
             {
               "iteration": 9250,
               "unique_exceptions": 1,
-              "total_exceptions": 4251
+              "total_exceptions": 4503
             },
             {
               "iteration": 9500,
               "unique_exceptions": 1,
-              "total_exceptions": 4377
+              "total_exceptions": 4667
             },
             {
               "iteration": 9750,
               "unique_exceptions": 1,
-              "total_exceptions": 4502
+              "total_exceptions": 4806
             },
             {
               "iteration": 10000,
               "unique_exceptions": 1,
-              "total_exceptions": 4640
+              "total_exceptions": 4934
             }
           ]
         },
         "stdout_tail": [],
         "stderr_tail": [
-          "#7575\tREDUCE cov: 540 ft: 1051 corp: 99/762b lim: 14 exec/s: 3787 rss: 176Mb L: 6/13 MS: 1 EraseBytes-",
-          "#7576\tREDUCE cov: 540 ft: 1051 corp: 99/759b lim: 14 exec/s: 3788 rss: 176Mb L: 8/13 MS: 1 CrossOver-",
-          "#7715\tREDUCE cov: 540 ft: 1051 corp: 99/754b lim: 14 exec/s: 3857 rss: 176Mb L: 8/13 MS: 4 ChangeASCIIInt-ChangeByte-ChangeASCIIInt-EraseBytes-",
-          "#7861\tNEW    cov: 540 ft: 1055 corp: 100/765b lim: 14 exec/s: 3930 rss: 176Mb L: 11/13 MS: 1 ShuffleBytes-",
-          "#7898\tNEW    cov: 540 ft: 1056 corp: 101/779b lim: 14 exec/s: 3949 rss: 176Mb L: 14/14 MS: 2 CopyPart-CrossOver-",
-          "#8065\tREDUCE cov: 541 ft: 1057 corp: 102/787b lim: 14 exec/s: 4032 rss: 176Mb L: 8/14 MS: 2 ChangeBinInt-ChangeBit-",
-          "#8192\tpulse  cov: 541 ft: 1057 corp: 102/787b lim: 14 exec/s: 4096 rss: 176Mb",
-          "#8521\tNEW    cov: 541 ft: 1060 corp: 103/798b lim: 17 exec/s: 4260 rss: 176Mb L: 11/14 MS: 1 ChangeBinInt-",
-          "#8557\tNEW    cov: 541 ft: 1061 corp: 104/814b lim: 17 exec/s: 4278 rss: 176Mb L: 16/16 MS: 1 CrossOver-",
-          "#8609\tNEW    cov: 542 ft: 1062 corp: 105/823b lim: 17 exec/s: 4304 rss: 176Mb L: 9/16 MS: 2 EraseBytes-ChangeByte-",
-          "#8635\tREDUCE cov: 542 ft: 1062 corp: 105/822b lim: 17 exec/s: 4317 rss: 176Mb L: 9/16 MS: 1 EraseBytes-",
-          "#8777\tNEW    cov: 542 ft: 1064 corp: 106/831b lim: 17 exec/s: 4388 rss: 176Mb L: 9/16 MS: 2 ShuffleBytes-ChangeBit-",
-          "#9136\tNEW    cov: 542 ft: 1065 corp: 107/839b lim: 17 exec/s: 4568 rss: 176Mb L: 8/16 MS: 4 ChangeByte-EraseBytes-CopyPart-CrossOver-",
-          "#9228\tNEW    cov: 542 ft: 1075 corp: 108/855b lim: 17 exec/s: 4614 rss: 176Mb L: 16/16 MS: 2 CrossOver-CopyPart-",
-          "#9366\tREDUCE cov: 543 ft: 1076 corp: 109/866b lim: 17 exec/s: 4683 rss: 176Mb L: 11/16 MS: 3 PersAutoDict-ChangeByte-CopyPart- DE: \"{{\"-",
-          "#9427\tREDUCE cov: 544 ft: 1079 corp: 110/877b lim: 17 exec/s: 4713 rss: 176Mb L: 11/16 MS: 1 CopyPart-",
-          "#9433\tNEW    cov: 544 ft: 1081 corp: 111/893b lim: 17 exec/s: 4716 rss: 176Mb L: 16/16 MS: 1 ChangeBit-",
-          "#9606\tNEW    cov: 544 ft: 1082 corp: 112/910b lim: 17 exec/s: 4803 rss: 176Mb L: 17/17 MS: 3 CrossOver-ShuffleBytes-CopyPart-",
-          "#9809\tNEW    cov: 544 ft: 1086 corp: 113/926b lim: 17 exec/s: 4904 rss: 176Mb L: 16/17 MS: 3 CopyPart-PersAutoDict-ChangeByte- DE: \"div\"-",
+          "#8210\tNEW    cov: 532 ft: 1111 corp: 86/1077b lim: 21 exec/s: 4105 rss: 167Mb L: 16/21 MS: 2 CrossOver-CrossOver-",
+          "#8277\tREDUCE cov: 532 ft: 1111 corp: 86/1076b lim: 21 exec/s: 4138 rss: 167Mb L: 17/21 MS: 2 ChangeByte-EraseBytes-",
+          "#8363\tREDUCE cov: 532 ft: 1111 corp: 86/1075b lim: 21 exec/s: 4181 rss: 167Mb L: 8/21 MS: 1 EraseBytes-",
+          "#8479\tREDUCE cov: 532 ft: 1113 corp: 87/1091b lim: 21 exec/s: 4239 rss: 167Mb L: 16/21 MS: 1 ChangeBit-",
+          "#8497\tREDUCE cov: 532 ft: 1113 corp: 87/1090b lim: 21 exec/s: 4248 rss: 167Mb L: 19/21 MS: 3 ShuffleBytes-CopyPart-EraseBytes-",
+          "#8598\tREDUCE cov: 532 ft: 1113 corp: 87/1086b lim: 21 exec/s: 4299 rss: 167Mb L: 11/21 MS: 1 EraseBytes-",
+          "#8830\tNEW    cov: 532 ft: 1114 corp: 88/1105b lim: 21 exec/s: 4415 rss: 167Mb L: 19/21 MS: 2 InsertByte-ShuffleBytes-",
+          "#9011\tREDUCE cov: 532 ft: 1114 corp: 88/1104b lim: 21 exec/s: 4505 rss: 167Mb L: 15/21 MS: 1 EraseBytes-",
+          "#9017\tREDUCE cov: 532 ft: 1114 corp: 88/1099b lim: 21 exec/s: 4508 rss: 167Mb L: 7/21 MS: 1 EraseBytes-",
+          "#9088\tREDUCE cov: 532 ft: 1114 corp: 88/1097b lim: 21 exec/s: 4544 rss: 167Mb L: 4/21 MS: 1 EraseBytes-",
+          "#9189\tNEW    cov: 532 ft: 1116 corp: 89/1113b lim: 21 exec/s: 4594 rss: 167Mb L: 16/21 MS: 1 ChangeBinInt-",
+          "#9240\tREDUCE cov: 532 ft: 1116 corp: 89/1112b lim: 21 exec/s: 4620 rss: 167Mb L: 12/21 MS: 1 EraseBytes-",
+          "#9271\tREDUCE cov: 532 ft: 1116 corp: 89/1105b lim: 21 exec/s: 4635 rss: 167Mb L: 12/21 MS: 1 EraseBytes-",
+          "#9358\tREDUCE cov: 532 ft: 1116 corp: 89/1104b lim: 21 exec/s: 4679 rss: 167Mb L: 8/21 MS: 2 ShuffleBytes-EraseBytes-",
+          "#9472\tNEW    cov: 532 ft: 1117 corp: 90/1125b lim: 21 exec/s: 4736 rss: 167Mb L: 21/21 MS: 4 ShuffleBytes-InsertRepeatedBytes-CopyPart-CrossOver-",
+          "#9669\tREDUCE cov: 532 ft: 1117 corp: 90/1119b lim: 21 exec/s: 4834 rss: 167Mb L: 12/21 MS: 2 ShuffleBytes-EraseBytes-",
+          "#9800\tREDUCE cov: 532 ft: 1117 corp: 90/1118b lim: 21 exec/s: 4900 rss: 167Mb L: 8/21 MS: 1 EraseBytes-",
+          "#9829\tNEW    cov: 533 ft: 1118 corp: 91/1139b lim: 21 exec/s: 4914 rss: 167Mb L: 21/21 MS: 4 CopyPart-CopyPart-ChangeBinInt-ShuffleBytes-",
+          "#9945\tREDUCE cov: 533 ft: 1118 corp: 91/1138b lim: 21 exec/s: 4972 rss: 167Mb L: 16/21 MS: 1 CrossOver-",
           "Done 10000 in 3 second(s)"
         ]
       },
@@ -6978,9 +6978,9 @@
         "status": "ok",
         "return_code": 0,
         "coverage_metrics": {
-          "cov": 88,
-          "features": 223,
-          "corpus": 44,
+          "cov": 86,
+          "features": 212,
+          "corpus": 43,
           "exec_per_sec": 0
         },
         "crash_files": [
@@ -6989,14 +6989,14 @@
         "summary": {
           "target": "lexer",
           "status": "ok",
-          "collected_at": "2026-02-10T06:48:46.439130+00:00",
+          "collected_at": "2026-02-10T07:01:10.399188+00:00",
           "runs_configured": 10000,
           "iterations_observed": 10000,
           "exception_counts": {
-            "TemplateSyntaxError": 3961
+            "TemplateSyntaxError": 3312
           },
           "exception_samples": {
-            "TemplateSyntaxError": "{{\n]{{"
+            "TemplateSyntaxError": "m{{{{[mm3\u000e"
           },
           "crash_files": [
             "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/crashes/lexer_TemplateSyntaxError.txt"
@@ -7019,212 +7019,212 @@
             },
             {
               "iteration": 1000,
-              "unique_exceptions": 1,
-              "total_exceptions": 29
+              "unique_exceptions": 0,
+              "total_exceptions": 0
             },
             {
               "iteration": 1250,
               "unique_exceptions": 1,
-              "total_exceptions": 131
+              "total_exceptions": 79
             },
             {
               "iteration": 1500,
               "unique_exceptions": 1,
-              "total_exceptions": 224
+              "total_exceptions": 175
             },
             {
               "iteration": 1750,
               "unique_exceptions": 1,
-              "total_exceptions": 327
+              "total_exceptions": 284
             },
             {
               "iteration": 2000,
               "unique_exceptions": 1,
-              "total_exceptions": 411
+              "total_exceptions": 370
             },
             {
               "iteration": 2250,
               "unique_exceptions": 1,
-              "total_exceptions": 515
+              "total_exceptions": 429
             },
             {
               "iteration": 2500,
               "unique_exceptions": 1,
-              "total_exceptions": 633
+              "total_exceptions": 526
             },
             {
               "iteration": 2750,
               "unique_exceptions": 1,
-              "total_exceptions": 765
+              "total_exceptions": 620
             },
             {
               "iteration": 3000,
               "unique_exceptions": 1,
-              "total_exceptions": 890
+              "total_exceptions": 706
             },
             {
               "iteration": 3250,
               "unique_exceptions": 1,
-              "total_exceptions": 1003
+              "total_exceptions": 801
             },
             {
               "iteration": 3500,
               "unique_exceptions": 1,
-              "total_exceptions": 1100
+              "total_exceptions": 873
             },
             {
               "iteration": 3750,
               "unique_exceptions": 1,
-              "total_exceptions": 1220
+              "total_exceptions": 953
             },
             {
               "iteration": 4000,
               "unique_exceptions": 1,
-              "total_exceptions": 1335
+              "total_exceptions": 1027
             },
             {
               "iteration": 4250,
               "unique_exceptions": 1,
-              "total_exceptions": 1438
+              "total_exceptions": 1104
             },
             {
               "iteration": 4500,
               "unique_exceptions": 1,
-              "total_exceptions": 1550
+              "total_exceptions": 1220
             },
             {
               "iteration": 4750,
               "unique_exceptions": 1,
-              "total_exceptions": 1661
+              "total_exceptions": 1315
             },
             {
               "iteration": 5000,
               "unique_exceptions": 1,
-              "total_exceptions": 1783
+              "total_exceptions": 1385
             },
             {
               "iteration": 5250,
               "unique_exceptions": 1,
-              "total_exceptions": 1889
+              "total_exceptions": 1492
             },
             {
               "iteration": 5500,
               "unique_exceptions": 1,
-              "total_exceptions": 1993
+              "total_exceptions": 1599
             },
             {
               "iteration": 5750,
               "unique_exceptions": 1,
-              "total_exceptions": 2123
+              "total_exceptions": 1697
             },
             {
               "iteration": 6000,
               "unique_exceptions": 1,
-              "total_exceptions": 2227
+              "total_exceptions": 1769
             },
             {
               "iteration": 6250,
               "unique_exceptions": 1,
-              "total_exceptions": 2311
+              "total_exceptions": 1851
             },
             {
               "iteration": 6500,
               "unique_exceptions": 1,
-              "total_exceptions": 2398
+              "total_exceptions": 1962
             },
             {
               "iteration": 6750,
               "unique_exceptions": 1,
-              "total_exceptions": 2522
+              "total_exceptions": 2036
             },
             {
               "iteration": 7000,
               "unique_exceptions": 1,
-              "total_exceptions": 2589
+              "total_exceptions": 2133
             },
             {
               "iteration": 7250,
               "unique_exceptions": 1,
-              "total_exceptions": 2701
+              "total_exceptions": 2235
             },
             {
               "iteration": 7500,
               "unique_exceptions": 1,
-              "total_exceptions": 2793
+              "total_exceptions": 2301
             },
             {
               "iteration": 7750,
               "unique_exceptions": 1,
-              "total_exceptions": 2916
+              "total_exceptions": 2399
             },
             {
               "iteration": 8000,
               "unique_exceptions": 1,
-              "total_exceptions": 3021
+              "total_exceptions": 2484
             },
             {
               "iteration": 8250,
               "unique_exceptions": 1,
-              "total_exceptions": 3117
+              "total_exceptions": 2595
             },
             {
               "iteration": 8500,
               "unique_exceptions": 1,
-              "total_exceptions": 3227
+              "total_exceptions": 2680
             },
             {
               "iteration": 8750,
               "unique_exceptions": 1,
-              "total_exceptions": 3352
+              "total_exceptions": 2777
             },
             {
               "iteration": 9000,
               "unique_exceptions": 1,
-              "total_exceptions": 3477
+              "total_exceptions": 2863
             },
             {
               "iteration": 9250,
               "unique_exceptions": 1,
-              "total_exceptions": 3591
+              "total_exceptions": 2956
             },
             {
               "iteration": 9500,
               "unique_exceptions": 1,
-              "total_exceptions": 3687
+              "total_exceptions": 3068
             },
             {
               "iteration": 9750,
               "unique_exceptions": 1,
-              "total_exceptions": 3821
+              "total_exceptions": 3191
             },
             {
               "iteration": 10000,
               "unique_exceptions": 1,
-              "total_exceptions": 3960
+              "total_exceptions": 3311
             }
           ]
         },
         "stdout_tail": [],
         "stderr_tail": [
-          "#7159\tREDUCE cov: 86 ft: 212 corp: 37/353b lim: 25 exec/s: 0 rss: 176Mb L: 5/25 MS: 1 EraseBytes-",
-          "#7181\tREDUCE cov: 86 ft: 212 corp: 37/351b lim: 25 exec/s: 0 rss: 176Mb L: 7/25 MS: 2 ChangeBinInt-EraseBytes-",
-          "#7412\tREDUCE cov: 86 ft: 212 corp: 37/350b lim: 25 exec/s: 0 rss: 176Mb L: 6/25 MS: 1 EraseBytes-",
-          "#7894\tNEW    cov: 86 ft: 213 corp: 38/378b lim: 29 exec/s: 0 rss: 176Mb L: 28/28 MS: 2 ChangeByte-CopyPart-",
-          "#7910\tREDUCE cov: 86 ft: 213 corp: 38/376b lim: 29 exec/s: 0 rss: 176Mb L: 7/28 MS: 1 EraseBytes-",
-          "#8472\tREDUCE cov: 86 ft: 213 corp: 38/375b lim: 33 exec/s: 0 rss: 176Mb L: 15/28 MS: 2 ChangeBit-EraseBytes-",
-          "#8561\tNEW    cov: 86 ft: 214 corp: 39/406b lim: 33 exec/s: 0 rss: 176Mb L: 31/31 MS: 4 CrossOver-ShuffleBytes-PersAutoDict-CopyPart- DE: \"\\377\\377\"-",
-          "#8582\tREDUCE cov: 86 ft: 216 corp: 40/422b lim: 33 exec/s: 0 rss: 176Mb L: 16/31 MS: 1 InsertRepeatedBytes-",
-          "#8623\tREDUCE cov: 86 ft: 216 corp: 40/421b lim: 33 exec/s: 0 rss: 176Mb L: 8/31 MS: 1 EraseBytes-",
-          "#8668\tREDUCE cov: 87 ft: 219 corp: 41/440b lim: 33 exec/s: 0 rss: 176Mb L: 19/31 MS: 5 ChangeByte-InsertRepeatedBytes-ChangeByte-PersAutoDict-EraseBytes- DE: \"\\377\\377\"-",
-          "#8719\tNEW    cov: 87 ft: 221 corp: 42/456b lim: 33 exec/s: 0 rss: 176Mb L: 16/31 MS: 1 ShuffleBytes-",
-          "#8880\tREDUCE cov: 87 ft: 221 corp: 42/447b lim: 33 exec/s: 0 rss: 176Mb L: 10/31 MS: 1 EraseBytes-",
-          "#9081\tREDUCE cov: 88 ft: 222 corp: 43/459b lim: 33 exec/s: 0 rss: 176Mb L: 12/31 MS: 1 CopyPart-",
-          "#9396\tREDUCE cov: 88 ft: 222 corp: 43/458b lim: 33 exec/s: 0 rss: 176Mb L: 15/31 MS: 5 CopyPart-ChangeBit-ShuffleBytes-EraseBytes-InsertByte-",
-          "#9410\tREDUCE cov: 88 ft: 222 corp: 43/454b lim: 33 exec/s: 0 rss: 176Mb L: 6/31 MS: 4 ShuffleBytes-ChangeBit-CopyPart-EraseBytes-",
-          "#9529\tREDUCE cov: 88 ft: 222 corp: 43/444b lim: 33 exec/s: 0 rss: 176Mb L: 21/28 MS: 4 PersAutoDict-ChangeBit-ChangeBinInt-CrossOver- DE: \"{{\"-",
-          "#9715\tREDUCE cov: 88 ft: 222 corp: 43/443b lim: 33 exec/s: 0 rss: 176Mb L: 6/28 MS: 1 EraseBytes-",
-          "#9814\tNEW    cov: 88 ft: 223 corp: 44/455b lim: 33 exec/s: 0 rss: 176Mb L: 12/28 MS: 4 ShuffleBytes-PersAutoDict-InsertByte-EraseBytes- DE: \"{{\"-",
-          "#9860\tREDUCE cov: 88 ft: 223 corp: 44/454b lim: 33 exec/s: 0 rss: 176Mb L: 14/28 MS: 1 EraseBytes-",
+          "#5981\tREDUCE cov: 86 ft: 202 corp: 37/338b lim: 21 exec/s: 0 rss: 167Mb L: 7/20 MS: 1 EraseBytes-",
+          "#6104\tNEW    cov: 86 ft: 203 corp: 38/359b lim: 21 exec/s: 0 rss: 167Mb L: 21/21 MS: 3 ChangeBit-ChangeBit-CrossOver-",
+          "#6655\tREDUCE cov: 86 ft: 203 corp: 38/358b lim: 25 exec/s: 0 rss: 167Mb L: 5/21 MS: 1 EraseBytes-",
+          "#7072\tREDUCE cov: 86 ft: 207 corp: 39/386b lim: 29 exec/s: 0 rss: 167Mb L: 28/28 MS: 2 CrossOver-InsertRepeatedBytes-",
+          "#7198\tREDUCE cov: 86 ft: 207 corp: 39/385b lim: 29 exec/s: 0 rss: 167Mb L: 7/28 MS: 1 EraseBytes-",
+          "#7339\tREDUCE cov: 86 ft: 207 corp: 39/384b lim: 29 exec/s: 0 rss: 167Mb L: 10/28 MS: 1 EraseBytes-",
+          "#7501\tREDUCE cov: 86 ft: 207 corp: 39/382b lim: 29 exec/s: 0 rss: 167Mb L: 8/28 MS: 2 ChangeASCIIInt-EraseBytes-",
+          "#7648\tREDUCE cov: 86 ft: 207 corp: 39/381b lim: 29 exec/s: 0 rss: 167Mb L: 6/28 MS: 2 InsertByte-EraseBytes-",
+          "#7865\tREDUCE cov: 86 ft: 207 corp: 39/379b lim: 29 exec/s: 0 rss: 167Mb L: 12/28 MS: 2 InsertRepeatedBytes-EraseBytes-",
+          "#7958\tREDUCE cov: 86 ft: 207 corp: 39/378b lim: 29 exec/s: 0 rss: 167Mb L: 6/28 MS: 3 ChangeBinInt-EraseBytes-CopyPart-",
+          "#8039\tREDUCE cov: 86 ft: 207 corp: 39/375b lim: 29 exec/s: 0 rss: 167Mb L: 9/28 MS: 1 EraseBytes-",
+          "#8072\tREDUCE cov: 86 ft: 208 corp: 40/388b lim: 29 exec/s: 0 rss: 167Mb L: 13/28 MS: 3 ChangeBit-CopyPart-CrossOver-",
+          "#8394\tREDUCE cov: 86 ft: 210 corp: 41/404b lim: 29 exec/s: 0 rss: 167Mb L: 16/28 MS: 2 ChangeBinInt-CopyPart-",
+          "#8403\tREDUCE cov: 86 ft: 210 corp: 41/403b lim: 29 exec/s: 0 rss: 167Mb L: 5/28 MS: 4 ChangeBit-CopyPart-ShuffleBytes-EraseBytes-",
+          "#8419\tREDUCE cov: 86 ft: 210 corp: 41/402b lim: 29 exec/s: 0 rss: 167Mb L: 9/28 MS: 1 CrossOver-",
+          "#9006\tNEW    cov: 86 ft: 211 corp: 42/434b lim: 33 exec/s: 0 rss: 167Mb L: 32/32 MS: 2 ChangeBinInt-CopyPart-",
+          "#9912\tNEW    cov: 86 ft: 212 corp: 43/452b lim: 38 exec/s: 0 rss: 167Mb L: 18/32 MS: 1 CopyPart-",
+          "#9923\tREDUCE cov: 86 ft: 212 corp: 43/451b lim: 38 exec/s: 0 rss: 167Mb L: 27/32 MS: 1 EraseBytes-",
+          "#9974\tREDUCE cov: 86 ft: 212 corp: 43/450b lim: 38 exec/s: 0 rss: 167Mb L: 4/32 MS: 1 EraseBytes-",
           "Done 10000 in 1 second(s)"
         ]
       },
@@ -7235,15 +7235,15 @@
         "return_code": 0,
         "coverage_metrics": {
           "cov": 29,
-          "features": 41,
-          "corpus": 9,
+          "features": 44,
+          "corpus": 11,
           "exec_per_sec": 0
         },
         "crash_files": [],
         "summary": {
           "target": "markup",
           "status": "ok",
-          "collected_at": "2026-02-10T06:48:47.658311+00:00",
+          "collected_at": "2026-02-10T07:01:11.691855+00:00",
           "runs_configured": 10000,
           "iterations_observed": 10000,
           "exception_counts": {},
@@ -7454,25 +7454,25 @@
         },
         "stdout_tail": [],
         "stderr_tail": [
-          "#5159\tREDUCE cov: 29 ft: 38 corp: 7/71b lim: 38 exec/s: 0 rss: 176Mb L: 14/30 MS: 1 EraseBytes-",
-          "#5385\tREDUCE cov: 29 ft: 38 corp: 7/66b lim: 38 exec/s: 0 rss: 176Mb L: 25/25 MS: 1 EraseBytes-",
-          "#5406\tREDUCE cov: 29 ft: 38 corp: 7/65b lim: 38 exec/s: 0 rss: 176Mb L: 4/25 MS: 1 EraseBytes-",
-          "#5772\tREDUCE cov: 29 ft: 38 corp: 7/62b lim: 38 exec/s: 0 rss: 176Mb L: 22/22 MS: 1 EraseBytes-",
-          "#6203\tREDUCE cov: 29 ft: 38 corp: 7/59b lim: 38 exec/s: 0 rss: 176Mb L: 12/22 MS: 1 EraseBytes-",
-          "#6244\tREDUCE cov: 29 ft: 39 corp: 8/97b lim: 38 exec/s: 0 rss: 176Mb L: 38/38 MS: 1 CopyPart-",
-          "#6420\tREDUCE cov: 29 ft: 39 corp: 8/96b lim: 38 exec/s: 0 rss: 176Mb L: 13/38 MS: 1 EraseBytes-",
-          "#6564\tNEW    cov: 29 ft: 41 corp: 9/134b lim: 38 exec/s: 0 rss: 176Mb L: 38/38 MS: 4 ChangeBit-ChangeBinInt-ChangeBit-ShuffleBytes-",
-          "#6585\tREDUCE cov: 29 ft: 41 corp: 9/132b lim: 38 exec/s: 0 rss: 176Mb L: 20/38 MS: 1 EraseBytes-",
-          "#7146\tREDUCE cov: 29 ft: 41 corp: 9/131b lim: 43 exec/s: 0 rss: 176Mb L: 37/38 MS: 1 EraseBytes-",
-          "#7492\tREDUCE cov: 29 ft: 41 corp: 9/129b lim: 43 exec/s: 0 rss: 176Mb L: 11/38 MS: 1 EraseBytes-",
-          "#7821\tREDUCE cov: 29 ft: 41 corp: 9/128b lim: 43 exec/s: 0 rss: 176Mb L: 19/38 MS: 4 CrossOver-ChangeBinInt-ChangeByte-EraseBytes-",
-          "#7858\tREDUCE cov: 29 ft: 41 corp: 9/127b lim: 43 exec/s: 0 rss: 176Mb L: 3/38 MS: 2 ChangeBit-EraseBytes-",
-          "#7986\tREDUCE cov: 29 ft: 41 corp: 9/124b lim: 43 exec/s: 0 rss: 176Mb L: 34/38 MS: 3 ShuffleBytes-CopyPart-EraseBytes-",
-          "#8784\tREDUCE cov: 29 ft: 41 corp: 9/123b lim: 48 exec/s: 0 rss: 176Mb L: 37/37 MS: 3 ChangeBinInt-CopyPart-EraseBytes-",
-          "#9060\tREDUCE cov: 29 ft: 41 corp: 9/118b lim: 48 exec/s: 0 rss: 176Mb L: 32/34 MS: 1 EraseBytes-",
-          "#9272\tREDUCE cov: 29 ft: 41 corp: 9/117b lim: 48 exec/s: 0 rss: 176Mb L: 10/34 MS: 2 ChangeByte-EraseBytes-",
-          "#9754\tREDUCE cov: 29 ft: 41 corp: 9/116b lim: 48 exec/s: 0 rss: 176Mb L: 11/34 MS: 2 ChangeBinInt-EraseBytes-",
-          "#9802\tREDUCE cov: 29 ft: 41 corp: 9/115b lim: 48 exec/s: 0 rss: 176Mb L: 9/34 MS: 3 InsertByte-CopyPart-EraseBytes-",
+          "#2827\tNEW    cov: 28 ft: 28 corp: 3/6b lim: 25 exec/s: 0 rss: 167Mb L: 3/3 MS: 5 EraseBytes-InsertByte-ChangeBit-CopyPart-CrossOver-",
+          "#2954\tNEW    cov: 29 ft: 31 corp: 4/12b lim: 25 exec/s: 0 rss: 167Mb L: 6/6 MS: 2 ChangeBit-CopyPart-",
+          "#2991\tNEW    cov: 29 ft: 33 corp: 5/22b lim: 25 exec/s: 0 rss: 167Mb L: 10/10 MS: 2 InsertByte-CopyPart-",
+          "#3072\tNEW    cov: 29 ft: 34 corp: 6/31b lim: 25 exec/s: 0 rss: 167Mb L: 9/10 MS: 1 CrossOver-",
+          "#3163\tNEW    cov: 29 ft: 37 corp: 7/43b lim: 25 exec/s: 0 rss: 167Mb L: 12/12 MS: 1 CrossOver-",
+          "#3229\tNEW    cov: 29 ft: 38 corp: 8/59b lim: 25 exec/s: 0 rss: 167Mb L: 16/16 MS: 1 CrossOver-",
+          "#3321\tREDUCE cov: 29 ft: 38 corp: 8/58b lim: 25 exec/s: 0 rss: 167Mb L: 11/16 MS: 2 EraseBytes-CopyPart-",
+          "#3859\tNEW    cov: 29 ft: 40 corp: 9/84b lim: 29 exec/s: 0 rss: 167Mb L: 26/26 MS: 3 CopyPart-InsertByte-CrossOver-",
+          "#3970\tNEW    cov: 29 ft: 41 corp: 10/113b lim: 29 exec/s: 0 rss: 167Mb L: 29/29 MS: 1 CrossOver-",
+          "#4356\tREDUCE cov: 29 ft: 41 corp: 10/112b lim: 29 exec/s: 0 rss: 167Mb L: 9/29 MS: 1 EraseBytes-",
+          "#4717\tREDUCE cov: 29 ft: 41 corp: 10/111b lim: 29 exec/s: 0 rss: 167Mb L: 8/29 MS: 1 EraseBytes-",
+          "#4749\tREDUCE cov: 29 ft: 41 corp: 10/110b lim: 29 exec/s: 0 rss: 167Mb L: 10/29 MS: 2 ChangeBit-EraseBytes-",
+          "#5220\tREDUCE cov: 29 ft: 41 corp: 10/109b lim: 33 exec/s: 0 rss: 167Mb L: 8/29 MS: 1 EraseBytes-",
+          "#7264\tREDUCE cov: 29 ft: 41 corp: 10/108b lim: 53 exec/s: 0 rss: 167Mb L: 5/29 MS: 4 EraseBytes-ChangeBit-CrossOver-EraseBytes-",
+          "#7843\tREDUCE cov: 29 ft: 41 corp: 10/106b lim: 58 exec/s: 0 rss: 167Mb L: 24/29 MS: 4 InsertByte-InsertByte-EraseBytes-CrossOver-",
+          "#8610\tREDUCE cov: 29 ft: 44 corp: 11/158b lim: 63 exec/s: 0 rss: 167Mb L: 52/52 MS: 2 CrossOver-CrossOver-",
+          "#8631\tREDUCE cov: 29 ft: 44 corp: 11/157b lim: 63 exec/s: 0 rss: 167Mb L: 7/52 MS: 1 EraseBytes-",
+          "#8839\tREDUCE cov: 29 ft: 44 corp: 11/156b lim: 63 exec/s: 0 rss: 167Mb L: 15/52 MS: 3 EraseBytes-InsertByte-CrossOver-",
+          "#9772\tREDUCE cov: 29 ft: 44 corp: 11/155b lim: 68 exec/s: 0 rss: 167Mb L: 9/52 MS: 3 ShuffleBytes-ChangeBit-EraseBytes-",
           "Done 10000 in 0 second(s)"
         ]
       }

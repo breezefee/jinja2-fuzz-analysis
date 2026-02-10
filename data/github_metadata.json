@@ -1,7 +1,7 @@
 {
   "collector": "github_api",
   "status": "cached",
-  "collected_at": "2026-02-10T06:48:25.966911+00:00",
+  "collected_at": "2026-02-10T07:00:49.762516+00:00",
   "repo": {
     "name": "jinja",
     "full_name": "pallets/jinja",

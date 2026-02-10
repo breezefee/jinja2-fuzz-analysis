@@ -2,10 +2,10 @@
   "target": "render",
   "iterations": 10000,
   "coverage_metrics": {
-    "cov": 537,
-    "features": 1157,
-    "corpus": 84,
-    "exec_per_sec": 4994
+    "cov": 528,
+    "features": 1123,
+    "corpus": 92,
+    "exec_per_sec": 4981
   },
   "return_code": 0,
   "summary_path": "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/fuzz_coverage/render_summary.json"

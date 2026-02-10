@@ -152,5 +152,6 @@ def run_all_targets(
         "iterations": iterations,
         "targets": target_results,
     }
-    dump_json(config.DATA_DIR / "fuzz_results.json", payload)
+    if execute:
+        dump_json(config.DATA_DIR / "fuzz_results.json", payload)
     return payload
