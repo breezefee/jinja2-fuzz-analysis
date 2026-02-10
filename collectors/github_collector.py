@@ -6,7 +6,7 @@ from typing import Any
 import requests
 
 import config
-from utils.helpers import dump_json, utc_now_iso
+from utils.helpers import dump_json, load_json, utc_now_iso
 
 
 def _build_headers() -> dict[str, str]:
@@ -28,9 +28,30 @@ def _request_json(url: str, params: dict[str, Any] | None = None) -> Any:
 
 def collect_github_metadata() -> dict[str, Any]:
     base = "https://api.github.com/repos/pallets/jinja"
-    repo_info = _request_json(base)
-    contributors = _request_json(f"{base}/contributors", params={"per_page": 100})
-    releases = _request_json(f"{base}/releases", params={"per_page": 30})
+    output_path = config.DATA_DIR / "github_metadata.json"
+    try:
+        repo_info = _request_json(base)
+        contributors = _request_json(f"{base}/contributors", params={"per_page": 100})
+        releases = _request_json(f"{base}/releases", params={"per_page": 30})
+    except requests.RequestException as exc:
+        if output_path.exists():
+            cached = load_json(output_path)
+            cached["status"] = "cached"
+            cached["error"] = str(exc)
+            cached["collected_at"] = utc_now_iso()
+            dump_json(output_path, cached)
+            return cached
+        fallback = {
+            "collector": "github_api",
+            "status": "error",
+            "collected_at": utc_now_iso(),
+            "error": str(exc),
+            "repo": {},
+            "top_contributors": [],
+            "releases": [],
+        }
+        dump_json(output_path, fallback)
+        return fallback
 
     payload = {
         "collector": "github_api",
@@ -64,5 +85,5 @@ def collect_github_metadata() -> dict[str, Any]:
         ],
     }
 
-    dump_json(config.DATA_DIR / "github_metadata.json", payload)
+    dump_json(output_path, payload)
     return payload

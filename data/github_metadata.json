@@ -1,7 +1,7 @@
 {
   "collector": "github_api",
-  "status": "ok",
-  "collected_at": "2026-02-10T05:49:06.452038+00:00",
+  "status": "cached",
+  "collected_at": "2026-02-10T06:48:25.966911+00:00",
   "repo": {
     "name": "jinja",
     "full_name": "pallets/jinja",
@@ -221,5 +221,6 @@
       "published_at": "2017-11-08T20:14:00Z",
       "prerelease": false
     }
-  ]
+  ],
+  "error": "HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/pallets/jinja (Caused by ProxyError('Unable to connect to proxy', NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=7890): Failed to establish a new connection: [Errno 1] Operation not permitted\")))"
 }

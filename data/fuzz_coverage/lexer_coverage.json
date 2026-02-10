@@ -2,9 +2,9 @@
   "target": "lexer",
   "iterations": 10000,
   "coverage_metrics": {
-    "cov": 86,
-    "features": 215,
-    "corpus": 40,
+    "cov": 88,
+    "features": 223,
+    "corpus": 44,
     "exec_per_sec": 0
   },
   "return_code": 0,

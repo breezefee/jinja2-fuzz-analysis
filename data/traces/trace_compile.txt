@@ -1,9 +1,9 @@
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
 Starting var:.. template = '{{ value }}'
-14:02:47.515918 call        35     def _trace_compile(template: str) -> int:
-14:02:47.520653 line        36         env = Environment()
+14:49:14.708804 call        35     def _trace_compile(template: str) -> int:
+14:49:14.713179 line        36         env = Environment()
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/environment.py
-    Starting var:.. self = <jinja2.environment.Environment object at 0x7f5e353c78c0>
+    Starting var:.. self = <jinja2.environment.Environment object at 0x7f2f526e3bc0>
     Starting var:.. block_start_string = '{%'
     Starting var:.. block_end_string = '%}'
     Starting var:.. variable_start_string = '{{'
@@ -26,72 +26,72 @@ Starting var:.. template = '{{ value }}'
     Starting var:.. auto_reload = True
     Starting var:.. bytecode_cache = None
     Starting var:.. enable_async = False
-    14:02:47.522411 call       294     def __init__(
-    14:02:47.563692 line       331         self.block_start_string = block_start_string
-    14:02:47.565384 line       332         self.block_end_string = block_end_string
-    14:02:47.567042 line       333         self.variable_start_string = variable_start_string
-    14:02:47.568842 line       334         self.variable_end_string = variable_end_string
-    14:02:47.570583 line       335         self.comment_start_string = comment_start_string
-    14:02:47.572190 line       336         self.comment_end_string = comment_end_string
-    14:02:47.573876 line       337         self.line_statement_prefix = line_statement_prefix
-    14:02:47.575509 line       338         self.line_comment_prefix = line_comment_prefix
-    14:02:47.577135 line       339         self.trim_blocks = trim_blocks
-    14:02:47.578677 line       340         self.lstrip_blocks = lstrip_blocks
-    14:02:47.580332 line       341         self.newline_sequence = newline_sequence
-    14:02:47.581925 line       342         self.keep_trailing_newline = keep_trailing_newline
-    14:02:47.583960 line       345         self.undefined: t.Type[Undefined] = undefined
-    14:02:47.585544 line       346         self.optimized = optimized
-    14:02:47.587180 line       347         self.finalize = finalize
-    14:02:47.588789 line       348         self.autoescape = autoescape
-    14:02:47.590371 line       351         self.filters = DEFAULT_FILTERS.copy()
-    14:02:47.592207 line       352         self.tests = DEFAULT_TESTS.copy()
-    14:02:47.593828 line       353         self.globals = DEFAULT_NAMESPACE.copy()
-    14:02:47.595460 line       356         self.loader = loader
-    14:02:47.597346 line       357         self.cache = create_cache(cache_size)
-    14:02:47.599228 line       358         self.bytecode_cache = bytecode_cache
-    14:02:47.600889 line       359         self.auto_reload = auto_reload
-    14:02:47.602523 line       362         self.policies = DEFAULT_POLICIES.copy()
-    14:02:47.604189 line       365         self.extensions = load_extensions(self, extensions)
-    14:02:47.605881 line       367         self.is_async = enable_async
-    14:02:47.607772 line       368         _environment_config_check(self)
-    14:02:47.609351 return     368         _environment_config_check(self)
+    14:49:14.714586 call       294     def __init__(
+    14:49:14.751550 line       331         self.block_start_string = block_start_string
+    14:49:14.753437 line       332         self.block_end_string = block_end_string
+    14:49:14.754889 line       333         self.variable_start_string = variable_start_string
+    14:49:14.756349 line       334         self.variable_end_string = variable_end_string
+    14:49:14.757842 line       335         self.comment_start_string = comment_start_string
+    14:49:14.759347 line       336         self.comment_end_string = comment_end_string
+    14:49:14.760728 line       337         self.line_statement_prefix = line_statement_prefix
+    14:49:14.762161 line       338         self.line_comment_prefix = line_comment_prefix
+    14:49:14.763547 line       339         self.trim_blocks = trim_blocks
+    14:49:14.765098 line       340         self.lstrip_blocks = lstrip_blocks
+    14:49:14.766659 line       341         self.newline_sequence = newline_sequence
+    14:49:14.768145 line       342         self.keep_trailing_newline = keep_trailing_newline
+    14:49:14.769938 line       345         self.undefined: t.Type[Undefined] = undefined
+    14:49:14.771515 line       346         self.optimized = optimized
+    14:49:14.773090 line       347         self.finalize = finalize
+    14:49:14.774607 line       348         self.autoescape = autoescape
+    14:49:14.776037 line       351         self.filters = DEFAULT_FILTERS.copy()
+    14:49:14.778008 line       352         self.tests = DEFAULT_TESTS.copy()
+    14:49:14.779493 line       353         self.globals = DEFAULT_NAMESPACE.copy()
+    14:49:14.781155 line       356         self.loader = loader
+    14:49:14.782758 line       357         self.cache = create_cache(cache_size)
+    14:49:14.784308 line       358         self.bytecode_cache = bytecode_cache
+    14:49:14.785905 line       359         self.auto_reload = auto_reload
+    14:49:14.787541 line       362         self.policies = DEFAULT_POLICIES.copy()
+    14:49:14.789009 line       365         self.extensions = load_extensions(self, extensions)
+    14:49:14.790417 line       367         self.is_async = enable_async
+    14:49:14.791795 line       368         _environment_config_check(self)
+    14:49:14.793326 return     368         _environment_config_check(self)
     Return value:.. None
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
-New var:....... env = <jinja2.environment.Environment object at 0x7f5e353c78c0>
-14:02:47.612567 line        37         code = env.compile(template, raw=True)
+New var:....... env = <jinja2.environment.Environment object at 0x7f2f526e3bc0>
+14:49:14.796764 line        37         code = env.compile(template, raw=True)
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/environment.py
-    Starting var:.. self = <jinja2.environment.Environment object at 0x7f5e353c78c0>
+    Starting var:.. self = <jinja2.environment.Environment object at 0x7f2f526e3bc0>
     Starting var:.. source = '{{ value }}'
     Starting var:.. name = None
     Starting var:.. filename = None
     Starting var:.. raw = True
     Starting var:.. defer_init = False
-    14:02:47.617348 call       732     def compile(
-    14:02:47.629791 line       759         source_hint = None
+    14:49:14.800878 call       732     def compile(
+    14:49:14.812619 line       759         source_hint = None
     New var:....... source_hint = None
-    14:02:47.631527 line       760         try:
-    14:02:47.634863 line       761             if isinstance(source, str):
-    14:02:47.636555 line       762                 source_hint = source
+    14:49:14.814004 line       760         try:
+    14:49:14.816739 line       761             if isinstance(source, str):
+    14:49:14.818203 line       762                 source_hint = source
     Modified var:.. source_hint = '{{ value }}'
-    14:02:47.638158 line       763                 source = self._parse(source, name, filename)
+    14:49:14.819723 line       763                 source = self._parse(source, name, filename)
     Modified var:.. source = Template(body=[Output(nodes=[Name(name='value', ctx='load')])])
-    14:02:47.641736 line       764             source = self._generate(source, name, filename, defer_init=defer_init)
+    14:49:14.822844 line       764             source = self._generate(source, name, filename, defer_init=defer_init)
     Modified var:.. source = "from jinja2.runtime import LoopContext, Macro, ... l_0_value))\n\nblocks = {}\ndebug_info = '1=12'"
-    14:02:47.645601 line       765             if raw:
-    14:02:47.648927 line       766                 return source
-    14:02:47.650651 return     766                 return source
+    14:49:14.826070 line       765             if raw:
+    14:49:14.829237 line       766                 return source
+    14:49:14.830679 return     766                 return source
     Return value:.. "from jinja2.runtime import LoopContext, Macro, ... l_0_value))\n\nblocks = {}\ndebug_info = '1=12'"
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
 New var:....... code = "from jinja2.runtime import LoopContext, Macro, ... l_0_value))\n\nblocks = {}\ndebug_info = '1=12'"
-14:02:47.653682 line        38         return len(code)
-14:02:47.658412 return      38         return len(code)
+14:49:14.833623 line        38         return len(code)
+14:49:14.838534 return      38         return len(code)
 Return value:.. 595
-Elapsed time: 00:00:00.146125
+Elapsed time: 00:00:00.132714
 Starting var:.. template = '{% if flag %}A{% else %}B{% endif %}'
-14:02:47.663661 call        35     def _trace_compile(template: str) -> int:
-14:02:47.667078 line        36         env = Environment()
+14:49:14.843098 call        35     def _trace_compile(template: str) -> int:
+14:49:14.846118 line        36         env = Environment()
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/environment.py
-    Starting var:.. self = <jinja2.environment.Environment object at 0x7f5e353c51c0>
+    Starting var:.. self = <jinja2.environment.Environment object at 0x7f2f526e3380>
     Starting var:.. block_start_string = '{%'
     Starting var:.. block_end_string = '%}'
     Starting var:.. variable_start_string = '{{'
@@ -114,72 +114,72 @@ Starting var:.. template = '{% if flag %}A{% else %}B{% endif %}'
     Starting var:.. auto_reload = True
     Starting var:.. bytecode_cache = None
     Starting var:.. enable_async = False
-    14:02:47.668646 call       294     def __init__(
-    14:02:47.710042 line       331         self.block_start_string = block_start_string
-    14:02:47.712056 line       332         self.block_end_string = block_end_string
-    14:02:47.713966 line       333         self.variable_start_string = variable_start_string
-    14:02:47.716090 line       334         self.variable_end_string = variable_end_string
-    14:02:47.717841 line       335         self.comment_start_string = comment_start_string
-    14:02:47.719417 line       336         self.comment_end_string = comment_end_string
-    14:02:47.721041 line       337         self.line_statement_prefix = line_statement_prefix
-    14:02:47.722869 line       338         self.line_comment_prefix = line_comment_prefix
-    14:02:47.724505 line       339         self.trim_blocks = trim_blocks
-    14:02:47.726092 line       340         self.lstrip_blocks = lstrip_blocks
-    14:02:47.727727 line       341         self.newline_sequence = newline_sequence
-    14:02:47.729303 line       342         self.keep_trailing_newline = keep_trailing_newline
-    14:02:47.730949 line       345         self.undefined: t.Type[Undefined] = undefined
-    14:02:47.732610 line       346         self.optimized = optimized
-    14:02:47.734398 line       347         self.finalize = finalize
-    14:02:47.736125 line       348         self.autoescape = autoescape
-    14:02:47.737848 line       351         self.filters = DEFAULT_FILTERS.copy()
-    14:02:47.739694 line       352         self.tests = DEFAULT_TESTS.copy()
-    14:02:47.741834 line       353         self.globals = DEFAULT_NAMESPACE.copy()
-    14:02:47.743666 line       356         self.loader = loader
-    14:02:47.745650 line       357         self.cache = create_cache(cache_size)
-    14:02:47.748117 line       358         self.bytecode_cache = bytecode_cache
-    14:02:47.750287 line       359         self.auto_reload = auto_reload
-    14:02:47.752130 line       362         self.policies = DEFAULT_POLICIES.copy()
-    14:02:47.753875 line       365         self.extensions = load_extensions(self, extensions)
-    14:02:47.755630 line       367         self.is_async = enable_async
-    14:02:47.757361 line       368         _environment_config_check(self)
-    14:02:47.759049 return     368         _environment_config_check(self)
+    14:49:14.847497 call       294     def __init__(
+    14:49:14.882911 line       331         self.block_start_string = block_start_string
+    14:49:14.884422 line       332         self.block_end_string = block_end_string
+    14:49:14.886373 line       333         self.variable_start_string = variable_start_string
+    14:49:14.888095 line       334         self.variable_end_string = variable_end_string
+    14:49:14.890175 line       335         self.comment_start_string = comment_start_string
+    14:49:14.899561 line       336         self.comment_end_string = comment_end_string
+    14:49:14.901921 line       337         self.line_statement_prefix = line_statement_prefix
+    14:49:14.904840 line       338         self.line_comment_prefix = line_comment_prefix
+    14:49:14.907269 line       339         self.trim_blocks = trim_blocks
+    14:49:14.909526 line       340         self.lstrip_blocks = lstrip_blocks
+    14:49:14.911988 line       341         self.newline_sequence = newline_sequence
+    14:49:14.914366 line       342         self.keep_trailing_newline = keep_trailing_newline
+    14:49:14.916639 line       345         self.undefined: t.Type[Undefined] = undefined
+    14:49:14.919132 line       346         self.optimized = optimized
+    14:49:14.921719 line       347         self.finalize = finalize
+    14:49:14.929560 line       348         self.autoescape = autoescape
+    14:49:14.934215 line       351         self.filters = DEFAULT_FILTERS.copy()
+    14:49:14.938311 line       352         self.tests = DEFAULT_TESTS.copy()
+    14:49:14.940779 line       353         self.globals = DEFAULT_NAMESPACE.copy()
+    14:49:14.943127 line       356         self.loader = loader
+    14:49:14.945566 line       357         self.cache = create_cache(cache_size)
+    14:49:14.947949 line       358         self.bytecode_cache = bytecode_cache
+    14:49:14.950448 line       359         self.auto_reload = auto_reload
+    14:49:14.952802 line       362         self.policies = DEFAULT_POLICIES.copy()
+    14:49:14.955070 line       365         self.extensions = load_extensions(self, extensions)
+    14:49:14.957298 line       367         self.is_async = enable_async
+    14:49:14.959500 line       368         _environment_config_check(self)
+    14:49:14.961725 return     368         _environment_config_check(self)
     Return value:.. None
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
-New var:....... env = <jinja2.environment.Environment object at 0x7f5e353c51c0>
-14:02:47.762332 line        37         code = env.compile(template, raw=True)
+New var:....... env = <jinja2.environment.Environment object at 0x7f2f526e3380>
+14:49:14.965564 line        37         code = env.compile(template, raw=True)
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/environment.py
-    Starting var:.. self = <jinja2.environment.Environment object at 0x7f5e353c51c0>
+    Starting var:.. self = <jinja2.environment.Environment object at 0x7f2f526e3380>
     Starting var:.. source = '{% if flag %}A{% else %}B{% endif %}'
     Starting var:.. name = None
     Starting var:.. filename = None
     Starting var:.. raw = True
     Starting var:.. defer_init = False
-    14:02:47.767424 call       732     def compile(
-    14:02:47.780793 line       759         source_hint = None
+    14:49:14.970699 call       732     def compile(
+    14:49:14.982983 line       759         source_hint = None
     New var:....... source_hint = None
-    14:02:47.782647 line       760         try:
-    14:02:47.786005 line       761             if isinstance(source, str):
-    14:02:47.787656 line       762                 source_hint = source
+    14:49:14.984456 line       760         try:
+    14:49:14.987838 line       761             if isinstance(source, str):
+    14:49:14.989473 line       762                 source_hint = source
     Modified var:.. source_hint = '{% if flag %}A{% else %}B{% endif %}'
-    14:02:47.789272 line       763                 source = self._parse(source, name, filename)
+    14:49:14.991132 line       763                 source = self._parse(source, name, filename)
     Modified var:.. source = Template(body=[If(test=Name(name='flag', ctx='lo...else_=[Output(nodes=[TemplateData(data='B')])])])
-    14:02:47.793130 line       764             source = self._generate(source, name, filename, defer_init=defer_init)
+    14:49:14.995556 line       764             source = self._generate(source, name, filename, defer_init=defer_init)
     Modified var:.. source = "from jinja2.runtime import LoopContext, Macro, ...   yield 'B'\n\nblocks = {}\ndebug_info = '1=12'"
-    14:02:47.797158 line       765             if raw:
-    14:02:47.800728 line       766                 return source
-    14:02:47.802338 return     766                 return source
+    14:49:14.999871 line       765             if raw:
+    14:49:15.003134 line       766                 return source
+    14:49:15.004799 return     766                 return source
     Return value:.. "from jinja2.runtime import LoopContext, Macro, ...   yield 'B'\n\nblocks = {}\ndebug_info = '1=12'"
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
 New var:....... code = "from jinja2.runtime import LoopContext, Macro, ...   yield 'B'\n\nblocks = {}\ndebug_info = '1=12'"
-14:02:47.805448 line        38         return len(code)
-14:02:47.810384 return      38         return len(code)
+14:49:15.007829 line        38         return len(code)
+14:49:15.013006 return      38         return len(code)
 Return value:.. 655
-Elapsed time: 00:00:00.149992
+Elapsed time: 00:00:00.173106
 Starting var:.. template = '{% for x in items %}'
-14:02:47.815263 call        35     def _trace_compile(template: str) -> int:
-14:02:47.818409 line        36         env = Environment()
+14:49:15.017831 call        35     def _trace_compile(template: str) -> int:
+14:49:15.021344 line        36         env = Environment()
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/environment.py
-    Starting var:.. self = <jinja2.environment.Environment object at 0x7f5e33897980>
+    Starting var:.. self = <jinja2.environment.Environment object at 0x7f2f526aa900>
     Starting var:.. block_start_string = '{%'
     Starting var:.. block_end_string = '%}'
     Starting var:.. variable_start_string = '{{'
@@ -202,64 +202,64 @@ Starting var:.. template = '{% for x in items %}'
     Starting var:.. auto_reload = True
     Starting var:.. bytecode_cache = None
     Starting var:.. enable_async = False
-    14:02:47.819984 call       294     def __init__(
-    14:02:47.860609 line       331         self.block_start_string = block_start_string
-    14:02:47.862266 line       332         self.block_end_string = block_end_string
-    14:02:47.863837 line       333         self.variable_start_string = variable_start_string
-    14:02:47.865483 line       334         self.variable_end_string = variable_end_string
-    14:02:47.867430 line       335         self.comment_start_string = comment_start_string
-    14:02:47.869003 line       336         self.comment_end_string = comment_end_string
-    14:02:47.870730 line       337         self.line_statement_prefix = line_statement_prefix
-    14:02:47.872347 line       338         self.line_comment_prefix = line_comment_prefix
-    14:02:47.873876 line       339         self.trim_blocks = trim_blocks
-    14:02:47.875459 line       340         self.lstrip_blocks = lstrip_blocks
-    14:02:47.877271 line       341         self.newline_sequence = newline_sequence
-    14:02:47.878938 line       342         self.keep_trailing_newline = keep_trailing_newline
-    14:02:47.880660 line       345         self.undefined: t.Type[Undefined] = undefined
-    14:02:47.882294 line       346         self.optimized = optimized
-    14:02:47.883998 line       347         self.finalize = finalize
-    14:02:47.885580 line       348         self.autoescape = autoescape
-    14:02:47.887296 line       351         self.filters = DEFAULT_FILTERS.copy()
-    14:02:47.888955 line       352         self.tests = DEFAULT_TESTS.copy()
-    14:02:47.890676 line       353         self.globals = DEFAULT_NAMESPACE.copy()
-    14:02:47.892527 line       356         self.loader = loader
-    14:02:47.894168 line       357         self.cache = create_cache(cache_size)
-    14:02:47.895846 line       358         self.bytecode_cache = bytecode_cache
-    14:02:47.897568 line       359         self.auto_reload = auto_reload
-    14:02:47.899341 line       362         self.policies = DEFAULT_POLICIES.copy()
-    14:02:47.901026 line       365         self.extensions = load_extensions(self, extensions)
-    14:02:47.902692 line       367         self.is_async = enable_async
-    14:02:47.904364 line       368         _environment_config_check(self)
-    14:02:47.905934 return     368         _environment_config_check(self)
+    14:49:15.022961 call       294     def __init__(
+    14:49:15.061574 line       331         self.block_start_string = block_start_string
+    14:49:15.063195 line       332         self.block_end_string = block_end_string
+    14:49:15.064656 line       333         self.variable_start_string = variable_start_string
+    14:49:15.066172 line       334         self.variable_end_string = variable_end_string
+    14:49:15.067674 line       335         self.comment_start_string = comment_start_string
+    14:49:15.069221 line       336         self.comment_end_string = comment_end_string
+    14:49:15.070961 line       337         self.line_statement_prefix = line_statement_prefix
+    14:49:15.072554 line       338         self.line_comment_prefix = line_comment_prefix
+    14:49:15.074085 line       339         self.trim_blocks = trim_blocks
+    14:49:15.075729 line       340         self.lstrip_blocks = lstrip_blocks
+    14:49:15.077453 line       341         self.newline_sequence = newline_sequence
+    14:49:15.079142 line       342         self.keep_trailing_newline = keep_trailing_newline
+    14:49:15.080723 line       345         self.undefined: t.Type[Undefined] = undefined
+    14:49:15.082324 line       346         self.optimized = optimized
+    14:49:15.083876 line       347         self.finalize = finalize
+    14:49:15.085631 line       348         self.autoescape = autoescape
+    14:49:15.087880 line       351         self.filters = DEFAULT_FILTERS.copy()
+    14:49:15.089589 line       352         self.tests = DEFAULT_TESTS.copy()
+    14:49:15.091366 line       353         self.globals = DEFAULT_NAMESPACE.copy()
+    14:49:15.093080 line       356         self.loader = loader
+    14:49:15.095312 line       357         self.cache = create_cache(cache_size)
+    14:49:15.096923 line       358         self.bytecode_cache = bytecode_cache
+    14:49:15.098388 line       359         self.auto_reload = auto_reload
+    14:49:15.099796 line       362         self.policies = DEFAULT_POLICIES.copy()
+    14:49:15.101372 line       365         self.extensions = load_extensions(self, extensions)
+    14:49:15.103037 line       367         self.is_async = enable_async
+    14:49:15.104546 line       368         _environment_config_check(self)
+    14:49:15.105931 return     368         _environment_config_check(self)
     Return value:.. None
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
-New var:....... env = <jinja2.environment.Environment object at 0x7f5e33897980>
-14:02:47.909664 line        37         code = env.compile(template, raw=True)
+New var:....... env = <jinja2.environment.Environment object at 0x7f2f526aa900>
+14:49:15.108865 line        37         code = env.compile(template, raw=True)
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/environment.py
-    Starting var:.. self = <jinja2.environment.Environment object at 0x7f5e33897980>
+    Starting var:.. self = <jinja2.environment.Environment object at 0x7f2f526aa900>
     Starting var:.. source = '{% for x in items %}'
     Starting var:.. name = None
     Starting var:.. filename = None
     Starting var:.. raw = True
     Starting var:.. defer_init = False
-    14:02:47.914194 call       732     def compile(
-    14:02:47.926037 line       759         source_hint = None
+    14:49:15.113680 call       732     def compile(
+    14:49:15.125832 line       759         source_hint = None
     New var:....... source_hint = None
-    14:02:47.927595 line       760         try:
-    14:02:47.930725 line       761             if isinstance(source, str):
-    14:02:47.932164 line       762                 source_hint = source
+    14:49:15.127428 line       760         try:
+    14:49:15.130466 line       761             if isinstance(source, str):
+    14:49:15.131981 line       762                 source_hint = source
     Modified var:.. source_hint = '{% for x in items %}'
-    14:02:47.933834 line       763                 source = self._parse(source, name, filename)
-    14:02:47.937810 exception  763                 source = self._parse(source, name, filename)
+    14:49:15.133378 line       763                 source = self._parse(source, name, filename)
+    14:49:15.136964 exception  763                 source = self._parse(source, name, filename)
     Exception:..... jinja2.exceptions.TemplateSyntaxError: Unexpecte... block that needs to be closed is 'for'.
   line 1
-    14:02:47.941466 line       770         except TemplateSyntaxError:
-    14:02:47.943140 line       771             self.handle_exception(source=source_hint)
-    14:02:47.944864 exception  771             self.handle_exception(source=source_hint)
+    14:49:15.139867 line       770         except TemplateSyntaxError:
+    14:49:15.141273 line       771             self.handle_exception(source=source_hint)
+    14:49:15.142752 exception  771             self.handle_exception(source=source_hint)
     Exception:..... jinja2.exceptions.TemplateSyntaxError: Unexpecte...innermost block that needs to be closed is 'for'.
     Call ended by exception
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
-14:02:47.949920 exception   37         code = env.compile(template, raw=True)
+14:49:15.147415 exception   37         code = env.compile(template, raw=True)
 Exception:..... jinja2.exceptions.TemplateSyntaxError: Unexpecte...innermost block that needs to be closed is 'for'.
 Call ended by exception
-Elapsed time: 00:00:00.141330
+Elapsed time: 00:00:00.135918

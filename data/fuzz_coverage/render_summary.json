@@ -1,14 +1,14 @@
 {
   "target": "render",
   "status": "ok",
-  "collected_at": "2026-02-10T06:26:26.349948+00:00",
+  "collected_at": "2026-02-10T06:48:38.788614+00:00",
   "runs_configured": 10000,
   "iterations_observed": 10000,
   "exception_counts": {
-    "TemplateSyntaxError": 4966
+    "TemplateSyntaxError": 5368
   },
   "exception_samples": {
-    "TemplateSyntaxError": "{{"
+    "TemplateSyntaxError": "\u001a{{{\u0000"
   },
   "crash_files": [
     "/mnt/c/Users/l/Desktop/opensource/group4/repo/data/crashes/render_TemplateSyntaxError.txt"
@@ -26,193 +26,193 @@
     },
     {
       "iteration": 750,
-      "unique_exceptions": 1,
-      "total_exceptions": 41
+      "unique_exceptions": 0,
+      "total_exceptions": 0
     },
     {
       "iteration": 1000,
-      "unique_exceptions": 1,
-      "total_exceptions": 126
+      "unique_exceptions": 0,
+      "total_exceptions": 0
     },
     {
       "iteration": 1250,
-      "unique_exceptions": 1,
-      "total_exceptions": 220
+      "unique_exceptions": 0,
+      "total_exceptions": 0
     },
     {
       "iteration": 1500,
-      "unique_exceptions": 1,
-      "total_exceptions": 322
+      "unique_exceptions": 0,
+      "total_exceptions": 0
     },
     {
       "iteration": 1750,
-      "unique_exceptions": 1,
-      "total_exceptions": 447
+      "unique_exceptions": 0,
+      "total_exceptions": 0
     },
     {
       "iteration": 2000,
       "unique_exceptions": 1,
-      "total_exceptions": 569
+      "total_exceptions": 66
     },
     {
       "iteration": 2250,
       "unique_exceptions": 1,
-      "total_exceptions": 682
+      "total_exceptions": 201
     },
     {
       "iteration": 2500,
       "unique_exceptions": 1,
-      "total_exceptions": 804
+      "total_exceptions": 350
     },
     {
       "iteration": 2750,
       "unique_exceptions": 1,
-      "total_exceptions": 918
+      "total_exceptions": 510
     },
     {
       "iteration": 3000,
       "unique_exceptions": 1,
-      "total_exceptions": 1039
+      "total_exceptions": 693
     },
     {
       "iteration": 3250,
       "unique_exceptions": 1,
-      "total_exceptions": 1159
+      "total_exceptions": 847
     },
     {
       "iteration": 3500,
       "unique_exceptions": 1,
-      "total_exceptions": 1283
+      "total_exceptions": 1023
     },
     {
       "iteration": 3750,
       "unique_exceptions": 1,
-      "total_exceptions": 1390
+      "total_exceptions": 1188
     },
     {
       "iteration": 4000,
       "unique_exceptions": 1,
-      "total_exceptions": 1501
+      "total_exceptions": 1358
     },
     {
       "iteration": 4250,
       "unique_exceptions": 1,
-      "total_exceptions": 1633
+      "total_exceptions": 1509
     },
     {
       "iteration": 4500,
       "unique_exceptions": 1,
-      "total_exceptions": 1768
+      "total_exceptions": 1662
     },
     {
       "iteration": 4750,
       "unique_exceptions": 1,
-      "total_exceptions": 1911
+      "total_exceptions": 1819
     },
     {
       "iteration": 5000,
       "unique_exceptions": 1,
-      "total_exceptions": 2044
+      "total_exceptions": 2001
     },
     {
       "iteration": 5250,
       "unique_exceptions": 1,
-      "total_exceptions": 2168
+      "total_exceptions": 2167
     },
     {
       "iteration": 5500,
       "unique_exceptions": 1,
-      "total_exceptions": 2308
+      "total_exceptions": 2296
     },
     {
       "iteration": 5750,
       "unique_exceptions": 1,
-      "total_exceptions": 2475
+      "total_exceptions": 2455
     },
     {
       "iteration": 6000,
       "unique_exceptions": 1,
-      "total_exceptions": 2623
+      "total_exceptions": 2628
     },
     {
       "iteration": 6250,
       "unique_exceptions": 1,
-      "total_exceptions": 2750
+      "total_exceptions": 2805
     },
     {
       "iteration": 6500,
       "unique_exceptions": 1,
-      "total_exceptions": 2897
+      "total_exceptions": 2962
     },
     {
       "iteration": 6750,
       "unique_exceptions": 1,
-      "total_exceptions": 3062
+      "total_exceptions": 3172
     },
     {
       "iteration": 7000,
       "unique_exceptions": 1,
-      "total_exceptions": 3204
+      "total_exceptions": 3337
     },
     {
       "iteration": 7250,
       "unique_exceptions": 1,
-      "total_exceptions": 3362
+      "total_exceptions": 3517
     },
     {
       "iteration": 7500,
       "unique_exceptions": 1,
-      "total_exceptions": 3521
+      "total_exceptions": 3669
     },
     {
       "iteration": 7750,
       "unique_exceptions": 1,
-      "total_exceptions": 3683
+      "total_exceptions": 3839
     },
     {
       "iteration": 8000,
       "unique_exceptions": 1,
-      "total_exceptions": 3853
+      "total_exceptions": 4003
     },
     {
       "iteration": 8250,
       "unique_exceptions": 1,
-      "total_exceptions": 3992
+      "total_exceptions": 4153
     },
     {
       "iteration": 8500,
       "unique_exceptions": 1,
-      "total_exceptions": 4132
+      "total_exceptions": 4334
     },
     {
       "iteration": 8750,
       "unique_exceptions": 1,
-      "total_exceptions": 4270
+      "total_exceptions": 4499
     },
     {
       "iteration": 9000,
       "unique_exceptions": 1,
-      "total_exceptions": 4407
+      "total_exceptions": 4667
     },
     {
       "iteration": 9250,
       "unique_exceptions": 1,
-      "total_exceptions": 4549
+      "total_exceptions": 4845
     },
     {
       "iteration": 9500,
       "unique_exceptions": 1,
-      "total_exceptions": 4687
+      "total_exceptions": 5019
     },
     {
       "iteration": 9750,
       "unique_exceptions": 1,
-      "total_exceptions": 4842
+      "total_exceptions": 5190
     },
     {
       "iteration": 10000,
       "unique_exceptions": 1,
-      "total_exceptions": 4966
+      "total_exceptions": 5367
     }
   ]
 }

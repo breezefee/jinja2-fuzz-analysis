@@ -1,3 +1,3 @@
 exception=TemplateSyntaxError
-sample={{
-
+sample={{
+]{{

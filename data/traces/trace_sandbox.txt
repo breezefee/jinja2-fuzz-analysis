@@ -1,101 +1,101 @@
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
 Starting var:.. template = '{{ obj.name }}'
-Starting var:.. context = {'obj': <analyzers.dynamic_tracer.Safe object at 0x7f5e339f6b70>}
-14:02:47.958330 call        45     def _trace_sandbox(template: str, context: dict[str, Any]) -> str:
-14:02:47.964845 line        46         env = SandboxedEnvironment()
+Starting var:.. context = {'obj': <analyzers.dynamic_tracer.Safe object at 0x7f2f5298eb70>}
+14:49:15.155216 call        45     def _trace_sandbox(template: str, context: dict[str, Any]) -> str:
+14:49:15.161025 line        46         env = SandboxedEnvironment()
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/sandbox.py
-    Starting var:.. self = <jinja2.sandbox.SandboxedEnvironment object at 0x7f5e33867c80>
+    Starting var:.. self = <jinja2.sandbox.SandboxedEnvironment object at 0x7f2f526e1370>
     Starting var:.. args = ()
     Starting var:.. kwargs = {}
     Starting var:.. __class__ = <class 'jinja2.sandbox.SandboxedEnvironment'>
-    14:02:47.966736 call       242     def __init__(self, *args: t.Any, **kwargs: t.Any) -> None:
-    14:02:47.977555 line       243         super().__init__(*args, **kwargs)
-    14:02:47.979102 line       244         self.globals["range"] = safe_range
-    14:02:47.980633 line       245         self.binop_table = self.default_binop_table.copy()
-    14:02:47.982160 line       246         self.unop_table = self.default_unop_table.copy()
-    14:02:47.984076 return     246         self.unop_table = self.default_unop_table.copy()
+    14:49:15.162510 call       242     def __init__(self, *args: t.Any, **kwargs: t.Any) -> None:
+    14:49:15.172907 line       243         super().__init__(*args, **kwargs)
+    14:49:15.174393 line       244         self.globals["range"] = safe_range
+    14:49:15.175861 line       245         self.binop_table = self.default_binop_table.copy()
+    14:49:15.177444 line       246         self.unop_table = self.default_unop_table.copy()
+    14:49:15.179027 return     246         self.unop_table = self.default_unop_table.copy()
     Return value:.. None
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
-New var:....... env = <jinja2.sandbox.SandboxedEnvironment object at 0x7f5e33867c80>
-14:02:47.987164 line        47         return env.from_string(template).render(**context)
+New var:....... env = <jinja2.sandbox.SandboxedEnvironment object at 0x7f2f526e1370>
+14:49:15.182263 line        47         return env.from_string(template).render(**context)
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/environment.py
-    Starting var:.. self = <jinja2.sandbox.SandboxedEnvironment object at 0x7f5e33867c80>
+    Starting var:.. self = <jinja2.sandbox.SandboxedEnvironment object at 0x7f2f526e1370>
     Starting var:.. source = '{{ obj.name }}'
     Starting var:.. globals = None
     Starting var:.. template_class = None
-    14:02:47.991895 call      1092     def from_string(
-    14:02:48.001830 line      1109         gs = self.make_globals(globals)
+    14:49:15.186801 call      1092     def from_string(
+    14:49:15.195229 line      1109         gs = self.make_globals(globals)
     New var:....... gs = ChainMap({}, {'range': <function safe_range at 0..., 'namespace': <class 'jinja2.utils.Namespace'>})
-    14:02:48.003351 line      1110         cls = template_class or self.template_class
+    14:49:15.196687 line      1110         cls = template_class or self.template_class
     New var:....... cls = <class 'jinja2.environment.Template'>
-    14:02:48.006283 line      1111         return cls.from_code(self, self.compile(source), gs, None)
-    14:02:48.010825 return    1111         return cls.from_code(self, self.compile(source), gs, None)
-    Return value:.. <Template memory:7f5e363a7a40>
-    Starting var:.. self = <Template memory:7f5e363a7a40>
+    14:49:15.199465 line      1111         return cls.from_code(self, self.compile(source), gs, None)
+    14:49:15.203426 return    1111         return cls.from_code(self, self.compile(source), gs, None)
+    Return value:.. <Template memory:7f2fa87a4770>
+    Starting var:.. self = <Template memory:7f2fa87a4770>
     Starting var:.. args = ()
-    Starting var:.. kwargs = {'obj': <analyzers.dynamic_tracer.Safe object at 0x7f5e339f6b70>}
-    14:02:48.013849 call      1275     def render(self, *args: t.Any, **kwargs: t.Any) -> str:
-    14:02:48.020086 line      1285         if self.environment.is_async:
-    14:02:48.021667 line      1290         ctx = self.new_context(dict(*args, **kwargs))
-    New var:....... ctx = <Context {'range': <function safe_range at 0x7f5...c_tracer.Safe object at 0x7f5e339f6b70>} of None>
-    14:02:48.023199 line      1292         try:
-    14:02:48.026252 line      1293             return self.environment.concat(self.root_render_func(ctx))  # type: ignore
-    14:02:48.027805 return    1293             return self.environment.concat(self.root_render_func(ctx))  # type: ignore
+    Starting var:.. kwargs = {'obj': <analyzers.dynamic_tracer.Safe object at 0x7f2f5298eb70>}
+    14:49:15.206158 call      1275     def render(self, *args: t.Any, **kwargs: t.Any) -> str:
+    14:49:15.212240 line      1285         if self.environment.is_async:
+    14:49:15.213695 line      1290         ctx = self.new_context(dict(*args, **kwargs))
+    New var:....... ctx = <Context {'range': <function safe_range at 0x7f2...c_tracer.Safe object at 0x7f2f5298eb70>} of None>
+    14:49:15.215103 line      1292         try:
+    14:49:15.217928 line      1293             return self.environment.concat(self.root_render_func(ctx))  # type: ignore
+    14:49:15.219496 return    1293             return self.environment.concat(self.root_render_func(ctx))  # type: ignore
     Return value:.. 'ok'
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
-14:02:48.031035 return      47         return env.from_string(template).render(**context)
+14:49:15.222513 return      47         return env.from_string(template).render(**context)
 Return value:.. 'ok'
-Elapsed time: 00:00:00.077566
+Elapsed time: 00:00:00.071658
 Starting var:.. template = '{{ obj.__class__.__mro__ }}'
 Starting var:.. context = {'obj': 'x'}
-14:02:48.037381 call        45     def _trace_sandbox(template: str, context: dict[str, Any]) -> str:
-14:02:48.042118 line        46         env = SandboxedEnvironment()
+14:49:15.228436 call        45     def _trace_sandbox(template: str, context: dict[str, Any]) -> str:
+14:49:15.232848 line        46         env = SandboxedEnvironment()
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/sandbox.py
-    Starting var:.. self = <jinja2.sandbox.SandboxedEnvironment object at 0x7f5e338956d0>
+    Starting var:.. self = <jinja2.sandbox.SandboxedEnvironment object at 0x7f2f526e2b40>
     Starting var:.. args = ()
     Starting var:.. kwargs = {}
     Starting var:.. __class__ = <class 'jinja2.sandbox.SandboxedEnvironment'>
-    14:02:48.043615 call       242     def __init__(self, *args: t.Any, **kwargs: t.Any) -> None:
-    14:02:48.052776 line       243         super().__init__(*args, **kwargs)
-    14:02:48.054359 line       244         self.globals["range"] = safe_range
-    14:02:48.055843 line       245         self.binop_table = self.default_binop_table.copy()
-    14:02:48.057388 line       246         self.unop_table = self.default_unop_table.copy()
-    14:02:48.059105 return     246         self.unop_table = self.default_unop_table.copy()
+    14:49:15.234205 call       242     def __init__(self, *args: t.Any, **kwargs: t.Any) -> None:
+    14:49:15.242885 line       243         super().__init__(*args, **kwargs)
+    14:49:15.244508 line       244         self.globals["range"] = safe_range
+    14:49:15.245905 line       245         self.binop_table = self.default_binop_table.copy()
+    14:49:15.247412 line       246         self.unop_table = self.default_unop_table.copy()
+    14:49:15.248819 return     246         self.unop_table = self.default_unop_table.copy()
     Return value:.. None
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
-New var:....... env = <jinja2.sandbox.SandboxedEnvironment object at 0x7f5e338956d0>
-14:02:48.062550 line        47         return env.from_string(template).render(**context)
+New var:....... env = <jinja2.sandbox.SandboxedEnvironment object at 0x7f2f526e2b40>
+14:49:15.251684 line        47         return env.from_string(template).render(**context)
     Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/.venv/lib/python3.12/site-packages/jinja2/environment.py
-    Starting var:.. self = <jinja2.sandbox.SandboxedEnvironment object at 0x7f5e338956d0>
+    Starting var:.. self = <jinja2.sandbox.SandboxedEnvironment object at 0x7f2f526e2b40>
     Starting var:.. source = '{{ obj.__class__.__mro__ }}'
     Starting var:.. globals = None
     Starting var:.. template_class = None
-    14:02:48.067135 call      1092     def from_string(
-    14:02:48.075923 line      1109         gs = self.make_globals(globals)
+    14:49:15.256772 call      1092     def from_string(
+    14:49:15.265180 line      1109         gs = self.make_globals(globals)
     New var:....... gs = ChainMap({}, {'range': <function safe_range at 0..., 'namespace': <class 'jinja2.utils.Namespace'>})
-    14:02:48.077648 line      1110         cls = template_class or self.template_class
+    14:49:15.266612 line      1110         cls = template_class or self.template_class
     New var:....... cls = <class 'jinja2.environment.Template'>
-    14:02:48.080904 line      1111         return cls.from_code(self, self.compile(source), gs, None)
-    14:02:48.085497 return    1111         return cls.from_code(self, self.compile(source), gs, None)
-    Return value:.. <Template memory:7f5e353c5df0>
-    Starting var:.. self = <Template memory:7f5e353c5df0>
+    14:49:15.269791 line      1111         return cls.from_code(self, self.compile(source), gs, None)
+    14:49:15.274117 return    1111         return cls.from_code(self, self.compile(source), gs, None)
+    Return value:.. <Template memory:7f2f52ac49b0>
+    Starting var:.. self = <Template memory:7f2f52ac49b0>
     Starting var:.. args = ()
     Starting var:.. kwargs = {'obj': 'x'}
-    14:02:48.088458 call      1275     def render(self, *args: t.Any, **kwargs: t.Any) -> str:
-    14:02:48.094741 line      1285         if self.environment.is_async:
-    14:02:48.096505 line      1290         ctx = self.new_context(dict(*args, **kwargs))
-    New var:....... ctx = <Context {'range': <function safe_range at 0x7f5...s 'jinja2.utils.Namespace'>, 'obj': 'x'} of None>
-    14:02:48.098132 line      1292         try:
-    14:02:48.101337 line      1293             return self.environment.concat(self.root_render_func(ctx))  # type: ignore
-    14:02:48.102870 exception 1293             return self.environment.concat(self.root_render_func(ctx))  # type: ignore
+    14:49:15.276973 call      1275     def render(self, *args: t.Any, **kwargs: t.Any) -> str:
+    14:49:15.282917 line      1285         if self.environment.is_async:
+    14:49:15.284447 line      1290         ctx = self.new_context(dict(*args, **kwargs))
+    New var:....... ctx = <Context {'range': <function safe_range at 0x7f2...s 'jinja2.utils.Namespace'>, 'obj': 'x'} of None>
+    14:49:15.286417 line      1292         try:
+    14:49:15.289799 line      1293             return self.environment.concat(self.root_render_func(ctx))  # type: ignore
+    14:49:15.291418 exception 1293             return self.environment.concat(self.root_render_func(ctx))  # type: ignore
     Exception:..... jinja2.exceptions.SecurityError: access to attribute '__class__' of 'str' object is unsafe.
-    14:02:48.111563 line      1294         except Exception:
-    14:02:48.113031 line      1295             self.environment.handle_exception()
-    14:02:48.114656 exception 1295             self.environment.handle_exception()
+    14:49:15.300115 line      1294         except Exception:
+    14:49:15.301714 line      1295             self.environment.handle_exception()
+    14:49:15.303580 exception 1295             self.environment.handle_exception()
     Exception:..... jinja2.exceptions.SecurityError: access to attribute '__class__' of 'str' object is unsafe.
     Call ended by exception
 Source path:... /mnt/c/Users/l/Desktop/opensource/group4/repo/analyzers/dynamic_tracer.py
-14:02:48.121397 exception   47         return env.from_string(template).render(**context)
+14:49:15.309782 exception   47         return env.from_string(template).render(**context)
 Exception:..... jinja2.exceptions.SecurityError: access to attribute '__class__' of 'str' object is unsafe.
 Call ended by exception
-Elapsed time: 00:00:00.092460
+Elapsed time: 00:00:00.092195
